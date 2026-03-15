@@ -40,7 +40,7 @@ export default function ProfileForm({
     <form onSubmit={handleSubmit}>
       <label
         htmlFor="displayName"
-        className="block text-sm font-medium text-[#e8e6e3]/40"
+        className="block text-sm font-medium text-[#e8e6e3]/55"
       >
         Display Name
       </label>
@@ -49,7 +49,7 @@ export default function ProfileForm({
         type="text"
         value={displayName}
         onChange={(e) => setDisplayName(e.target.value)}
-        className="mt-1 w-full rounded-lg border border-[#2a2d35] bg-[#0f1117] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/30 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c]"
+        className="mt-1 w-full rounded-lg border border-[#333845] bg-[#13151a] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/40 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c] transition-all duration-300"
       />
 
       {error && (
@@ -60,12 +60,12 @@ export default function ProfileForm({
         <button
           type="submit"
           disabled={loading}
-          className="rounded-lg bg-[#1e3a5f] px-5 py-2 text-sm font-medium text-[#c9a84c] transition-colors hover:bg-[#2a4a7f] disabled:opacity-50"
+          className="rounded-lg bg-gradient-to-r from-[#1e3a5f] to-[#2a5a8f] px-5 py-2 text-sm font-medium text-[#c9a84c] shadow-md shadow-[#1e3a5f]/30 transition-all duration-300 hover:from-[#2a4a7f] hover:to-[#3460a0] hover:shadow-lg disabled:opacity-50 active:scale-95"
         >
           {loading ? "Saving..." : "Save Changes"}
         </button>
         {saved && (
-          <span className="text-sm text-[#4a7c59]">Saved!</span>
+          <span className="text-sm text-[#5a9a6e]">Saved!</span>
         )}
       </div>
     </form>

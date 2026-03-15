@@ -14,9 +14,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "The Four Boxes Diner — Second Amendment Education",
+  title: "Second Amendment Online — by Mark Smith (Four Boxes Diner)",
   description:
-    "Serving hot, fresh Second Amendment news and analysis. Free online courses covering constitutional history, firearm safety, and gun laws.",
+    "Free online courses covering constitutional history, firearm safety, and gun laws. Second Amendment education by Mark Smith of The Four Boxes Diner.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.variable} ${playfair.variable} antialiased min-h-screen bg-[#0f1117] text-[#e8e6e3]`}
+        className={`${inter.variable} ${playfair.variable} antialiased min-h-screen bg-[#13151a] text-[#e8e6e3]`}
       >
         <Header />
         <main>{children}</main>

@@ -54,21 +54,21 @@ export default function AuthForm({ mode }: AuthFormProps) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-md">
-      <div className="rounded-xl border border-[#2a2d35] bg-[#1a1d23] p-8">
+    <div className="mx-auto w-full max-w-md animate-fade-in-up">
+      <div className="rounded-xl border border-[#333845] bg-[#1c1f27] p-8 shadow-xl shadow-black/30">
         <h1 className="font-heading text-2xl font-bold text-white">
           {mode === "login" ? "Welcome back" : "Create your account"}
         </h1>
-        <p className="mt-2 text-sm text-[#e8e6e3]/50">
+        <p className="mt-2 text-sm text-[#e8e6e3]/65">
           {mode === "login"
             ? "Sign in to continue your learning"
-            : "Join The Four Boxes Diner and start learning"}
+            : "Join Second Amendment Online and start learning"}
         </p>
 
         <button
           onClick={handleGoogleAuth}
           type="button"
-          className="mt-6 flex w-full items-center justify-center gap-3 rounded-lg border border-[#2a2d35] bg-[#0f1117] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#2a2d35]"
+          className="mt-6 flex w-full items-center justify-center gap-3 rounded-lg border border-[#333845] bg-[#13151a] px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-[#333845] hover:border-[#c9a84c]/30 active:scale-95"
         >
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <path
@@ -92,15 +92,15 @@ export default function AuthForm({ mode }: AuthFormProps) {
         </button>
 
         <div className="my-6 flex items-center gap-3">
-          <div className="h-px flex-1 bg-[#2a2d35]" />
-          <span className="text-xs text-[#e8e6e3]/30">or</span>
-          <div className="h-px flex-1 bg-[#2a2d35]" />
+          <div className="h-px flex-1 bg-[#333845]" />
+          <span className="text-xs text-[#e8e6e3]/45">or</span>
+          <div className="h-px flex-1 bg-[#333845]" />
         </div>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           {mode === "signup" && (
             <div>
-              <label htmlFor="displayName" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/70">
+              <label htmlFor="displayName" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/80">
                 Display Name
               </label>
               <input
@@ -109,14 +109,14 @@ export default function AuthForm({ mode }: AuthFormProps) {
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
                 required
-                className="w-full rounded-lg border border-[#2a2d35] bg-[#0f1117] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/30 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c]"
+                className="w-full rounded-lg border border-[#333845] bg-[#13151a] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/40 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c] transition-all duration-300"
                 placeholder="Your name"
               />
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/70">
+            <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/80">
               Email
             </label>
             <input
@@ -125,13 +125,13 @@ export default function AuthForm({ mode }: AuthFormProps) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full rounded-lg border border-[#2a2d35] bg-[#0f1117] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/30 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c]"
+              className="w-full rounded-lg border border-[#333845] bg-[#13151a] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/40 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c] transition-all duration-300"
               placeholder="you@example.com"
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/70">
+            <label htmlFor="password" className="mb-1.5 block text-sm font-medium text-[#e8e6e3]/80">
               Password
             </label>
             <input
@@ -141,7 +141,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
               onChange={(e) => setPassword(e.target.value)}
               required
               minLength={6}
-              className="w-full rounded-lg border border-[#2a2d35] bg-[#0f1117] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/30 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c]"
+              className="w-full rounded-lg border border-[#333845] bg-[#13151a] px-3 py-2.5 text-sm text-white placeholder-[#e8e6e3]/40 focus:border-[#c9a84c] focus:outline-none focus:ring-1 focus:ring-[#c9a84c] transition-all duration-300"
               placeholder="At least 6 characters"
             />
           </div>
@@ -153,7 +153,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
           )}
 
           {message && (
-            <div className="rounded-lg bg-[#4a7c59]/20 border border-[#4a7c59]/30 px-4 py-2.5 text-sm text-[#4a7c59]">
+            <div className="rounded-lg bg-[#5a9a6e]/20 border border-[#5a9a6e]/30 px-4 py-2.5 text-sm text-[#5a9a6e]">
               {message}
             </div>
           )}
@@ -161,7 +161,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
           <button
             type="submit"
             disabled={loading}
-            className="rounded-lg bg-[#1e3a5f] px-4 py-2.5 text-sm font-medium text-[#c9a84c] transition-colors hover:bg-[#2a4a7f] disabled:opacity-50"
+            className="rounded-lg bg-gradient-to-r from-[#1e3a5f] to-[#2a5a8f] px-4 py-2.5 text-sm font-medium text-[#c9a84c] shadow-md shadow-[#1e3a5f]/30 transition-all duration-300 hover:from-[#2a4a7f] hover:to-[#3460a0] hover:shadow-lg disabled:opacity-50 active:scale-95"
           >
             {loading
               ? "Loading..."
@@ -171,18 +171,18 @@ export default function AuthForm({ mode }: AuthFormProps) {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-[#e8e6e3]/40">
+        <p className="mt-6 text-center text-sm text-[#e8e6e3]/55">
           {mode === "login" ? (
             <>
               Don&apos;t have an account?{" "}
-              <Link href="/signup" className="text-[#c9a84c] hover:text-[#d4af37]">
+              <Link href="/signup" className="text-[#c9a84c] hover:text-[#dbb94d] transition-all duration-300">
                 Sign up
               </Link>
             </>
           ) : (
             <>
               Already have an account?{" "}
-              <Link href="/login" className="text-[#c9a84c] hover:text-[#d4af37]">
+              <Link href="/login" className="text-[#c9a84c] hover:text-[#dbb94d] transition-all duration-300">
                 Sign in
               </Link>
             </>

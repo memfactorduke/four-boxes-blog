@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props) {
   const lesson = await getLessonBySlug(supabase, course.id, lessonSlug);
   return {
     title: lesson
-      ? `${lesson.title} — ${course.title} — The Four Boxes Diner`
+      ? `${lesson.title} — ${course.title} — Second Amendment Online`
       : "Lesson Not Found",
   };
 }

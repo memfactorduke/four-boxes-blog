@@ -40,10 +40,10 @@ export default function MarkCompleteButton({
     <button
       onClick={handleToggle}
       disabled={loading}
-      className={`inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-colors disabled:opacity-50 ${
+      className={`inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-300 disabled:opacity-50 active:scale-95 ${
         completed
-          ? "bg-[#4a7c59]/20 text-[#4a7c59] border border-[#4a7c59]/30 hover:bg-[#4a7c59]/30"
-          : "bg-[#1e3a5f] text-[#c9a84c] hover:bg-[#2a4a7f]"
+          ? "bg-[#5a9a6e]/20 text-[#5a9a6e] border border-[#5a9a6e]/40 hover:bg-[#5a9a6e]/30 shadow-md shadow-[#5a9a6e]/10"
+          : "bg-gradient-to-r from-[#1e3a5f] to-[#2a5a8f] text-[#c9a84c] shadow-md shadow-[#1e3a5f]/30 hover:from-[#2a4a7f] hover:to-[#3460a0] hover:shadow-lg"
       }`}
     >
       {loading ? (
