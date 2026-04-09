@@ -1,0 +1,23 @@
+{
+  "name": "four-boxes-blog",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/build-search-index.mjs && astro build && npx pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "@netlify/blobs": "^10.7.4",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.1.4",
+    "pagefind": "^1.5.0",
+    "tailwindcss": "^4.2.2"
+  }
+}
