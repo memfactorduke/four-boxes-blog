@@ -16,9 +16,9 @@
   --color-ink: #1c1f26;
   --color-paper: #fdfcfa;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Newsreader', 'Georgia', serif;
-  --font-ui: 'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Newsreader", "Georgia", serif;
+  --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
 }
 
 /* ---- Base ---- */
@@ -32,7 +32,7 @@ body {
 
 /* Grain overlay */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -44,23 +44,43 @@ body::before {
 
 /* ---- Staggered fade-in ---- */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(24px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 .animate-fade-up {
@@ -75,12 +95,24 @@ body::before {
   animation: slideInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.stagger-1 { animation-delay: 0.05s; }
-.stagger-2 { animation-delay: 0.1s; }
-.stagger-3 { animation-delay: 0.15s; }
-.stagger-4 { animation-delay: 0.2s; }
-.stagger-5 { animation-delay: 0.25s; }
-.stagger-6 { animation-delay: 0.3s; }
+.stagger-1 {
+  animation-delay: 0.05s;
+}
+.stagger-2 {
+  animation-delay: 0.1s;
+}
+.stagger-3 {
+  animation-delay: 0.15s;
+}
+.stagger-4 {
+  animation-delay: 0.2s;
+}
+.stagger-5 {
+  animation-delay: 0.25s;
+}
+.stagger-6 {
+  animation-delay: 0.3s;
+}
 
 /* ---- Article prose ---- */
 .prose h2 {
@@ -96,7 +128,7 @@ body::before {
 }
 
 .prose h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -132,7 +164,8 @@ body::before {
   color: var(--color-navy);
 }
 
-.prose ul, .prose ol {
+.prose ul,
+.prose ol {
   font-family: var(--font-body);
   font-size: 1.075rem;
   line-height: 1.85;
@@ -153,7 +186,9 @@ body::before {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  transition: color 0.2s, text-decoration-color 0.2s;
+  transition:
+    color 0.2s,
+    text-decoration-color 0.2s;
 }
 
 .prose a:hover {
@@ -164,7 +199,12 @@ body::before {
 .prose hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-gold-muted), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-muted),
+    transparent
+  );
   margin: 2rem 0;
 }
 
@@ -200,21 +240,47 @@ body::before {
 }
 
 /* ---- Smooth transitions for interactive elements ---- */
-a, button {
+a,
+button {
   transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* ---- Gold separator ---- */
 .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-gold-muted) 30%, var(--color-gold-muted) 70%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-muted) 30%,
+    var(--color-gold-muted) 70%,
+    transparent
+  );
+}
+
+/* ---- Sidebar scroll ---- */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-cream-dark);
+  border-radius: 2px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-muted);
 }
 
 /* ---- Card hover lift ---- */
 .card-lift {
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease;
 }
 .card-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px -8px rgba(15, 26, 46, 0.12), 0 4px 12px -4px rgba(15, 26, 46, 0.06);
+  box-shadow:
+    0 12px 32px -8px rgba(15, 26, 46, 0.12),
+    0 4px 12px -4px rgba(15, 26, 46, 0.06);
 }
