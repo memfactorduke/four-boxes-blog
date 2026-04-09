@@ -42,9 +42,16 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+function caseStatusBorderClass(status: string): string {
+  const s = status.toLowerCase();
+  if (s.includes('active') || s.includes('decided')) return 'border-l-seal';
+  if (s.includes('pending') || s.includes('cert')) return 'border-l-gold';
+  return 'border-l-gray-light';
+}
 ---
 
-<aside class="rounded-xl border border-gray-100 overflow-hidden">
+<aside class="rounded-lg border border-cream-dark overflow-hidden">
   <!-- Watch on YouTube CTA -->
   <a
     href={youtube_url}
@@ -53,20 +60,20 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
     class="group flex items-center gap-3 bg-navy p-4 text-white hover:bg-navy-light transition-colors"
   >
     <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-      <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+      <svg class="w-4 h-4 text-gold drop-shadow-[0_0_4px_rgba(196,153,61,0.3)]" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
     </div>
     <div class="flex-1 min-w-0">
-      <div class="text-sm font-semibold">Watch on YouTube</div>
-      <div class="text-[11px] text-white/40">{duration} &middot; {formattedDate}</div>
+      <div class="text-sm font-semibold font-[Outfit]">Watch on YouTube</div>
+      <div class="text-[11px] text-white/40 font-[Outfit]">{duration} &middot; {formattedDate}</div>
     </div>
-    <svg class="w-4 h-4 text-white/30 group-hover:text-gold group-hover:translate-x-0.5 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+    <svg class="w-4 h-4 text-white/30 group-hover:text-gold group-hover:translate-x-1 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
   </a>
 
-  <div class="p-5 space-y-6 bg-cream/50">
+  <div class="p-5 space-y-5 bg-cream/50">
     <!-- Cases -->
     {cases_discussed.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
           Cases Discussed
         </h3>
@@ -74,38 +81,46 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
           {cases_discussed.map(c => (
             <li class="group/case">
               <a href={`/cases/${c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} class="text-sm font-medium text-navy hover:text-gold-dark transition-colors">
-                <em>{c.name}</em>
+                <em class="font-[Spectral] italic">{c.name}</em>
               </a>
-              {c.citation && <span class="text-[11px] text-gray-warm block mt-0.5">{c.citation}</span>}
-              {c.court && <span class="text-[10px] bg-navy/8 text-navy/70 px-1.5 py-0.5 rounded mt-1 inline-block font-medium">{c.court}</span>}
+              {c.citation && <span class="text-[11px] font-[Outfit] text-gray-warm block mt-0.5">{c.citation}</span>}
+              {c.court && <span class="text-[10px] font-[Outfit] bg-navy/8 text-navy/70 px-1.5 py-0.5 rounded mt-1 inline-block font-medium">{c.court}</span>}
             </li>
           ))}
         </ul>
       </div>
     )}
 
+    {cases_discussed.length > 0 && court_level.length > 0 && (
+      <div class="h-px bg-gold/15"></div>
+    )}
+
     <!-- Court Level -->
     {court_level.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
           Court Level
         </h3>
         <div class="flex flex-wrap gap-1.5">
           {court_level.map(level => (
-            <span class="bg-navy text-white px-2.5 py-1 rounded text-[11px] font-semibold">{level}</span>
+            <span class={`bg-navy px-2.5 py-1 rounded-sm text-[11px] font-semibold font-[Outfit] ${level.toLowerCase().includes('scotus') || level.toLowerCase().includes('supreme') ? 'text-gold' : 'text-white'}`}>{level}</span>
           ))}
         </div>
       </div>
     )}
 
+    {court_level.length > 0 && circuits.length > 0 && (
+      <div class="h-px bg-gold/15"></div>
+    )}
+
     <!-- Circuits -->
     {circuits.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3">Circuits</h3>
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3">Circuits</h3>
         <div class="flex flex-wrap gap-1.5">
           {circuits.map(circuit => (
-            <a href={`/circuits/${circuit.toLowerCase().replace(/\s+/g, '-')}`} class="bg-white border border-gray-200 px-2.5 py-1 rounded text-[11px] font-medium text-navy hover:border-gold/50 hover:bg-gold/5 transition-all">
+            <a href={`/circuits/${circuit.toLowerCase().replace(/\s+/g, '-')}`} class="bg-white border border-gray-200 border-l-0 hover:border-l-2 hover:border-l-gold/50 px-2.5 py-1 rounded text-[11px] font-medium font-[Outfit] text-navy hover:bg-gold/5 transition-all">
               {circuit}
             </a>
           ))}
@@ -113,16 +128,20 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
       </div>
     )}
 
+    {circuits.length > 0 && legal_topics.length > 0 && (
+      <div class="h-px bg-gold/15"></div>
+    )}
+
     <!-- Topics -->
     {legal_topics.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path d="M6 6h.008v.008H6V6Z"/></svg>
           Legal Topics
         </h3>
         <div class="flex flex-wrap gap-1.5">
           {legal_topics.map(topic => (
-            <a href={`/topics/${topic}`} class="bg-gold/10 text-gold-dark px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-gold/20 transition-colors capitalize">
+            <a href={`/topics/${topic}`} class="bg-gold/10 text-gold-dark px-2.5 py-1 rounded-sm text-[11px] font-semibold font-[Outfit] hover:bg-gold/20 transition-colors capitalize">
               {formatTopic(topic)}
             </a>
           ))}
@@ -130,25 +149,33 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
       </div>
     )}
 
+    {legal_topics.length > 0 && case_status.length > 0 && (
+      <div class="h-px bg-gold/15"></div>
+    )}
+
     <!-- Status -->
     {case_status.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3">Case Status</h3>
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3">Case Status</h3>
         <div class="flex flex-wrap gap-1.5">
           {case_status.map(status => (
-            <span class="bg-white border border-gray-200 px-2.5 py-1 rounded text-[11px] font-medium capitalize">{status.replace(/-/g, ' ')}</span>
+            <span class={`bg-white border border-gray-200 border-l-[3px] ${caseStatusBorderClass(status)} px-2.5 py-1 rounded text-[11px] font-medium font-[Outfit] capitalize`}>{status.replace(/-/g, ' ')}</span>
           ))}
         </div>
       </div>
     )}
 
+    {case_status.length > 0 && tags.length > 0 && (
+      <div class="h-px bg-gold/15"></div>
+    )}
+
     <!-- Tags -->
     {tags.length > 0 && (
       <div>
-        <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3">Tags</h3>
+        <h3 class="text-[11px] font-bold font-[Outfit] text-gold/70 uppercase tracking-[0.15em] mb-3">Tags</h3>
         <div class="flex flex-wrap gap-1.5">
           {tags.map(tag => (
-            <span class="bg-white border border-gray-100 px-2 py-0.5 rounded text-[11px] text-gray-warm">{tag}</span>
+            <span class="bg-cream border border-cream-dark px-2 py-0.5 rounded-sm text-[10px] font-[Outfit] text-gray-warm">{tag}</span>
           ))}
         </div>
       </div>
