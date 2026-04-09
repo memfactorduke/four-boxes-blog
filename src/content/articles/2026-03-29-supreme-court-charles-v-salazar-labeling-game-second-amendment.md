@@ -36,6 +36,7 @@ tags:
   - "Fourteenth Amendment"
   - "First Amendment"
   - "Heller"
+pull_quote: "The Supreme Court just ruled 8-1 that the government can't redefine speech as 'conduct' to dodge the First Amendment. So explain to me how states can redefine ordinary rifles as 'assault weapons' to dodge the Second. The labeling game is over."
 ---
 
 ## Summary

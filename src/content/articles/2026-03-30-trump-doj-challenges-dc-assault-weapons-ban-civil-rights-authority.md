@@ -39,6 +39,7 @@ tags:
   - "AR-15"
   - "Federal Courts"
   - "SCOTUS"
+pull_quote: "The DOJ is now using the same civil rights enforcement tool against D.C.'s gun ban that it used against police departments violating the Fourth Amendment. If the Second Amendment isn't a second-class right, it deserves the same enforcement muscle — and that's exactly what's happening."
 ---
 
 ## Summary

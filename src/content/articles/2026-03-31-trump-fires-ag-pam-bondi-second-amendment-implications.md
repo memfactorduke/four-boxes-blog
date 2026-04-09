@@ -63,6 +63,7 @@ tags:
   - "DOJ"
   - "Felon in Possession"
   - "Second Amendment"
+pull_quote: "Pam Bondi built the most pro-Second Amendment DOJ in history — then let the Solicitor General's office pick the worst possible case to bring to the Supreme Court. The next AG needs to keep Bondi's fire but actually control the strategic chessboard."
 ---
 
 ## Summary

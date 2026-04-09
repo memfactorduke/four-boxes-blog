@@ -24,6 +24,7 @@ tags:
   - "Fourteenth Amendment"
   - "Executive Power"
   - "Standing"
+pull_quote: "For over a century, no one could challenge the prevailing interpretation of birthright citizenship — not because the text was clear, but because no one had standing. Trump's executive order finally opened the courthouse doors, and the original meaning of 'subject to the jurisdiction thereof' is about to get its day in court."
 ---
 
 ## Summary

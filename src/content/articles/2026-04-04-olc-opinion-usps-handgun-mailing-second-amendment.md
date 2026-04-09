@@ -37,6 +37,7 @@ tags:
   - "Executive Power"
   - "Pam Bondi"
   - "Constitutional Law"
+pull_quote: "The government banned you from mailing a handgun through the Post Office for decades — with zero historical basis. The OLC finally admitted what we've known since Heller: singling out handguns for second-class treatment is unconstitutional, period."
 ---
 
 ## Summary
