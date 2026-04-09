@@ -1,0 +1,30 @@
+---
+interface Props {
+  items: string[];
+  basePath: string;
+  variant?: 'default' | 'gold' | 'navy';
+}
+
+const { items, basePath, variant = 'default' } = Astro.props;
+
+function formatLabel(item: string): string {
+  return item.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+const variantClasses = {
+  default: 'bg-white border border-gray-200 text-gray-700 hover:border-gold',
+  gold: 'bg-gold/15 text-gold-dark hover:bg-gold/25',
+  navy: 'bg-navy text-white hover:bg-navy-light',
+};
+---
+
+<div class="flex flex-wrap gap-2">
+  {items.map(item => (
+    <a
+      href={`${basePath}/${item.toLowerCase().replace(/\s+/g, '-')}`}
+      class={`px-3 py-1 rounded text-sm transition-colors ${variantClasses[variant]}`}
+    >
+      {formatLabel(item)}
+    </a>
+  ))}
+</div>
