@@ -14,37 +14,37 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
 
 <BaseLayout title="Home" description="Second Amendment legal analysis — court rulings, case breakdowns, and scholarly commentary by constitutional attorney Mark W. Smith.">
   <!-- Hero -->
-  <section class="relative bg-navy text-white overflow-hidden">
-    <!-- Subtle geometric pattern -->
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+  <section class="relative text-white overflow-hidden" style="background: radial-gradient(ellipse at 20% 40%, #162040 0%, #0b1528 60%, #060c18 100%)">
+    <!-- Geometric crosshatch pattern overlay -->
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='40' y2='40' stroke='%23ffffff' stroke-width='0.3'/%3E%3Cline x1='40' y1='0' x2='0' y2='40' stroke='%23ffffff' stroke-width='0.3'/%3E%3Cline x1='20' y1='0' x2='20' y2='40' stroke='%23ffffff' stroke-width='0.2'/%3E%3Cline x1='0' y1='20' x2='40' y2='20' stroke='%23ffffff' stroke-width='0.2'/%3E%3C/svg%3E&quot;);"></div>
 
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-28 relative">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
           <div class="animate-fade-up">
-            <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-6">
-              <div class="w-8 h-px bg-gold"></div>
+            <div class="inline-flex items-center gap-2 text-gold text-xs font-[Outfit] font-semibold tracking-[0.2em] uppercase mb-6">
+              <div class="w-16 h-px bg-gold"></div>
               Constitutional Law
             </div>
           </div>
 
-          <h1 class="animate-fade-up stagger-1 font-[Playfair_Display] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6 tracking-tight">
+          <h1 class="animate-fade-up stagger-1 font-[Cormorant_Garamond] text-5xl lg:text-7xl font-bold leading-[1.1] mb-6 tracking-tight" style="text-wrap: balance">
             Second Amendment<br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold to-gold-dark">Legal Analysis</span>
+            <span class="hero-shimmer text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold to-gold-dark">Legal Analysis</span>
           </h1>
 
-          <p class="animate-fade-up stagger-2 text-base sm:text-lg text-white/60 leading-relaxed mb-8 max-w-lg font-[Newsreader]">
-            Scholarly analysis of court rulings, case developments, and legislative changes affecting the right to keep and bear arms — by constitutional attorney <strong class="text-white/90">Mark W. Smith</strong>.
+          <p class="animate-fade-up stagger-2 font-[Spectral] italic text-lg lg:text-xl text-white/55 leading-relaxed mb-8 max-w-lg">
+            Scholarly analysis of court rulings, case developments, and legislative changes affecting the right to keep and bear arms — by constitutional attorney <strong class="text-white/90 not-italic">Mark W. Smith</strong>.
           </p>
 
           <div class="animate-fade-up stagger-3 flex flex-col sm:flex-row gap-3">
             <a href="/search"
-              class="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-xl hover:shadow-gold/15 transition-all hover:scale-[1.02] active:scale-[0.98]">
+              class="group inline-flex items-center justify-center gap-2 bg-navy text-gold border-b-2 border-gold px-6 py-3 rounded-sm font-[Outfit] font-semibold text-sm uppercase tracking-[0.1em] hover:bg-navy-light transition-all">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               Search Articles
             </a>
             <a href="https://www.youtube.com/@TheFourBoxesDiner" target="_blank" rel="noopener"
-              class="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-sm text-white/80 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all">
+              class="inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-sm font-[Outfit] font-semibold text-sm uppercase tracking-[0.1em] hover:bg-gold hover:text-navy transition-all">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
               Watch on YouTube
             </a>
@@ -53,18 +53,18 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           <!-- Stats bar -->
           <div class="animate-fade-up stagger-4 flex items-center gap-4 sm:gap-6 mt-10 pt-8 border-t border-white/10">
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{articles.length}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Articles</div>
+              <div class="text-3xl font-bold font-[Cormorant_Garamond] text-gold">{articles.length}</div>
+              <div class="text-[10px] sm:text-xs font-[Outfit] text-white/40 uppercase tracking-[0.15em]">Articles</div>
             </div>
-            <div class="w-px h-8 sm:h-10 bg-white/10"></div>
+            <div class="w-px h-8 bg-gold/30"></div>
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{totalCases}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Cases</div>
+              <div class="text-3xl font-bold font-[Cormorant_Garamond] text-gold">{totalCases}</div>
+              <div class="text-[10px] sm:text-xs font-[Outfit] text-white/40 uppercase tracking-[0.15em]">Cases</div>
             </div>
-            <div class="w-px h-8 sm:h-10 bg-white/10"></div>
+            <div class="w-px h-8 bg-gold/30"></div>
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{allTopics.length}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Topics</div>
+              <div class="text-3xl font-bold font-[Cormorant_Garamond] text-gold">{allTopics.length}</div>
+              <div class="text-[10px] sm:text-xs font-[Outfit] text-white/40 uppercase tracking-[0.15em]">Topics</div>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           <div class="animate-fade-up stagger-3 hidden lg:block">
             <a href={`/articles/${featuredArticle.id}`} class="group block relative">
               <div class="absolute -inset-3 bg-gradient-to-br from-gold/20 via-transparent to-gold/10 rounded-2xl blur-sm group-hover:blur-md transition-all"></div>
-              <div class="relative bg-navy-light rounded-xl overflow-hidden border border-white/10 group-hover:border-gold/30 transition-all">
+              <div class="relative bg-navy-light rounded-xl overflow-hidden border border-gold/20 group-hover:border-gold/40 transition-all">
                 <div class="relative">
                   <img
                     src={featuredArticle.data.thumbnail}
@@ -83,8 +83,8 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
                   />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy-light via-transparent"></div>
                   <div class="absolute top-3 left-3 flex gap-2">
-                    <span class="bg-gold/90 text-navy text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wide backdrop-blur-sm">
-                      Latest
+                    <span class="bg-gold text-navy text-[10px] font-[Outfit] font-bold px-2.5 py-1 rounded-sm uppercase tracking-[0.15em] backdrop-blur-sm">
+                      Latest Analysis
                     </span>
                   </div>
                   <span class="absolute bottom-3 right-3 bg-black/60 text-white/90 text-xs px-2 py-0.5 rounded backdrop-blur-sm">
@@ -92,13 +92,13 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
                   </span>
                 </div>
                 <div class="p-5">
-                  <time class="text-[11px] text-white/40 uppercase tracking-wider">
+                  <time class="text-[11px] font-[Outfit] text-white/40 uppercase tracking-[0.15em]">
                     {new Date(featuredArticle.data.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>
-                  <h2 class="font-[Playfair_Display] text-lg font-bold text-white mt-1.5 leading-snug group-hover:text-gold transition-colors">
+                  <h2 class="font-[Cormorant_Garamond] text-lg font-bold text-white mt-1.5 leading-snug group-hover:text-gold transition-colors">
                     {featuredArticle.data.title}
                   </h2>
-                  <div class="flex items-center gap-2 mt-3 text-xs text-gold/70 font-medium group-hover:text-gold transition-colors">
+                  <div class="flex items-center gap-2 mt-3 text-xs font-[Outfit] text-gold/70 font-medium group-hover:text-gold transition-colors uppercase tracking-wider">
                     Read article
                     <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                   </div>
@@ -113,6 +113,18 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     <!-- Bottom gradient fade -->
     <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-paper to-transparent"></div>
   </section>
+
+  <!-- Hero shimmer animation -->
+  <style>
+    @keyframes hero-shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .hero-shimmer {
+      background-size: 200% auto;
+      animation: hero-shimmer 2s ease-in-out 0.5s 1 forwards;
+    }
+  </style>
 
   <!-- Articles with Filters -->
   <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
