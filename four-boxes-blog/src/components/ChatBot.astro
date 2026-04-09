@@ -10,11 +10,11 @@
 >
   <div class="relative">
     <!-- Button (greyed out, no animations) -->
-    <div class="relative w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 via-gray-300 to-gray-400 shadow-lg flex items-center justify-center">
-      <span class="text-gray-600 font-bold text-xl font-[Playfair_Display] leading-none">2A</span>
+    <div class="relative w-16 h-16 rounded-full bg-gradient-to-br from-gold/25 via-gold/15 to-cream/20 shadow-lg flex items-center justify-center">
+      <span class="text-gray-600 font-bold text-xl font-[Cormorant_Garamond] leading-none">2A</span>
     </div>
     <!-- Coming Soon badge -->
-    <div class="absolute -top-1 -right-1 bg-gray-500 text-white text-[7px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider border-2 border-paper">Soon</div>
+    <div class="absolute -top-1 -right-1 bg-gold/20 text-gold/70 text-[7px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider border-2 border-paper">Soon</div>
   </div>
 </div>
 
@@ -26,10 +26,10 @@
     <div class="bg-navy px-5 py-4 flex items-center justify-between shrink-0">
       <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shadow-lg shadow-gold/20">
-          <span class="text-navy font-bold text-sm font-[Playfair_Display]">2A</span>
+          <span class="text-navy font-bold text-sm font-[Cormorant_Garamond]">2A</span>
         </div>
         <div>
-          <div class="text-white text-sm font-semibold">Professor 2A</div>
+          <div class="text-white text-sm font-semibold font-[Cormorant_Garamond]">Professor 2A</div>
           <div class="text-white/40 text-[10px] uppercase tracking-wider flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
             AI Legal Analysis &middot; Beta
@@ -46,10 +46,10 @@
     <!-- Disclaimer overlay -->
     <div id="chat-disclaimer" class="flex-1 flex flex-col items-center justify-center px-8 py-10 text-center">
       <div class="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center mb-5 shadow-lg shadow-gold/20">
-        <span class="text-navy font-bold text-xl font-[Playfair_Display]">2A</span>
+        <span class="text-navy font-bold text-xl font-[Cormorant_Garamond]">2A</span>
       </div>
-      <h2 class="font-[Playfair_Display] text-xl font-bold text-navy mb-3">Before We Begin</h2>
-      <div class="text-[13px] text-ink/70 leading-relaxed space-y-3 max-w-sm">
+      <h2 class="font-[Cormorant_Garamond] text-xl font-bold text-navy mb-3">Before We Begin</h2>
+      <div class="text-[13px] text-ink/70 leading-relaxed space-y-3 max-w-sm font-[Spectral]">
         <p><strong class="text-navy">Professor 2A is an AI assistant</strong> powered by analysis from constitutional attorney Mark W. Smith and The Four Boxes Diner.</p>
         <p>This tool is in <strong class="text-navy">beta</strong> and may occasionally produce errors. Always verify important legal information independently.</p>
         <p class="text-[12px] text-gray-warm bg-cream rounded-lg px-4 py-3 border border-cream-dark">
@@ -57,7 +57,7 @@
           Professor 2A provides legal analysis and education only. For advice on your specific situation, consult a licensed attorney in your jurisdiction.
         </p>
       </div>
-      <button id="chat-accept" class="mt-6 bg-gradient-to-r from-gold-dark to-gold text-navy px-8 py-3 rounded-xl font-semibold text-sm hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+      <button id="chat-accept" class="mt-6 bg-gradient-to-r from-gold-dark to-gold text-navy px-8 py-3 rounded-xl font-semibold text-sm font-[Outfit] hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
         I Understand — Let's Go
       </button>
       <p class="text-[10px] text-gray-warm mt-3">By continuing, you acknowledge this is AI-generated analysis, not legal advice.</p>
@@ -68,9 +68,9 @@
       <!-- Welcome message -->
       <div class="flex gap-3">
         <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-          <span class="text-navy text-[10px] font-bold font-[Playfair_Display]">2A</span>
+          <span class="text-navy text-[10px] font-bold font-[Cormorant_Garamond]">2A</span>
         </div>
-        <div class="bg-cream rounded-2xl rounded-tl-sm px-4 py-3 text-[13px] text-ink leading-relaxed max-w-[85%]">
+        <div class="bg-cream rounded-2xl rounded-tl-sm px-4 py-3 text-[13px] text-ink leading-relaxed max-w-[85%] font-[Spectral]">
           <p class="font-semibold text-navy">Hey there — Mark Smith here.</p>
           <p class="mt-1.5">Ask me about court cases, the <em>Bruen</em> decision, carry laws, historical tradition analysis — whatever's on your mind.</p>
         </div>
@@ -85,7 +85,7 @@
           rows="2"
           placeholder="Ask Professor 2A a question..."
           autocomplete="off"
-          class="flex-1 bg-cream/80 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/15 transition-all placeholder:text-gray-warm/50 resize-none leading-relaxed"
+          class="flex-1 bg-cream/80 border border-gray-200 rounded-xl px-4 py-3 text-sm font-[Outfit] focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/15 transition-all placeholder:text-gray-warm/50 resize-none leading-relaxed"
         ></textarea>
         <button
           type="submit"
@@ -360,16 +360,16 @@
 
     if (role === 'user') {
       wrapper.innerHTML = `
-        <div class="bg-navy text-white rounded-2xl rounded-tr-sm px-4 py-3 text-[13px] leading-relaxed max-w-[80%]">
+        <div class="bg-navy text-white rounded-2xl rounded-tr-sm px-4 py-3 text-[13px] leading-relaxed max-w-[80%]" style="font-family: Outfit, sans-serif">
           ${escapeHtml(text)}
         </div>
       `;
     } else {
       wrapper.innerHTML = `
         <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-          <span class="text-navy text-[10px] font-bold" style="font-family: Playfair Display, serif">2A</span>
+          <span class="text-navy text-[10px] font-bold" style="font-family: Cormorant Garamond, serif">2A</span>
         </div>
-        <div class="bg-cream rounded-2xl rounded-tl-sm px-5 py-4 text-[13px] text-ink leading-relaxed max-w-[92%]">
+        <div class="bg-cream rounded-2xl rounded-tl-sm px-5 py-4 text-[13px] text-ink leading-relaxed max-w-[92%]" style="font-family: Spectral, serif">
           <div class="chat-response">${text ? renderMarkdown(text) : ''}</div>
         </div>
       `;
@@ -385,7 +385,7 @@
     el.className = 'flex gap-3';
     el.innerHTML = `
       <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-        <span class="text-navy text-[10px] font-bold" style="font-family: Playfair Display, serif">2A</span>
+        <span class="text-navy text-[10px] font-bold" style="font-family: Cormorant Garamond, serif">2A</span>
       </div>
       <div class="bg-cream rounded-2xl rounded-tl-sm px-5 py-3.5 flex gap-1.5">
         <div class="w-2 h-2 rounded-full bg-gray-warm/50 typing-dot"></div>
