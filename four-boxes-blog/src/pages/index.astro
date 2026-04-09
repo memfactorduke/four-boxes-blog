@@ -118,11 +118,11 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
   <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6" data-animate>
       <div>
-        <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Analysis</div>
-        <h2 class="font-[Playfair_Display] text-3xl font-bold text-navy tracking-tight">Articles</h2>
+        <div class="font-[Outfit] text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Analysis</div>
+        <h2 class="font-[Cormorant_Garamond] text-3xl font-bold text-navy tracking-tight">Articles</h2>
       </div>
       <div class="flex items-center gap-3">
-        <select id="sort-select" class="text-sm bg-white border border-gray-200 rounded-lg px-3 py-2 text-navy focus:outline-none focus:border-gold cursor-pointer">
+        <select id="sort-select" class="font-[Outfit] text-sm bg-white border border-gray-200 rounded-lg px-3 py-2 text-navy focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 cursor-pointer">
           <option value="newest">Newest First</option>
           <option value="oldest">Oldest First</option>
         </select>
@@ -137,21 +137,21 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
 
     <!-- Filter bar -->
     <div class="flex flex-wrap gap-2 mb-8 pb-6 border-b border-gray-100" data-animate>
-      <button data-filter="all" class="filter-btn active text-xs bg-navy text-white px-3 py-1.5 rounded-lg font-medium transition-all">All</button>
+      <button data-filter="all" class="filter-btn active font-[Outfit] text-xs bg-navy text-white px-3 py-1.5 rounded-sm font-medium transition-all border-l-[3px] border-l-gold">All Articles</button>
       {[...new Set(articles.flatMap(a => a.data.content_type))].map(type => (
-        <button data-filter={`type:${type}`} class="filter-btn text-xs bg-cream text-navy/70 px-3 py-1.5 rounded-lg font-medium hover:bg-gold/15 transition-all capitalize">
+        <button data-filter={`type:${type}`} class="filter-btn font-[Outfit] text-xs bg-cream text-navy/70 px-3 py-1.5 rounded-sm font-medium border-l-[3px] border-l-transparent hover:border-l-gold transition-all capitalize">
           {type.replace(/-/g, ' ')}
         </button>
       ))}
       <div class="w-px h-6 bg-gray-200 self-center mx-1"></div>
       {[...new Set(articles.flatMap(a => a.data.court_level))].filter(Boolean).slice(0, 5).map(court => (
-        <button data-filter={`court:${court}`} class="filter-btn text-xs bg-cream text-navy/70 px-3 py-1.5 rounded-lg font-medium hover:bg-gold/15 transition-all">
+        <button data-filter={`court:${court}`} class="filter-btn font-[Outfit] text-xs bg-cream text-navy/70 px-3 py-1.5 rounded-sm font-medium hover:border-l-[3px] hover:border-l-gold transition-all border-l-[3px] border-l-transparent">
           {court}
         </button>
       ))}
     </div>
 
-    <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+    <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {articles.map((article, i) => (
         <div
           class={`article-item ${i >= 24 ? 'hidden' : ''}`}
@@ -160,6 +160,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           data-courts={article.data.court_level.join(',')}
           data-topics={article.data.legal_topics.join(',')}
           data-index={i}
+          data-animate
         >
           <ArticleCard
             title={article.data.title}
@@ -179,14 +180,15 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     </div>
 
     <div id="load-more-container" class="text-center mt-10">
-      <button id="load-more-btn" class="bg-navy text-white px-8 py-3 rounded-xl text-sm font-semibold hover:bg-navy-light transition-colors">
+      <button id="load-more-btn" class="font-[Outfit] uppercase tracking-[0.1em] border border-gold/40 text-gold px-8 py-3 rounded-sm text-sm font-semibold hover:bg-gold hover:text-navy transition-colors">
         Load More Articles
-        <span id="load-more-count" class="text-white/50 ml-1">({articles.length - 24} remaining)</span>
+        <span id="load-more-count" class="opacity-50 ml-1">({articles.length - 24} remaining)</span>
       </button>
     </div>
 
-    <div id="no-results" class="hidden text-center py-12 text-gray-warm">
-      <p class="text-sm">No articles match this filter.</p>
+    <div id="no-results" class="hidden text-center py-16 text-gray-warm">
+      <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <p class="font-[Spectral] italic text-lg">No articles match this filter.</p>
     </div>
   </section>
 
@@ -208,11 +210,11 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => {
-          b.classList.remove('active', 'bg-navy', 'text-white');
-          b.classList.add('bg-cream', 'text-navy/70');
+          b.classList.remove('active', 'bg-navy', 'text-white', 'border-l-gold');
+          b.classList.add('bg-cream', 'text-navy/70', 'border-l-transparent');
         });
-        btn.classList.add('active', 'bg-navy', 'text-white');
-        btn.classList.remove('bg-cream', 'text-navy/70');
+        btn.classList.add('active', 'bg-navy', 'text-white', 'border-l-gold');
+        btn.classList.remove('bg-cream', 'text-navy/70', 'border-l-transparent');
         activeFilter = btn.dataset.filter;
         visibleCount = PAGE_SIZE; // Reset pagination on filter change
         applyFilters();
@@ -288,58 +290,55 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
   </script>
 
   <!-- Email Capture -->
-  <section class="relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20">
-      <div class="relative bg-navy rounded-2xl overflow-hidden" data-animate>
-        <!-- Decorative elements -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
-        <div class="absolute bottom-0 left-0 w-48 h-48 bg-gold/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl"></div>
-        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+  <section class="bg-navy relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-gold/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl"></div>
+    <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
 
-        <div class="relative px-8 py-14 md:px-14 md:py-16 text-center max-w-2xl mx-auto">
-          <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-              <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
-            </svg>
-            Stay Informed
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8 py-20" data-animate>
+      <div class="text-center max-w-2xl mx-auto">
+        <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+          </svg>
+          Stay Informed
+        </div>
+
+        <h2 class="font-[Cormorant_Garamond] text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight">
+          Weekly 2A Legal Briefing
+        </h2>
+        <p class="font-[Spectral] text-white/60 text-sm md:text-base leading-relaxed mb-8">
+          Get a curated digest of the latest Second Amendment court decisions, case developments, and legislative analysis delivered to your inbox every week.
+        </p>
+
+        <form id="email-form" name="newsletter" method="POST" data-netlify="true" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <div class="flex-1 relative">
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="you@example.com"
+              required
+              class="font-[Outfit] w-full bg-white border border-white/15 rounded-sm px-4 py-3 text-sm text-navy placeholder:text-navy/40 focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/15 transition-all"
+            />
           </div>
+          <button
+            type="submit"
+            id="email-submit"
+            class="font-[Outfit] uppercase tracking-[0.1em] bg-gold text-navy px-6 py-3 rounded-sm text-sm font-semibold hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
+          >
+            Subscribe
+          </button>
+        </form>
 
-          <h2 class="font-[Playfair_Display] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
-            Weekly 2A Legal Briefing
-          </h2>
-          <p class="text-white/50 text-sm md:text-base leading-relaxed mb-8 font-[Newsreader]">
-            Get a curated digest of the latest Second Amendment court decisions, case developments, and legislative analysis delivered to your inbox every week.
-          </p>
+        <p class="text-white/25 text-xs mt-4">No spam. Unsubscribe anytime. Free forever.</p>
 
-          <form id="email-form" name="newsletter" method="POST" data-netlify="true" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input type="hidden" name="form-name" value="newsletter" />
-            <div class="flex-1 relative">
-              <input
-                type="email"
-                name="email"
-                id="email-input"
-                placeholder="you@example.com"
-                required
-                class="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/15 transition-all"
-              />
-            </div>
-            <button
-              type="submit"
-              id="email-submit"
-              class="bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg text-sm font-semibold hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
-            >
-              Subscribe
-            </button>
-          </form>
-
-          <p class="text-white/25 text-xs mt-4">No spam. Unsubscribe anytime. Free forever.</p>
-
-          <!-- Success message (hidden by default) -->
-          <div id="email-success" class="hidden mt-6">
-            <div class="inline-flex items-center gap-2 bg-gold/15 text-gold px-4 py-2.5 rounded-lg text-sm font-medium">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-              You're on the list. Welcome aboard.
-            </div>
+        <!-- Success message (hidden by default) -->
+        <div id="email-success" class="hidden mt-6">
+          <div class="inline-flex items-center gap-2 bg-gold/15 text-gold px-4 py-2.5 rounded-sm text-sm font-medium">
+            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+            You're on the list. Welcome aboard.
           </div>
         </div>
       </div>
@@ -349,19 +348,18 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
   <!-- Browse by Topic -->
   {allTopics.length > 0 && (
     <section class="max-w-7xl mx-auto px-5 lg:px-8 pb-20">
-      <div class="gold-rule mb-14"></div>
+      <div class="drawLine gold-rule mb-14"></div>
       <div data-animate>
-        <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Explore</div>
-        <h2 class="font-[Playfair_Display] text-3xl font-bold text-navy mb-8 tracking-tight">Browse by Topic</h2>
+        <div class="font-[Outfit] text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Explore</div>
+        <h2 class="font-[Cormorant_Garamond] text-3xl font-bold text-navy mb-8 tracking-tight">Browse by Topic</h2>
       </div>
       <div class="flex flex-wrap gap-2.5" data-animate>
         {allTopics.map(topic => (
           <a
             href={`/topics/${topic}`}
-            class="group relative bg-cream border border-cream-dark text-navy px-5 py-2.5 rounded-lg text-sm font-medium hover:border-gold/40 hover:bg-gold/8 transition-all capitalize"
+            class="font-[Outfit] group relative bg-cream border border-cream-dark border-l-[3px] border-l-transparent text-navy px-5 py-2.5 rounded-md text-sm font-medium hover:border-l-gold hover:bg-gold/8 transition-all capitalize"
           >
             {topic.replace(/-/g, ' ')}
-            <span class="absolute inset-0 rounded-lg bg-gradient-to-r from-gold/0 via-gold/5 to-gold/0 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           </a>
         ))}
       </div>
