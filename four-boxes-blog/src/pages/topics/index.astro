@@ -23,27 +23,27 @@ function formatTopic(topic: string): string {
 <BaseLayout title="Topics" description="Browse Second Amendment legal analysis by topic">
   <div class="bg-navy">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12">
-      <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Explore</div>
-      <h1 class="font-[Playfair_Display] text-3xl font-bold text-white tracking-tight animate-fade-up stagger-1">All Topics</h1>
-      <p class="text-white/50 mt-2 text-sm font-[Newsreader] animate-fade-up stagger-2">{sortedTopics.length} topics across {articles.length} articles</p>
+      <div class="font-[Outfit] text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Explore</div>
+      <h1 class="font-[Cormorant_Garamond] text-3xl font-medium text-white tracking-tight animate-fade-up stagger-1">All Topics</h1>
+      <p class="font-[Outfit] text-white/50 mt-2 text-sm animate-fade-up stagger-2">{sortedTopics.length} topics across {articles.length} articles</p>
     </div>
   </div>
 
   <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12">
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {sortedTopics.map(([topic, count], i) => (
+      {sortedTopics.map(([topic, count]) => (
         <a
           href={`/topics/${topic}`}
-          class="group flex items-center justify-between bg-white border border-gray-100 rounded-xl px-5 py-4 hover:border-gold/30 hover:bg-gold/5 transition-all card-lift"
+          class="group flex items-center justify-between bg-white border border-cream-dark rounded-lg px-5 py-4 hover:border-l-3 hover:border-l-gold/50 hover:bg-gold/[0.03] transition-all card-lift"
           data-animate
         >
           <div class="flex items-center gap-3 min-w-0">
-            <div class="w-2 h-2 rounded-full bg-gold shrink-0"></div>
-            <span class="text-sm font-medium text-navy group-hover:text-gold-dark transition-colors truncate capitalize">
+            <div class="w-2 h-2 bg-gold shrink-0"></div>
+            <span class="font-[Cormorant_Garamond] text-base font-medium text-navy group-hover:text-gold-dark transition-colors truncate capitalize">
               {formatTopic(topic)}
             </span>
           </div>
-          <span class="text-xs text-gray-warm bg-cream px-2.5 py-1 rounded-full font-medium shrink-0 ml-3">
+          <span class="font-[Outfit] text-xs text-gray-warm bg-cream px-2.5 py-1 rounded-sm font-medium shrink-0 ml-3">
             {count}
           </span>
         </a>
