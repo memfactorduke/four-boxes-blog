@@ -14,7 +14,11 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
 
 <BaseLayout title="Home" description="Second Amendment legal analysis — court rulings, case breakdowns, and scholarly commentary by constitutional attorney Mark W. Smith.">
   <!-- Hero -->
-  <section class="relative bg-navy text-white overflow-hidden">
+  <section class="relative bg-obsidian text-white overflow-hidden">
+    <!-- Radial gradient overlay for depth -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(200,165,90,0.06)_0%,transparent_60%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_80%,rgba(26,39,68,0.5)_0%,transparent_50%)]"></div>
+
     <!-- Subtle geometric pattern -->
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
 
@@ -22,29 +26,29 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
           <div class="animate-fade-up">
-            <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-6">
-              <div class="w-8 h-px bg-gold"></div>
+            <div class="inline-flex items-center gap-2 text-brass text-xs font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-6">
+              <div class="w-8 h-px bg-brass"></div>
               Constitutional Law
             </div>
           </div>
 
-          <h1 class="animate-fade-up stagger-1 font-[Playfair_Display] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] mb-6 tracking-tight">
+          <h1 class="animate-fade-up stagger-1 font-[Fraunces] text-5xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
             Second Amendment<br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold to-gold-dark">Legal Analysis</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brass-light via-brass to-brass-dark">Legal Analysis</span>
           </h1>
 
-          <p class="animate-fade-up stagger-2 text-base sm:text-lg text-white/60 leading-relaxed mb-8 max-w-lg font-[Newsreader]">
+          <p class="animate-fade-up stagger-2 text-base sm:text-lg text-white/60 leading-relaxed mb-8 max-w-lg font-[Lora]">
             Scholarly analysis of court rulings, case developments, and legislative changes affecting the right to keep and bear arms — by constitutional attorney <strong class="text-white/90">Mark W. Smith</strong>.
           </p>
 
           <div class="animate-fade-up stagger-3 flex flex-col sm:flex-row gap-3">
             <a href="/search"
-              class="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-xl hover:shadow-gold/15 transition-all hover:scale-[1.02] active:scale-[0.98]">
+              class="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brass-dark to-brass text-obsidian px-6 py-3 rounded-md font-[Figtree] font-semibold text-sm uppercase tracking-wide hover:shadow-xl hover:shadow-brass/15 transition-all hover:scale-[1.02] active:scale-[0.98]">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               Search Articles
             </a>
             <a href="https://www.youtube.com/@TheFourBoxesDiner" target="_blank" rel="noopener"
-              class="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-sm text-white/80 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all">
+              class="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 rounded-md font-[Figtree] text-sm uppercase tracking-wide text-white/80 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
               Watch on YouTube
             </a>
@@ -53,18 +57,18 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           <!-- Stats bar -->
           <div class="animate-fade-up stagger-4 flex items-center gap-4 sm:gap-6 mt-10 pt-8 border-t border-white/10">
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{articles.length}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Articles</div>
+              <div class="text-xl sm:text-2xl font-bold font-[Fraunces] text-brass">{articles.length}</div>
+              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider font-[Figtree]">Articles</div>
             </div>
             <div class="w-px h-8 sm:h-10 bg-white/10"></div>
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{totalCases}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Cases</div>
+              <div class="text-xl sm:text-2xl font-bold font-[Fraunces] text-brass">{totalCases}</div>
+              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider font-[Figtree]">Cases</div>
             </div>
             <div class="w-px h-8 sm:h-10 bg-white/10"></div>
             <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{allTopics.length}</div>
-              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Topics</div>
+              <div class="text-xl sm:text-2xl font-bold font-[Fraunces] text-brass">{allTopics.length}</div>
+              <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider font-[Figtree]">Topics</div>
             </div>
           </div>
         </div>
@@ -73,32 +77,32 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
         {featuredArticle && (
           <div class="animate-fade-up stagger-3 hidden lg:block">
             <a href={`/articles/${featuredArticle.id}`} class="group block relative">
-              <div class="absolute -inset-3 bg-gradient-to-br from-gold/20 via-transparent to-gold/10 rounded-2xl blur-sm group-hover:blur-md transition-all"></div>
-              <div class="relative bg-navy-light rounded-xl overflow-hidden border border-white/10 group-hover:border-gold/30 transition-all">
+              <div class="absolute -inset-3 bg-gradient-to-br from-brass/20 via-transparent to-brass/10 rounded-lg blur-sm group-hover:blur-md transition-all"></div>
+              <div class="relative bg-obsidian-light rounded-md overflow-hidden border-t-2 border-t-brass border border-white/10 group-hover:border-brass/30 transition-all">
                 <div class="relative">
                   <img
                     src={featuredArticle.data.thumbnail}
                     alt={featuredArticle.data.title}
                     class="w-full aspect-video object-cover opacity-80 group-hover:opacity-90 transition-opacity"
                   />
-                  <div class="absolute inset-0 bg-gradient-to-t from-navy-light via-transparent"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-obsidian-light via-transparent"></div>
                   <div class="absolute top-3 left-3 flex gap-2">
-                    <span class="bg-gold/90 text-navy text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wide backdrop-blur-sm">
+                    <span class="bg-brass/90 text-obsidian text-[10px] font-[Figtree] font-bold px-2.5 py-1 rounded-sm uppercase tracking-wide backdrop-blur-sm">
                       Latest
                     </span>
                   </div>
-                  <span class="absolute bottom-3 right-3 bg-black/60 text-white/90 text-xs px-2 py-0.5 rounded backdrop-blur-sm">
+                  <span class="absolute bottom-3 right-3 bg-obsidian/80 text-white/90 text-xs font-[Figtree] px-2 py-0.5 rounded-sm backdrop-blur-sm">
                     {featuredArticle.data.duration}
                   </span>
                 </div>
                 <div class="p-5">
-                  <time class="text-[11px] text-white/40 uppercase tracking-wider">
+                  <time class="text-[11px] text-white/40 uppercase tracking-wider font-[Figtree]">
                     {new Date(featuredArticle.data.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>
-                  <h2 class="font-[Playfair_Display] text-lg font-bold text-white mt-1.5 leading-snug group-hover:text-gold transition-colors">
+                  <h2 class="font-[Fraunces] text-lg font-bold text-white mt-1.5 leading-snug group-hover:text-brass transition-colors">
                     {featuredArticle.data.title}
                   </h2>
-                  <div class="flex items-center gap-2 mt-3 text-xs text-gold/70 font-medium group-hover:text-gold transition-colors">
+                  <div class="flex items-center gap-2 mt-3 text-xs text-brass/70 font-[Figtree] font-medium group-hover:text-brass transition-colors">
                     Read article
                     <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                   </div>
@@ -119,141 +123,116 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     <!-- Section header -->
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8" data-animate>
       <div>
-        <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Analysis</div>
-        <h2 class="font-[Playfair_Display] text-3xl font-bold text-navy tracking-tight">Articles</h2>
+        <div class="text-xs text-brass font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-2">Analysis</div>
+        <h2 class="font-[Fraunces] text-3xl font-bold text-obsidian tracking-tight">Articles</h2>
       </div>
-      <div class="flex items-center gap-3">
-        <select id="sort-select" class="text-sm bg-white border border-gray-200 rounded-lg px-3 py-2 text-navy focus:outline-none focus:border-gold cursor-pointer">
-          <option value="newest">Newest First</option>
-          <option value="oldest">Oldest First</option>
-        </select>
-        <a href="/rss.xml" class="hidden sm:flex items-center gap-1.5 text-sm text-gray-warm hover:text-gold-dark transition-colors group">
+      <a href="/rss.xml" class="hidden sm:flex items-center gap-1.5 text-sm font-[Figtree] text-warm-gray hover:text-brass-dark transition-colors group">
           <svg class="w-4 h-4 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
             <path d="M6.18 15.64a2.18 2.18 0 010 4.36 2.18 2.18 0 010-4.36zM4 4.44A15.56 15.56 0 0119.56 20h-2.83A12.73 12.73 0 004 7.27V4.44zm0 5.66a9.9 9.9 0 019.9 9.9h-2.83A7.07 7.07 0 004 12.93V10.1z"/>
           </svg>
           RSS
         </a>
-      </div>
     </div>
 
-    <!-- Mobile filter toggle -->
-    <button id="mobile-filter-toggle" class="lg:hidden flex items-center gap-2 mb-6 bg-cream border border-cream-dark px-4 py-2.5 rounded-lg text-sm font-semibold text-navy hover:border-gold/40 transition-all w-full justify-center">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M3 4h18M3 8h12M3 12h18M3 16h8M3 20h14"/>
-      </svg>
-      <span id="mobile-filter-label">Filter Articles</span>
-      <svg id="mobile-filter-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
-    </button>
+    <!-- Filter Bar -->
+    <div class="mb-8 space-y-3" data-animate>
+      <!-- Single row: Search + Sort + All + Category toggles -->
+      <div class="flex flex-wrap items-center gap-2">
+        <div class="relative flex-1 min-w-[160px] max-w-xs">
+          <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-warm-gray pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="sidebar-search" type="text" placeholder="Search..." class="w-full text-xs font-[Figtree] bg-white border border-parchment-dark rounded-md pl-8 pr-3 py-1.5 text-obsidian placeholder:text-warm-gray/60 focus:outline-none focus:border-brass focus:ring-1 focus:ring-brass/20" />
+        </div>
+        <select id="sort-select" class="text-xs font-[Figtree] bg-white border border-parchment-dark rounded-md px-2.5 py-1.5 text-obsidian focus:outline-none focus:border-brass cursor-pointer">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+        <button data-filter="all" class="filter-btn active text-xs font-[Figtree] font-semibold bg-obsidian text-white px-3 py-1.5 rounded-md transition-all">
+          All <span class="opacity-60 ml-0.5 tabular-nums">{articles.length}</span>
+        </button>
+        <div class="h-4 w-px bg-parchment-dark hidden sm:block"></div>
+        <!-- Category toggle buttons — click to expand filter pills below -->
+        <button class="filter-section-toggle-btn text-xs font-[Figtree] font-medium text-obsidian/60 border border-parchment-dark bg-white px-2.5 py-1.5 rounded-md transition-all" data-target="content-type-pills">Type</button>
+        <button class="filter-section-toggle-btn text-xs font-[Figtree] font-medium text-obsidian/60 border border-parchment-dark bg-white px-2.5 py-1.5 rounded-md transition-all" data-target="court-level-pills">Court</button>
+        <button class="filter-section-toggle-btn text-xs font-[Figtree] font-medium text-obsidian/60 border border-parchment-dark bg-white px-2.5 py-1.5 rounded-md transition-all" data-target="topics-pills">Topics</button>
+        <button class="filter-section-toggle-btn text-xs font-[Figtree] font-medium text-obsidian/60 border border-parchment-dark bg-white px-2.5 py-1.5 rounded-md transition-all" data-target="circuits-pills">Circuit</button>
+      </div>
 
-    <div class="flex flex-col lg:flex-row gap-8">
-      <!-- LEFT SIDEBAR: Filters -->
-      <aside id="filter-sidebar" class="hidden lg:block lg:w-72 xl:w-80 flex-shrink-0">
-        <div class="lg:sticky lg:top-6 space-y-1 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto lg:pb-8 sidebar-scroll">
+      <!-- Active filter indicator -->
+      <div id="active-filter-display" class="hidden">
+        <div class="inline-flex items-center gap-2 bg-brass/10 border border-brass/25 rounded-md px-3 py-1">
+          <span class="text-xs font-[Figtree] font-semibold text-obsidian/80">Filtered:</span>
+          <span id="active-filter-name" class="text-xs font-[Figtree] font-bold text-obsidian"></span>
+          <button id="clear-filter-btn" class="text-[10px] font-[Figtree] font-bold text-brass-dark hover:text-obsidian ml-1 transition-colors">&times;</button>
+        </div>
+      </div>
 
-          <!-- Active filter indicator -->
-          <div id="active-filter-display" class="hidden mb-4 px-3 py-2 bg-gold/10 border border-gold/25 rounded-lg">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-semibold text-navy/80">Active filter:</span>
-              <button id="clear-filter-btn" class="text-[10px] font-bold text-gold-dark hover:text-navy uppercase tracking-wider transition-colors">Clear</button>
-            </div>
-            <span id="active-filter-name" class="text-sm font-bold text-navy mt-0.5 block"></span>
-          </div>
+      <!-- Expandable pill rows (hidden by default, toggled by buttons above) -->
+      <div id="filter-sidebar">
+        <!-- Content Type pills -->
+        <div id="content-type-pills" class="hidden flex flex-wrap gap-1.5 p-3 bg-parchment/60 rounded-md border border-parchment-dark">
+          {[...new Set(articles.flatMap(a => a.data.content_type))].filter(Boolean).sort().map(type => {
+            const count = articles.filter(a => a.data.content_type.includes(type)).length;
+            return (
+              <button data-filter={`type:${type}`} class="filter-btn text-[11px] font-[Figtree] font-medium bg-white border border-parchment-dark text-obsidian/70 px-2.5 py-1 rounded hover:border-brass/40 hover:text-obsidian transition-all capitalize">
+                {type.replace(/-/g, ' ')} <span class="text-warm-gray/60">{count}</span>
+              </button>
+            );
+          })}
+        </div>
 
-          <!-- All Articles -->
-          <button data-filter="all" class="filter-btn active w-full text-left flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold bg-navy text-white transition-all group">
-            <span class="flex items-center gap-2.5">
-              <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-              All Articles
-            </span>
-            <span class="text-xs opacity-60 tabular-nums">{articles.length}</span>
-          </button>
+        <!-- Court Level pills -->
+        <div id="court-level-pills" class="hidden flex flex-wrap gap-1.5 p-3 bg-parchment/60 rounded-md border border-parchment-dark">
+          {[...new Set(articles.flatMap(a => a.data.court_level))].filter(Boolean).sort().map(court => {
+            const count = articles.filter(a => a.data.court_level.includes(court)).length;
+            return (
+              <button data-filter={`court:${court}`} class="filter-btn text-[11px] font-[Figtree] font-medium bg-white border border-parchment-dark text-obsidian/70 px-2.5 py-1 rounded hover:border-brass/40 hover:text-obsidian transition-all capitalize">
+                {court.replace(/-/g, ' ')} <span class="text-warm-gray/60">{count}</span>
+              </button>
+            );
+          })}
+        </div>
 
-          <!-- Content Type -->
-          <div class="pt-4">
-            <div class="flex items-center gap-2 px-3 mb-2">
-              <div class="w-5 h-px bg-gold/50"></div>
-              <h3 class="text-[10px] font-bold text-gold-dark uppercase tracking-[0.18em]">Content Type</h3>
-            </div>
-            {[...new Set(articles.flatMap(a => a.data.content_type))].filter(Boolean).sort().map(type => {
-              const count = articles.filter(a => a.data.content_type.includes(type)).length;
+        <!-- Topics pills -->
+        <div id="topics-pills" class="hidden flex flex-wrap gap-1.5 p-3 bg-parchment/60 rounded-md border border-parchment-dark">
+          <div id="topics-list" class="flex flex-wrap gap-1.5">
+            {allTopics.sort().map((topic, i) => {
+              const count = articles.filter(a => a.data.legal_topics.includes(topic)).length;
               return (
-                <button data-filter={`type:${type}`} class="filter-btn w-full text-left flex items-center justify-between px-3 py-2 rounded-lg text-sm text-navy/75 hover:bg-gold/8 hover:text-navy transition-all group font-medium">
-                  <span class="capitalize truncate">{type.replace(/-/g, ' ')}</span>
-                  <span class="text-[11px] text-gray-warm group-hover:text-navy/50 tabular-nums flex-shrink-0 ml-2">{count}</span>
+                <button data-filter={`topic:${topic}`} class={`filter-btn text-[11px] font-[Figtree] font-medium bg-white border border-parchment-dark text-obsidian/70 px-2.5 py-1 rounded hover:border-brass/40 hover:text-obsidian transition-all capitalize ${i >= 20 ? 'topic-overflow hidden' : ''}`}>
+                  {topic.replace(/-/g, ' ')} <span class="text-warm-gray/60">{count}</span>
                 </button>
               );
             })}
           </div>
+          {allTopics.length > 20 && (
+            <button id="show-more-topics" class="text-[11px] font-[Figtree] font-semibold text-brass-dark hover:text-obsidian transition-colors">
+              +{allTopics.length - 20} more
+            </button>
+          )}
+        </div>
 
-          <!-- Court Level -->
-          <div class="pt-4">
-            <div class="flex items-center gap-2 px-3 mb-2">
-              <div class="w-5 h-px bg-gold/50"></div>
-              <h3 class="text-[10px] font-bold text-gold-dark uppercase tracking-[0.18em]">Court Level</h3>
-            </div>
-            {[...new Set(articles.flatMap(a => a.data.court_level))].filter(Boolean).sort().map(court => {
-              const count = articles.filter(a => a.data.court_level.includes(court)).length;
-              return (
-                <button data-filter={`court:${court}`} class="filter-btn w-full text-left flex items-center justify-between px-3 py-2 rounded-lg text-sm text-navy/75 hover:bg-gold/8 hover:text-navy transition-all group font-medium">
-                  <span class="capitalize truncate">{court.replace(/-/g, ' ')}</span>
-                  <span class="text-[11px] text-gray-warm group-hover:text-navy/50 tabular-nums flex-shrink-0 ml-2">{count}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          <!-- Legal Topics -->
-          <div class="pt-4">
-            <div class="flex items-center gap-2 px-3 mb-2">
-              <div class="w-5 h-px bg-gold/50"></div>
-              <h3 class="text-[10px] font-bold text-gold-dark uppercase tracking-[0.18em]">Legal Topics</h3>
-            </div>
-            <div id="topics-list">
-              {allTopics.sort().map((topic, i) => {
-                const count = articles.filter(a => a.data.legal_topics.includes(topic)).length;
+        <!-- Circuits pills -->
+        {(() => {
+          const allCircuits = [...new Set(articles.flatMap(a => a.data.circuits))].filter(Boolean).sort();
+          return allCircuits.length > 0 && (
+            <div id="circuits-pills" class="hidden flex flex-wrap gap-1.5 p-3 bg-parchment/60 rounded-md border border-parchment-dark">
+              {allCircuits.map(circuit => {
+                const count = articles.filter(a => a.data.circuits.includes(circuit)).length;
                 return (
-                  <button data-filter={`topic:${topic}`} class={`filter-btn w-full text-left flex items-center justify-between px-3 py-2 rounded-lg text-sm text-navy/75 hover:bg-gold/8 hover:text-navy transition-all group font-medium ${i >= 12 ? 'topic-overflow hidden' : ''}`}>
-                    <span class="capitalize truncate">{topic.replace(/-/g, ' ')}</span>
-                    <span class="text-[11px] text-gray-warm group-hover:text-navy/50 tabular-nums flex-shrink-0 ml-2">{count}</span>
+                  <button data-filter={`circuit:${circuit}`} class="filter-btn text-[11px] font-[Figtree] font-medium bg-white border border-parchment-dark text-obsidian/70 px-2.5 py-1 rounded hover:border-brass/40 hover:text-obsidian transition-all capitalize">
+                    {circuit.replace(/-/g, ' ')} <span class="text-warm-gray/60">{count}</span>
                   </button>
                 );
               })}
             </div>
-            {allTopics.length > 12 && (
-              <button id="show-more-topics" class="w-full text-left px-3 py-2 text-xs font-semibold text-gold-dark hover:text-navy transition-colors">
-                Show all {allTopics.length} topics...
-              </button>
-            )}
-          </div>
+          );
+        })()}
+      </div>
+    </div>
 
-          <!-- Circuits -->
-          {(() => {
-            const allCircuits = [...new Set(articles.flatMap(a => a.data.circuits))].filter(Boolean).sort();
-            return allCircuits.length > 0 && (
-              <div class="pt-4">
-                <div class="flex items-center gap-2 px-3 mb-2">
-                  <div class="w-5 h-px bg-gold/50"></div>
-                  <h3 class="text-[10px] font-bold text-gold-dark uppercase tracking-[0.18em]">Federal Circuit</h3>
-                </div>
-                {allCircuits.map(circuit => {
-                  const count = articles.filter(a => a.data.circuits.includes(circuit)).length;
-                  return (
-                    <button data-filter={`circuit:${circuit}`} class="filter-btn w-full text-left flex items-center justify-between px-3 py-2 rounded-lg text-sm text-navy/75 hover:bg-gold/8 hover:text-navy transition-all group font-medium">
-                      <span class="capitalize truncate">{circuit.replace(/-/g, ' ')}</span>
-                      <span class="text-[11px] text-gray-warm group-hover:text-navy/50 tabular-nums flex-shrink-0 ml-2">{count}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            );
-          })()}
-
-        </div>
-      </aside>
-
-      <!-- RIGHT: Article Grid -->
-      <div class="flex-1 min-w-0">
-        <div id="articles-grid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
+    <!-- Article Grid -->
+    <div>
+      <div id="articles-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {articles.map((article, i) => (
             <div
               class={`article-item ${i >= 24 ? 'hidden' : ''}`}
@@ -262,6 +241,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
               data-courts={article.data.court_level.join(',')}
               data-topics={article.data.legal_topics.join(',')}
               data-circuits={article.data.circuits.join(',')}
+              data-title={article.data.title.toLowerCase()}
               data-index={i}
             >
               <ArticleCard
@@ -282,20 +262,20 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
         </div>
 
         <div id="load-more-container" class="text-center mt-10">
-          <button id="load-more-btn" class="bg-navy text-white px-8 py-3 rounded-xl text-sm font-semibold hover:bg-navy-light transition-colors">
+          <button id="load-more-btn" class="bg-obsidian text-white px-8 py-3 rounded-md text-sm font-[Figtree] font-semibold uppercase tracking-wide hover:bg-obsidian-light transition-colors">
             Load More Articles
             <span id="load-more-count" class="text-white/50 ml-1">({articles.length - 24} remaining)</span>
           </button>
         </div>
 
-        <div id="no-results" class="hidden text-center py-16 text-gray-warm">
+        <div id="no-results" class="hidden text-center py-16 text-warm-gray">
           <svg class="w-10 h-10 mx-auto mb-3 opacity-30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <p class="text-sm font-medium">No articles match this filter.</p>
-          <button id="no-results-clear" class="mt-2 text-xs text-gold-dark hover:text-navy font-semibold transition-colors">Clear filter</button>
+          <p class="text-sm font-[Figtree] font-medium">No articles match this filter.</p>
+          <button id="no-results-clear" class="mt-2 text-xs font-[Figtree] text-brass-dark hover:text-obsidian font-semibold transition-colors">Clear filter</button>
         </div>
       </div>
     </div>
-  </section>
+    </section>
 
   <script is:inline>
   (function() {
@@ -310,32 +290,24 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     const loadMoreCount = document.getElementById('load-more-count');
     const mobileToggle = document.getElementById('mobile-filter-toggle');
     const sidebar = document.getElementById('filter-sidebar');
-    const mobileChevron = document.getElementById('mobile-filter-chevron');
-    const mobileLabel = document.getElementById('mobile-filter-label');
     const activeFilterDisplay = document.getElementById('active-filter-display');
     const activeFilterName = document.getElementById('active-filter-name');
     const clearFilterBtn = document.getElementById('clear-filter-btn');
     const showMoreTopics = document.getElementById('show-more-topics');
+    const sidebarSearch = document.getElementById('sidebar-search');
     const PAGE_SIZE = 24;
     let activeFilter = 'all';
+    let searchQuery = '';
     let visibleCount = PAGE_SIZE;
     let mobileOpen = false;
 
-    // Mobile toggle
-    mobileToggle.addEventListener('click', () => {
-      mobileOpen = !mobileOpen;
-      if (mobileOpen) {
-        sidebar.classList.remove('hidden');
-        sidebar.classList.add('block');
-        mobileChevron.style.transform = 'rotate(180deg)';
-        mobileLabel.textContent = 'Hide Filters';
-      } else {
-        sidebar.classList.add('hidden');
-        sidebar.classList.remove('block');
-        mobileChevron.style.transform = '';
-        mobileLabel.textContent = 'Filter Articles';
-      }
-    });
+    // Mobile toggle (if present)
+    if (mobileToggle && sidebar) {
+      mobileToggle.addEventListener('click', () => {
+        mobileOpen = !mobileOpen;
+        sidebar.classList.toggle('hidden', !mobileOpen);
+      });
+    }
 
     // Show more topics
     if (showMoreTopics) {
@@ -375,19 +347,19 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => {
-          b.classList.remove('active', 'bg-navy', 'text-white', 'font-semibold');
-          b.classList.add('text-navy/75');
-          // Don't add bg-cream to sidebar buttons (they have no bg by default)
+          b.classList.remove('active', 'bg-obsidian', 'text-white', 'font-semibold', 'border-brass');
+          b.classList.add('text-obsidian/75', 'bg-white');
+          if (b.classList.contains('border')) b.classList.add('border-parchment-dark');
         });
-        btn.classList.add('active', 'bg-navy', 'text-white', 'font-semibold');
-        btn.classList.remove('text-navy/75');
+        btn.classList.add('active', 'bg-obsidian', 'text-white', 'font-semibold');
+        btn.classList.remove('text-obsidian/75', 'bg-white', 'border-parchment-dark');
         setActiveFilter(btn.dataset.filter);
         visibleCount = PAGE_SIZE;
         applyFilters();
 
-        // On mobile, close sidebar after selecting a filter (unless it's "all")
-        if (window.innerWidth < 1024 && mobileOpen && btn.dataset.filter !== 'all') {
-          mobileToggle.click();
+        // Scroll to grid on mobile after filter selection
+        if (window.innerWidth < 768) {
+          document.getElementById('articles-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
@@ -396,6 +368,17 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     sortSelect.addEventListener('change', () => {
       visibleCount = PAGE_SIZE;
       applyFilters();
+    });
+
+    // Sidebar search
+    let searchTimeout;
+    sidebarSearch.addEventListener('input', () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        searchQuery = sidebarSearch.value.toLowerCase().trim();
+        visibleCount = PAGE_SIZE;
+        applyFilters();
+      }, 200);
     });
 
     // Load More
@@ -423,6 +406,9 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           if (filterType === 'court') matchesFilter = item.dataset.courts.includes(filterVal);
           if (filterType === 'topic') matchesFilter = item.dataset.topics.includes(filterVal);
           if (filterType === 'circuit') matchesFilter = (item.dataset.circuits || '').includes(filterVal);
+        }
+        if (searchQuery && matchesFilter) {
+          matchesFilter = (item.dataset.title || '').includes(searchQuery) || (item.dataset.topics || '').includes(searchQuery);
         }
 
         if (matchesFilter) {
@@ -458,30 +444,49 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     if (items.length <= PAGE_SIZE) {
       loadMoreContainer.classList.add('hidden');
     }
+
+    // Category toggle buttons — show/hide pill rows
+    document.querySelectorAll('.filter-section-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.dataset.target;
+        const target = document.getElementById(targetId);
+        if (!target) return;
+        const isVisible = !target.classList.contains('hidden');
+        // Close all pill rows
+        document.querySelectorAll('#filter-sidebar > div').forEach(el => el.classList.add('hidden'));
+        // Deactivate all toggle buttons
+        document.querySelectorAll('.filter-section-toggle-btn').forEach(b => b.classList.remove('active-toggle'));
+        // Toggle the clicked one
+        if (!isVisible) {
+          target.classList.remove('hidden');
+          btn.classList.add('active-toggle');
+        }
+      });
+    });
   })();
   </script>
 
   <!-- Email Capture -->
   <section class="relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20">
-      <div class="relative bg-navy rounded-2xl overflow-hidden" data-animate>
+      <div class="relative bg-obsidian rounded-md overflow-hidden" data-animate>
         <!-- Decorative elements -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
-        <div class="absolute bottom-0 left-0 w-48 h-48 bg-gold/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl"></div>
-        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brass/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-brass/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl"></div>
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brass/30 to-transparent"></div>
 
         <div class="relative px-8 py-14 md:px-14 md:py-16 text-center max-w-2xl mx-auto">
-          <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5">
+          <div class="inline-flex items-center gap-2 text-brass text-xs font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-5">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
             </svg>
             Stay Informed
           </div>
 
-          <h2 class="font-[Playfair_Display] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+          <h2 class="font-[Fraunces] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             Weekly 2A Legal Briefing
           </h2>
-          <p class="text-white/50 text-sm md:text-base leading-relaxed mb-8 font-[Newsreader]">
+          <p class="text-white/50 text-sm md:text-base leading-relaxed mb-8 font-[Lora]">
             Get a curated digest of the latest Second Amendment court decisions, case developments, and legislative analysis delivered to your inbox every week.
           </p>
 
@@ -494,23 +499,23 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
                 id="email-input"
                 placeholder="you@example.com"
                 required
-                class="w-full bg-white/8 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/15 transition-all"
+                class="w-full bg-white/8 border border-white/15 rounded-md px-4 py-3 text-sm font-[Figtree] text-white placeholder:text-white/30 focus:outline-none focus:border-brass/50 focus:ring-2 focus:ring-brass/15 transition-all"
               />
             </div>
             <button
               type="submit"
               id="email-submit"
-              class="bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg text-sm font-semibold hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
+              class="bg-gradient-to-r from-brass-dark to-brass text-obsidian px-6 py-3 rounded-md text-sm font-[Figtree] font-semibold uppercase tracking-wide hover:shadow-xl hover:shadow-brass/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
             >
               Subscribe
             </button>
           </form>
 
-          <p class="text-white/25 text-xs mt-4">No spam. Unsubscribe anytime. Free forever.</p>
+          <p class="text-white/25 text-xs font-[Figtree] mt-4">No spam. Unsubscribe anytime. Free forever.</p>
 
           <!-- Success message (hidden by default) -->
           <div id="email-success" class="hidden mt-6">
-            <div class="inline-flex items-center gap-2 bg-gold/15 text-gold px-4 py-2.5 rounded-lg text-sm font-medium">
+            <div class="inline-flex items-center gap-2 bg-brass/15 text-brass px-4 py-2.5 rounded-md text-sm font-[Figtree] font-medium">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
               You're on the list. Welcome aboard.
             </div>
@@ -525,14 +530,14 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
     <section class="max-w-7xl mx-auto px-5 lg:px-8 pb-20">
       <div class="gold-rule mb-14"></div>
       <div data-animate>
-        <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2">Explore</div>
-        <h2 class="font-[Playfair_Display] text-3xl font-bold text-navy mb-8 tracking-tight">All Topics</h2>
+        <div class="text-xs text-brass font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-2">Explore</div>
+        <h2 class="font-[Fraunces] text-3xl font-bold text-obsidian mb-8 tracking-tight">All Topics</h2>
       </div>
       <div class="flex flex-wrap gap-2.5" data-animate>
         {allTopics.sort().map(topic => (
           <a
             href={`/topics/${topic}`}
-            class="group relative bg-cream border border-cream-dark text-navy px-4 py-2 rounded-lg text-sm font-medium hover:border-gold/40 hover:bg-gold/8 transition-all capitalize"
+            class="group relative bg-parchment border border-parchment-dark text-obsidian px-4 py-2 rounded-md text-sm font-[Figtree] font-medium hover:border-brass/40 hover:bg-brass/8 transition-all capitalize"
           >
             {topic.replace(/-/g, ' ')}
           </a>
@@ -566,4 +571,23 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
       }
     });
   </script>
+<style is:global>
+  .filter-section-toggle-btn:not(.active-toggle):hover {
+    background-color: #161821;
+    color: white;
+    border-color: #161821;
+  }
+  .filter-section-toggle-btn.active-toggle {
+    background-color: #161821;
+    color: white;
+    border-color: #161821;
+  }
+  #sort-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%236b6e7a' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 1.5rem;
+  }
+</style>
 </BaseLayout>

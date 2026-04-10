@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #0f1a2e;
-  --color-navy-light: #1a2744;
-  --color-navy-dark: #080e1a;
-  --color-navy-medium: #152038;
-  --color-gold: #c8a55a;
-  --color-gold-light: #e0c882;
-  --color-gold-dark: #a68836;
-  --color-gold-muted: #b89d4f;
-  --color-cream: #faf8f3;
-  --color-cream-dark: #f0ece3;
-  --color-gray-warm: #7a7d85;
-  --color-gray-light: #d1d5db;
+  --color-obsidian: #161821;
+  --color-obsidian-light: #1e2030;
+  --color-obsidian-dark: #0e0f16;
+  --color-brass: #b5942d;
+  --color-brass-light: #d4b44e;
+  --color-brass-dark: #8f7520;
+  --color-brass-muted: #9e8535;
+  --color-parchment: #f5f0e6;
+  --color-parchment-dark: #e8e0d0;
+  --color-oxblood: #7c2439;
+  --color-oxblood-light: #9a3350;
+  --color-verdigris: #4a7c6f;
+  --color-warm-gray: #6b6e7a;
   --color-ink: #1c1f26;
-  --color-paper: #fdfcfa;
+  --color-paper: #faf7f0;
 
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-body: "Newsreader", "Georgia", serif;
-  --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
+  --font-ui: "Figtree", system-ui, sans-serif;
 }
 
 /* ---- Base ---- */
@@ -37,7 +38,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.025;
+  opacity: 0.02;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size: 256px 256px;
 }
@@ -84,15 +85,15 @@ body::before {
 }
 
 .animate-fade-up {
-  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.5s ease both;
+  animation: fadeIn 0.6s ease both;
 }
 
 .animate-slide-right {
-  animation: slideInRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: slideInRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .stagger-1 {
@@ -117,7 +118,7 @@ body::before {
 /* ---- Article prose ---- */
 .prose h2 {
   font-family: var(--font-display);
-  color: var(--color-navy);
+  color: var(--color-obsidian);
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 2.5rem;
@@ -134,12 +135,12 @@ body::before {
   left: 0;
   width: 3rem;
   height: 2px;
-  background: var(--color-gold);
+  background: var(--color-brass);
 }
 
 .prose h3 {
   font-family: var(--font-display);
-  color: var(--color-navy);
+  color: var(--color-obsidian);
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -161,7 +162,7 @@ body::before {
 
 .prose strong {
   font-weight: 700;
-  color: var(--color-navy);
+  color: var(--color-obsidian);
 }
 
 .prose ul,
@@ -178,11 +179,11 @@ body::before {
 }
 
 .prose li::marker {
-  color: var(--color-gold);
+  color: var(--color-brass);
 }
 
 .prose a {
-  color: var(--color-gold-dark);
+  color: var(--color-brass-dark);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -192,8 +193,8 @@ body::before {
 }
 
 .prose a:hover {
-  color: var(--color-gold);
-  text-decoration-color: var(--color-gold);
+  color: var(--color-brass);
+  text-decoration-color: var(--color-brass);
 }
 
 .prose hr {
@@ -202,19 +203,19 @@ body::before {
   background: linear-gradient(
     90deg,
     transparent,
-    var(--color-gold-muted),
+    var(--color-brass-muted),
     transparent
   );
   margin: 2rem 0;
 }
 
 .prose blockquote {
-  border-left: 3px solid var(--color-gold);
+  border-left: 3px solid var(--color-brass);
   padding: 0.75rem 1.25rem;
   margin: 2rem 0;
   font-style: italic;
   color: #4b5060;
-  background: var(--color-cream);
+  background: var(--color-parchment);
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
@@ -223,36 +224,37 @@ body::before {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-cream);
+  background: var(--color-parchment);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-navy-light);
+  background: var(--color-obsidian-light);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-dark);
+  background: var(--color-brass-dark);
 }
 
 /* ---- Selection ---- */
 ::selection {
-  background: rgba(200, 165, 90, 0.25);
-  color: var(--color-navy);
+  background: rgba(181, 148, 45, 0.25);
+  color: var(--color-obsidian);
 }
 
 /* ---- Smooth transitions for interactive elements ---- */
 a,
 button {
-  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ---- Gold separator ---- */
+/* ---- Brass separator ---- */
+.brass-rule,
 .gold-rule {
   height: 1px;
   background: linear-gradient(
     90deg,
     transparent,
-    var(--color-gold-muted) 30%,
-    var(--color-gold-muted) 70%,
+    var(--color-brass-muted) 30%,
+    var(--color-brass-muted) 70%,
     transparent
   );
 }
@@ -265,22 +267,22 @@ button {
   background: transparent;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb {
-  background: var(--color-cream-dark);
+  background: var(--color-parchment-dark);
   border-radius: 2px;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-muted);
+  background: var(--color-brass-muted);
 }
 
 /* ---- Card hover lift ---- */
 .card-lift {
   transition:
-    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.3s ease;
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s ease;
 }
 .card-lift:hover {
   transform: translateY(-4px);
   box-shadow:
-    0 12px 32px -8px rgba(15, 26, 46, 0.12),
-    0 4px 12px -4px rgba(15, 26, 46, 0.06);
+    0 12px 32px -8px rgba(22, 24, 33, 0.12),
+    0 4px 12px -4px rgba(22, 24, 33, 0.06);
 }

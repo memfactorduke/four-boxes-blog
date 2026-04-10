@@ -10,11 +10,11 @@
 >
   <div class="relative">
     <!-- Button (greyed out, no animations) -->
-    <div class="relative w-16 h-16 rounded-full bg-gradient-to-br from-gray-400 via-gray-300 to-gray-400 shadow-lg flex items-center justify-center">
-      <span class="text-gray-600 font-bold text-xl font-[Playfair_Display] leading-none">2A</span>
+    <div class="relative w-16 h-16 rounded-full bg-gradient-to-br from-brass/25 via-brass/15 to-brass/5 shadow-lg flex items-center justify-center">
+      <span class="text-brass/60 font-bold text-xl font-[Fraunces] leading-none">2A</span>
     </div>
     <!-- Coming Soon badge -->
-    <div class="absolute -top-1 -right-1 bg-gray-500 text-white text-[7px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider border-2 border-paper">Soon</div>
+    <div class="absolute -top-1 -right-1 bg-brass/20 text-brass/60 text-[7px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider border-2 border-paper">Soon</div>
   </div>
 </div>
 
@@ -23,14 +23,14 @@
   <div class="w-screen sm:w-[900px] sm:max-w-[calc(100vw-2rem)] h-screen sm:h-[800px] sm:max-h-[calc(100vh-3rem)] bg-paper sm:rounded-2xl shadow-2xl border-0 sm:border border-gray-200/80 flex flex-col overflow-hidden animate-chat-open">
 
     <!-- Header -->
-    <div class="bg-navy px-5 py-4 flex items-center justify-between shrink-0">
+    <div class="bg-obsidian px-5 py-4 flex items-center justify-between shrink-0">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shadow-lg shadow-gold/20">
-          <span class="text-navy font-bold text-sm font-[Playfair_Display]">2A</span>
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-brass to-brass-dark flex items-center justify-center shadow-lg shadow-brass/20">
+          <span class="text-obsidian font-bold text-sm font-[Fraunces]">2A</span>
         </div>
         <div>
-          <div class="text-white text-sm font-semibold">Professor 2A</div>
-          <div class="text-white/40 text-[10px] uppercase tracking-wider flex items-center gap-1.5">
+          <div class="text-white text-sm font-semibold font-[Fraunces]">Professor 2A</div>
+          <div class="text-white/40 text-[10px] uppercase tracking-wider flex items-center gap-1.5 font-[Figtree]">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
             AI Legal Analysis &middot; Beta
           </div>
@@ -45,33 +45,33 @@
 
     <!-- Disclaimer overlay -->
     <div id="chat-disclaimer" class="flex-1 flex flex-col items-center justify-center px-8 py-10 text-center">
-      <div class="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center mb-5 shadow-lg shadow-gold/20">
-        <span class="text-navy font-bold text-xl font-[Playfair_Display]">2A</span>
+      <div class="w-14 h-14 rounded-full bg-gradient-to-br from-brass to-brass-dark flex items-center justify-center mb-5 shadow-lg shadow-brass/20">
+        <span class="text-obsidian font-bold text-xl font-[Fraunces]">2A</span>
       </div>
-      <h2 class="font-[Playfair_Display] text-xl font-bold text-navy mb-3">Before We Begin</h2>
-      <div class="text-[13px] text-ink/70 leading-relaxed space-y-3 max-w-sm">
-        <p><strong class="text-navy">Professor 2A is an AI assistant</strong> powered by analysis from constitutional attorney Mark W. Smith and The Four Boxes Diner.</p>
-        <p>This tool is in <strong class="text-navy">beta</strong> and may occasionally produce errors. Always verify important legal information independently.</p>
-        <p class="text-[12px] text-gray-warm bg-cream rounded-lg px-4 py-3 border border-cream-dark">
-          <strong class="text-navy block mb-1">This is not legal advice.</strong>
+      <h2 class="font-[Fraunces] text-xl font-bold text-obsidian mb-3">Before We Begin</h2>
+      <div class="text-[13px] text-ink/70 leading-relaxed space-y-3 max-w-sm font-[Lora]">
+        <p><strong class="text-obsidian">Professor 2A is an AI assistant</strong> powered by analysis from constitutional attorney Mark W. Smith and The Four Boxes Diner.</p>
+        <p>This tool is in <strong class="text-obsidian">beta</strong> and may occasionally produce errors. Always verify important legal information independently.</p>
+        <p class="text-[12px] text-warm-gray bg-parchment rounded-lg px-4 py-3 border border-parchment-dark">
+          <strong class="text-obsidian block mb-1">This is not legal advice.</strong>
           Professor 2A provides legal analysis and education only. For advice on your specific situation, consult a licensed attorney in your jurisdiction.
         </p>
       </div>
-      <button id="chat-accept" class="mt-6 bg-gradient-to-r from-gold-dark to-gold text-navy px-8 py-3 rounded-xl font-semibold text-sm hover:shadow-xl hover:shadow-gold/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+      <button id="chat-accept" class="mt-6 bg-gradient-to-r from-brass-dark to-brass text-obsidian px-8 py-3 rounded-xl font-semibold text-sm hover:shadow-xl hover:shadow-brass/20 transition-all hover:scale-[1.02] active:scale-[0.98] font-[Figtree]">
         I Understand — Let's Go
       </button>
-      <p class="text-[10px] text-gray-warm mt-3">By continuing, you acknowledge this is AI-generated analysis, not legal advice.</p>
+      <p class="text-[10px] text-warm-gray mt-3 font-[Figtree]">By continuing, you acknowledge this is AI-generated analysis, not legal advice.</p>
     </div>
 
     <!-- Messages (hidden until disclaimer accepted) -->
     <div id="chat-messages" class="flex-1 overflow-y-auto px-6 py-5 space-y-5 hidden">
       <!-- Welcome message -->
       <div class="flex gap-3">
-        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-          <span class="text-navy text-[10px] font-bold font-[Playfair_Display]">2A</span>
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brass to-brass-dark flex items-center justify-center shrink-0 mt-0.5">
+          <span class="text-obsidian text-[10px] font-bold font-[Fraunces]">2A</span>
         </div>
-        <div class="bg-cream rounded-2xl rounded-tl-sm px-4 py-3 text-[13px] text-ink leading-relaxed max-w-[85%]">
-          <p class="font-semibold text-navy">Hey there — Mark Smith here.</p>
+        <div class="bg-parchment rounded-2xl rounded-tl-sm px-4 py-3 text-[13px] text-ink leading-relaxed max-w-[85%] font-[Lora]">
+          <p class="font-semibold text-obsidian">Hey there — Mark Smith here.</p>
           <p class="mt-1.5">Ask me about court cases, the <em>Bruen</em> decision, carry laws, historical tradition analysis — whatever's on your mind.</p>
         </div>
       </div>
@@ -85,12 +85,12 @@
           rows="2"
           placeholder="Ask Professor 2A a question..."
           autocomplete="off"
-          class="flex-1 bg-cream/80 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/15 transition-all placeholder:text-gray-warm/50 resize-none leading-relaxed"
+          class="flex-1 bg-parchment/80 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brass focus:ring-2 focus:ring-brass/15 transition-all placeholder:text-warm-gray/50 resize-none leading-relaxed font-[Lora]"
         ></textarea>
         <button
           type="submit"
           id="chat-send"
-          class="bg-gradient-to-r from-gold-dark to-gold text-navy w-11 h-11 rounded-xl flex items-center justify-center hover:shadow-lg hover:shadow-gold/20 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed shrink-0 mb-0.5"
+          class="bg-gradient-to-r from-brass-dark to-brass text-obsidian w-11 h-11 rounded-xl flex items-center justify-center hover:shadow-lg hover:shadow-brass/20 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed shrink-0 mb-0.5"
           aria-label="Send"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -161,37 +161,37 @@
   .chat-response p { margin-bottom: 1rem; line-height: 1.65; }
   .chat-response p:last-child { margin-bottom: 0; }
   .chat-response em { font-style: italic; }
-  .chat-response strong { font-weight: 700; color: #0f1a2e; }
+  .chat-response strong { font-weight: 700; color: #161821; }
   .chat-response ul { padding-left: 1.25rem; margin: 0.75rem 0; list-style: disc; }
   .chat-response ol { padding-left: 1.25rem; margin: 0.75rem 0; list-style: decimal; }
   .chat-response li { margin-bottom: 0.4rem; line-height: 1.55; }
   .chat-response a {
-    color: #b08d3e;
+    color: #8f7520;
     text-decoration: underline;
-    text-decoration-color: #c8a55a;
+    text-decoration-color: #b5942d;
     text-underline-offset: 3px;
     text-decoration-thickness: 1.5px;
     font-weight: 600;
     transition: color 0.15s, text-decoration-color 0.15s;
   }
   .chat-response a:hover {
-    color: #0f1a2e;
-    text-decoration-color: #0f1a2e;
+    color: #161821;
+    text-decoration-color: #161821;
   }
   .chat-response h3, .chat-response h4 {
     font-weight: 700;
-    color: var(--color-navy);
+    color: var(--color-obsidian);
     margin: 0.5rem 0 0.25rem;
     font-size: 0.875rem;
   }
   .chat-response code {
-    background: var(--color-cream);
+    background: var(--color-parchment);
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
     font-size: 0.8em;
   }
   .chat-response blockquote {
-    border-left: 2px solid var(--color-gold);
+    border-left: 2px solid var(--color-brass);
     padding-left: 0.75rem;
     margin: 0.5rem 0;
     color: #6b7280;
@@ -360,16 +360,16 @@
 
     if (role === 'user') {
       wrapper.innerHTML = `
-        <div class="bg-navy text-white rounded-2xl rounded-tr-sm px-4 py-3 text-[13px] leading-relaxed max-w-[80%]">
+        <div class="bg-obsidian text-white rounded-2xl rounded-tr-sm px-4 py-3 text-[13px] leading-relaxed max-w-[80%]">
           ${escapeHtml(text)}
         </div>
       `;
     } else {
       wrapper.innerHTML = `
-        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-          <span class="text-navy text-[10px] font-bold" style="font-family: Playfair Display, serif">2A</span>
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brass to-brass-dark flex items-center justify-center shrink-0 mt-0.5">
+          <span class="text-obsidian text-[10px] font-bold" style="font-family: Fraunces, serif">2A</span>
         </div>
-        <div class="bg-cream rounded-2xl rounded-tl-sm px-5 py-4 text-[13px] text-ink leading-relaxed max-w-[92%]">
+        <div class="bg-parchment rounded-2xl rounded-tl-sm px-5 py-4 text-[13px] text-ink leading-relaxed max-w-[92%]">
           <div class="chat-response">${text ? renderMarkdown(text) : ''}</div>
         </div>
       `;
@@ -384,13 +384,13 @@
     const el = document.createElement('div');
     el.className = 'flex gap-3';
     el.innerHTML = `
-      <div class="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shrink-0 mt-0.5">
-        <span class="text-navy text-[10px] font-bold" style="font-family: Playfair Display, serif">2A</span>
+      <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brass to-brass-dark flex items-center justify-center shrink-0 mt-0.5">
+        <span class="text-obsidian text-[10px] font-bold" style="font-family: Fraunces, serif">2A</span>
       </div>
-      <div class="bg-cream rounded-2xl rounded-tl-sm px-5 py-3.5 flex gap-1.5">
-        <div class="w-2 h-2 rounded-full bg-gray-warm/50 typing-dot"></div>
-        <div class="w-2 h-2 rounded-full bg-gray-warm/50 typing-dot"></div>
-        <div class="w-2 h-2 rounded-full bg-gray-warm/50 typing-dot"></div>
+      <div class="bg-parchment rounded-2xl rounded-tl-sm px-5 py-3.5 flex gap-1.5">
+        <div class="w-2 h-2 rounded-full bg-warm-gray/50 typing-dot"></div>
+        <div class="w-2 h-2 rounded-full bg-warm-gray/50 typing-dot"></div>
+        <div class="w-2 h-2 rounded-full bg-warm-gray/50 typing-dot"></div>
       </div>
     `;
     messages.appendChild(el);
