@@ -51,7 +51,7 @@ function formatTopic(t: string) {
           {popularTopics.map(([topic, count]) => (
             <a
               href={`/topics/${topic}`}
-              class="group flex items-center gap-2 bg-white border border-gray-100 rounded-lg px-4 py-2.5 hover:border-gold/30 hover:bg-gold/5 transition-all"
+              class="group flex items-center gap-2 bg-white border border-gray-100 rounded-lg px-4 py-2.5 hover:border-gold/30 hover:bg-gold/5 transition-all duration-200"
             >
               <span class="text-sm font-medium text-navy group-hover:text-gold-dark transition-colors capitalize">
                 {formatTopic(topic)}
@@ -74,7 +74,7 @@ function formatTopic(t: string) {
               <img
                 src={article.data.thumbnail}
                 alt=""
-                class="w-20 h-14 object-cover rounded-lg shrink-0"
+                class="w-20 h-14 object-cover rounded-lg shrink-0 hover:opacity-90 transition-opacity"
                 loading="lazy"
               />
               <div class="min-w-0 flex-1">
@@ -134,7 +134,7 @@ function formatTopic(t: string) {
   .search-in-hero .pagefind-ui__search-input:focus {
     border-color: #c8a55a !important;
     outline: none !important;
-    box-shadow: 0 0 0 3px rgba(200, 165, 90, 0.2) !important;
+    box-shadow: 0 0 0 2px rgba(200, 165, 90, 0.2) !important;
     background: rgba(255,255,255,0.12) !important;
   }
   .search-in-hero .pagefind-ui__search-clear {

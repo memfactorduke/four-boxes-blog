@@ -27,11 +27,11 @@ const books = (await getCollection('books'))
     ) : (
       <div class="grid md:grid-cols-2 gap-8">
         {books.map(book => (
-          <a href={`/books/${book.id}`} class="group flex flex-col sm:flex-row gap-5 sm:gap-6 bg-white rounded-xl border border-gray-100 p-5 sm:p-6 card-lift hover:border-gold/25">
+          <a href={`/books/${book.id}`} class="group flex flex-col sm:flex-row gap-5 sm:gap-6 bg-white rounded-xl border border-gray-100 p-5 sm:p-6 card-lift hover:border-gold/25 hover:shadow-lg transition-shadow duration-300">
             <img
               src={book.data.cover_image}
               alt={book.data.title}
-              class="w-28 sm:w-32 h-auto sm:h-48 object-cover rounded-lg shadow-lg ring-1 ring-black/10 shrink-0 group-hover:shadow-xl transition-shadow self-center sm:self-start"
+              class="w-28 sm:w-32 h-auto sm:h-48 object-cover rounded-lg shadow-lg ring-1 ring-gold/15 shrink-0 group-hover:shadow-xl transition-shadow self-center sm:self-start"
               loading="lazy"
             />
             <div class="flex-1 min-w-0">

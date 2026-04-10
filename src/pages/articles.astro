@@ -32,7 +32,7 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {articles.map((article, i) => (
         <a href={`/articles/${article.id}`} class="group block card-lift" data-animate>
-          <div class="relative rounded-xl overflow-hidden mb-3.5 ring-1 ring-black/5">
+          <div class="relative rounded-xl overflow-hidden mb-3.5 ring-1 ring-black/5 hover:opacity-95 transition-opacity duration-300">
             <img
               src={article.data.thumbnail}
               alt={article.data.title}
@@ -44,7 +44,7 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
               {article.data.duration}
             </span>
             <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
-              <div class="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center shadow-xl shadow-gold/30 scale-90 group-hover:scale-100 transition-transform">
+              <div class="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center shadow-xl shadow-gold/30 scale-90 group-hover:scale-100 transition-all duration-300">
                 <svg class="w-6 h-6 text-navy ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z"/>
                 </svg>
