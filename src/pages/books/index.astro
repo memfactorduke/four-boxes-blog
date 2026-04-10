@@ -7,65 +7,65 @@ const books = (await getCollection('books'))
 ---
 
 <BaseLayout title="Books" description="Books by constitutional attorney Mark W. Smith on Second Amendment law and constitutional rights">
-  <div class="bg-navy">
+  <div class="bg-obsidian">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12">
-      <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Library</div>
-      <h1 class="font-[Playfair_Display] text-3xl font-bold text-white tracking-tight animate-fade-up stagger-1">Books by Mark W. Smith</h1>
-      <p class="text-white/50 mt-2 text-sm font-[Newsreader] animate-fade-up stagger-2 max-w-xl">Scholarly works on Second Amendment law, constitutional rights, and the historical tradition of firearms regulation in America.</p>
+      <div class="text-xs text-brass font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Library</div>
+      <h1 class="font-[Fraunces] text-3xl font-bold text-white tracking-tight animate-fade-up stagger-1">Books by Mark W. Smith</h1>
+      <p class="text-white/50 mt-2 text-sm font-[Lora] animate-fade-up stagger-2 max-w-xl">Scholarly works on Second Amendment law, constitutional rights, and the historical tradition of firearms regulation in America.</p>
     </div>
   </div>
 
   <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12">
     {books.length === 0 ? (
       <div class="text-center py-20">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-cream flex items-center justify-center">
-          <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-parchment flex items-center justify-center">
+          <svg class="w-8 h-8 text-brass" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
         </div>
-        <h2 class="font-[Playfair_Display] text-xl font-bold text-navy mb-2">Books coming soon</h2>
-        <p class="text-gray-warm text-sm">Mark's published works will appear here with summaries, key topics, and purchase links.</p>
+        <h2 class="font-[Fraunces] text-xl font-bold text-obsidian mb-2">Books coming soon</h2>
+        <p class="text-warm-gray text-sm">Mark's published works will appear here with summaries, key topics, and purchase links.</p>
       </div>
     ) : (
       <div class="grid md:grid-cols-2 gap-8">
         {books.map(book => (
-          <a href={`/books/${book.id}`} class="group flex flex-col sm:flex-row gap-5 sm:gap-6 bg-white rounded-xl border border-gray-100 p-5 sm:p-6 card-lift hover:border-gold/25">
+          <a href={`/books/${book.id}`} class="group flex flex-col sm:flex-row gap-5 sm:gap-6 bg-white rounded-md border border-parchment-dark p-5 sm:p-6 card-lift hover:border-brass/25 hover:shadow-md transition-all">
             <img
               src={book.data.cover_image}
               alt={book.data.title}
-              class="w-28 sm:w-32 h-auto sm:h-48 object-cover rounded-lg shadow-lg ring-1 ring-black/10 shrink-0 group-hover:shadow-xl transition-shadow self-center sm:self-start"
+              class="w-28 sm:w-32 h-auto sm:h-48 object-cover rounded-md shadow-lg ring-1 ring-black/10 shrink-0 group-hover:shadow-xl transition-shadow self-center sm:self-start"
               loading="lazy"
             />
             <div class="flex-1 min-w-0">
-              <h2 class="font-[Playfair_Display] text-lg font-bold text-navy group-hover:text-gold-dark transition-colors leading-snug">
+              <h2 class="font-[Fraunces] text-lg font-bold text-obsidian group-hover:text-brass-dark transition-colors leading-snug">
                 {book.data.title}
               </h2>
               {book.data.subtitle && (
-                <p class="text-sm text-gray-warm mt-0.5 italic">{book.data.subtitle}</p>
+                <p class="text-sm text-warm-gray mt-0.5 italic font-[Lora]">{book.data.subtitle}</p>
               )}
               <div class="flex items-center gap-2 mt-1.5">
                 {book.data.amazon_rating && (
                   <div class="flex items-center gap-1">
                     <div class="flex">
                       {[1,2,3,4,5].map(star => (
-                        <svg class={`w-3.5 h-3.5 ${star <= Math.round(book.data.amazon_rating!) ? 'text-amber-400' : 'text-gray-200'}`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class={`w-3.5 h-3.5 ${star <= Math.round(book.data.amazon_rating!) ? 'text-brass' : 'text-gray-200'}`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                       ))}
                     </div>
-                    <span class="text-xs font-semibold text-navy">{book.data.amazon_rating}</span>
+                    <span class="text-xs font-semibold text-obsidian">{book.data.amazon_rating}</span>
                     {book.data.amazon_ratings_count && (
-                      <span class="text-[10px] text-gray-warm">({book.data.amazon_ratings_count})</span>
+                      <span class="text-[10px] text-warm-gray">({book.data.amazon_ratings_count})</span>
                     )}
                   </div>
                 )}
-                <span class="text-[10px] text-gray-warm">{book.data.publisher} &middot; {new Date(book.data.publish_date + 'T00:00:00').getFullYear()}</span>
+                <span class="text-[10px] text-warm-gray">{book.data.publisher} &middot; {new Date(book.data.publish_date + 'T00:00:00').getFullYear()}</span>
               </div>
-              <p class="text-sm text-ink/70 mt-2.5 leading-relaxed line-clamp-3 font-[Newsreader]">{book.data.summary}</p>
+              <p class="text-sm text-ink/70 mt-2.5 leading-relaxed line-clamp-3 font-[Lora]">{book.data.summary}</p>
               {book.data.endorsements.length > 0 && (
-                <p class="text-[11px] text-gray-warm mt-2 italic line-clamp-2 font-[Newsreader]">
+                <p class="text-[11px] text-warm-gray mt-2 italic line-clamp-2 font-[Lora]">
                   &ldquo;{book.data.endorsements[0].quote}&rdquo; — {book.data.endorsements[0].source}
                 </p>
               )}
               <div class="flex flex-wrap gap-1.5 mt-2.5">
                 {book.data.legal_topics.slice(0, 4).map(topic => (
-                  <span class="text-[10px] bg-gold/10 text-gold-dark px-2 py-0.5 rounded font-medium uppercase tracking-wide capitalize">
+                  <span class="font-[Figtree] text-[10px] bg-brass/15 text-brass-dark px-2 py-0.5 rounded-sm font-medium uppercase tracking-wide capitalize">
                     {topic.replace(/-/g, ' ')}
                   </span>
                 ))}

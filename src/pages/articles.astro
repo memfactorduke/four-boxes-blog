@@ -9,20 +9,20 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
 ---
 
 <BaseLayout title="Article Library" description="Browse all Four Boxes Diner legal analyses">
-  <div class="bg-navy">
+  <div class="bg-obsidian">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-12">
-      <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Library</div>
-      <h1 class="font-[Playfair_Display] text-3xl font-bold text-white tracking-tight animate-fade-up stagger-1">Article Library</h1>
-      <p class="text-white/50 mt-2 text-sm font-[Newsreader] animate-fade-up stagger-2">Browse all legal analyses by Mark W. Smith</p>
+      <div class="text-xs text-brass font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Library</div>
+      <h1 class="font-[Fraunces] text-3xl font-bold text-white tracking-tight animate-fade-up stagger-1">Article Library</h1>
+      <p class="text-white/50 mt-2 text-sm font-[Lora] animate-fade-up stagger-2">Browse all legal analyses by Mark W. Smith</p>
     </div>
   </div>
 
   <div class="max-w-7xl mx-auto px-5 lg:px-8 py-10">
     <!-- Filter bar -->
     <div class="flex flex-wrap gap-2 mb-10 pb-8 border-b border-gray-100" data-animate>
-      <span class="text-xs font-semibold text-navy/50 uppercase tracking-wider self-center mr-3">Topics:</span>
+      <span class="text-xs font-[Figtree] font-semibold text-obsidian/50 uppercase tracking-wider self-center mr-3">Topics:</span>
       {allTopics.slice(0, 10).map(topic => (
-        <a href={`/topics/${topic}`} class="bg-cream border border-cream-dark text-navy/70 px-3 py-1.5 rounded-lg text-xs font-medium hover:border-gold/40 hover:text-navy transition-all capitalize">
+        <a href={`/topics/${topic}`} class="font-[Figtree] bg-parchment border border-parchment-dark text-obsidian/70 px-3 py-1.5 rounded-sm text-xs font-medium hover:border-brass/40 hover:text-obsidian transition-all capitalize">
           {topic.replace(/-/g, ' ')}
         </a>
       ))}
@@ -32,7 +32,7 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {articles.map((article, i) => (
         <a href={`/articles/${article.id}`} class="group block card-lift" data-animate>
-          <div class="relative rounded-xl overflow-hidden mb-3.5 ring-1 ring-black/5">
+          <div class="relative rounded-md overflow-hidden mb-3.5 ring-1 ring-black/5">
             <img
               src={article.data.thumbnail}
               alt={article.data.title}
@@ -44,24 +44,24 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
               {article.data.duration}
             </span>
             <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
-              <div class="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center shadow-xl shadow-gold/30 scale-90 group-hover:scale-100 transition-transform">
-                <svg class="w-6 h-6 text-navy ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+              <div class="w-14 h-14 rounded-full bg-brass/90 flex items-center justify-center shadow-xl shadow-brass/30 scale-90 group-hover:scale-100 transition-transform">
+                <svg class="w-6 h-6 text-obsidian ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z"/>
                 </svg>
               </div>
             </div>
           </div>
-          <h2 class="font-[Playfair_Display] font-bold text-navy group-hover:text-gold-dark transition-colors leading-snug text-[15px]">
+          <h2 class="font-[Fraunces] font-bold text-obsidian group-hover:text-brass-dark transition-colors leading-snug text-[15px]">
             {article.data.title}
           </h2>
           <div class="flex items-center gap-2 mt-1.5">
-            <time class="text-[11px] text-gray-warm font-medium">
+            <time class="text-[11px] text-warm-gray font-medium">
               {new Date(article.data.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
             </time>
             {article.data.court_level[0] && (
               <>
                 <span class="w-1 h-1 rounded-full bg-gray-light"></span>
-                <span class="text-[11px] text-navy/50 font-medium">{article.data.court_level[0]}</span>
+                <span class="text-[11px] text-obsidian/50 font-medium">{article.data.court_level[0]}</span>
               </>
             )}
           </div>
