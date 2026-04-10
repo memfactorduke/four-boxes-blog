@@ -16,6 +16,18 @@
   --color-ink: #1c1f26;
   --color-paper: #fdfcfa;
 
+  /* New identity tokens */
+  --color-obsidian: #0f1a2e;
+  --color-obsidian-light: #1a2744;
+  --color-obsidian-dark: #080e1a;
+  --color-brass: #c8a55a;
+  --color-brass-light: #e0c882;
+  --color-brass-dark: #a68836;
+  --color-brass-muted: #b89d4f;
+  --color-parchment: #faf8f3;
+  --color-parchment-dark: #f0ece3;
+  --color-warm-gray: #7a7d85;
+
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Newsreader", "Georgia", serif;
   --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
