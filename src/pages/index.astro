@@ -16,7 +16,9 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
   <!-- Hero -->
   <section class="relative bg-navy text-white overflow-hidden">
     <!-- Subtle geometric pattern -->
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+    <!-- Depth overlay -->
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse at 30% 40%, rgba(26,39,68,0.4) 0%, transparent 70%);"></div>
 
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-28 relative">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -39,12 +41,12 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
 
           <div class="animate-fade-up stagger-3 flex flex-col sm:flex-row gap-3">
             <a href="/search"
-              class="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-xl hover:shadow-gold/15 transition-all hover:scale-[1.02] active:scale-[0.98]">
+              class="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-dark to-gold text-navy px-6 py-3 rounded-lg font-semibold text-sm hover:shadow-xl hover:shadow-gold/15 transition-all hover:scale-[1.02] active:scale-[0.97]">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               Search Articles
             </a>
             <a href="https://www.youtube.com/@TheFourBoxesDiner" target="_blank" rel="noopener"
-              class="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-sm text-white/80 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all">
+              class="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 rounded-lg text-sm text-white/80 hover:text-white hover:bg-white/5 hover:border-white/30 transition-all active:scale-[0.97]">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
               Watch on YouTube
             </a>
@@ -52,18 +54,18 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
 
           <!-- Stats bar -->
           <div class="animate-fade-up stagger-4 flex items-center gap-4 sm:gap-6 mt-10 pt-8 border-t border-white/10">
-            <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{articles.length}</div>
+            <div class="animate-fade-up stagger-3">
+              <div class="text-2xl sm:text-4xl font-bold font-[Playfair_Display] text-gold">{articles.length}</div>
               <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Articles</div>
             </div>
             <div class="w-px h-8 sm:h-10 bg-white/10"></div>
-            <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{totalCases}</div>
+            <div class="animate-fade-up stagger-4">
+              <div class="text-2xl sm:text-4xl font-bold font-[Playfair_Display] text-gold">{totalCases}</div>
               <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Cases</div>
             </div>
             <div class="w-px h-8 sm:h-10 bg-white/10"></div>
-            <div>
-              <div class="text-xl sm:text-2xl font-bold font-[Playfair_Display] text-gold">{allTopics.length}</div>
+            <div class="animate-fade-up stagger-5">
+              <div class="text-2xl sm:text-4xl font-bold font-[Playfair_Display] text-gold">{allTopics.length}</div>
               <div class="text-[10px] sm:text-xs text-white/40 uppercase tracking-wider">Topics</div>
             </div>
           </div>
@@ -74,7 +76,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
           <div class="animate-fade-up stagger-3 hidden lg:block">
             <a href={`/articles/${featuredArticle.id}`} class="group block relative">
               <div class="absolute -inset-3 bg-gradient-to-br from-gold/20 via-transparent to-gold/10 rounded-2xl blur-sm group-hover:blur-md transition-all"></div>
-              <div class="relative bg-navy-light rounded-xl overflow-hidden border border-white/10 group-hover:border-gold/30 transition-all">
+              <div class="relative bg-navy-light rounded-xl overflow-hidden border border-white/10 border-t-2 border-t-gold/30 group-hover:border-gold/30 group-hover:shadow-xl transition-all duration-300">
                 <div class="relative">
                   <img
                     src={featuredArticle.data.thumbnail}
