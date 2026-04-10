@@ -40,6 +40,7 @@ tags:
   - "Federal Courts"
   - "SCOTUS"
 pull_quote: "The DOJ is now using the same civil rights enforcement tool against D.C.'s gun ban that it used against police departments violating the Fourth Amendment. If the Second Amendment isn't a second-class right, it deserves the same enforcement muscle — and that's exactly what's happening."
+image_prompt: "The Robert F. Kennedy Department of Justice building in Washington DC, shot from street level looking up at the Art Deco aluminum doors and carved limestone eagles. Late afternoon golden light raking across the facade, pedestrians as distant blurred silhouettes. Documentary street photography, natural light, slightly desaturated tones."
 ---
 
 ## Summary

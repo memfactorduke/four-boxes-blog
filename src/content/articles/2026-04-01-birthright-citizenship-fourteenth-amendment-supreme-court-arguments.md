@@ -25,6 +25,7 @@ tags:
   - "Executive Power"
   - "Standing"
 pull_quote: "For over a century, no one could challenge the prevailing interpretation of birthright citizenship — not because the text was clear, but because no one had standing. Trump's executive order finally opened the courthouse doors, and the original meaning of 'subject to the jurisdiction thereof' is about to get its day in court."
+image_prompt: "The Supreme Court plaza at dawn, shot from ground level across the wet marble with reflections of the building's colonnade. A lone security barrier in the foreground, the building's pediment and columns towering above in soft pink-gold early morning light. Wide-angle architectural photography, clean geometric composition, misty atmospheric quality."
 ---
 
 ## Summary

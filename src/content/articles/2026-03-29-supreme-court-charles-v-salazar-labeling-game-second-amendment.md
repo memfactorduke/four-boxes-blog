@@ -37,6 +37,7 @@ tags:
   - "First Amendment"
   - "Heller"
 pull_quote: "The Supreme Court just ruled 8-1 that the government can't redefine speech as 'conduct' to dodge the First Amendment. So explain to me how states can redefine ordinary rifles as 'assault weapons' to dodge the Second. The labeling game is over."
+image_prompt: "Dramatic low-angle shot of the Supreme Court building's west facade at dusk, deep blue sky with warm amber light hitting the Corinthian columns, long shadows across the marble plaza. A single bronze lamp post glows in the foreground. Shot on medium format, Fuji Velvia color saturation, architectural photography."
 ---
 
 ## Summary

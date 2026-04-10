@@ -38,6 +38,7 @@ tags:
   - "Pam Bondi"
   - "Constitutional Law"
 pull_quote: "The government banned you from mailing a handgun through the Post Office for decades — with zero historical basis. The OLC finally admitted what we've known since Heller: singling out handguns for second-class treatment is unconstitutional, period."
+image_prompt: "A vintage USPS post office interior with ornate brass PO boxes and marble countertops, warm overhead pendant lights, worn terrazzo floor. Close-up on the brass mailbox doors with combination dials, shallow depth of field. Nostalgic Americana, golden warm tones, editorial still life photography like a Wes Anderson frame."
 ---
 
 ## Summary

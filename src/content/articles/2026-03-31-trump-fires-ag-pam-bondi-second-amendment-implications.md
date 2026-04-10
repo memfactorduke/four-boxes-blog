@@ -64,6 +64,7 @@ tags:
   - "Felon in Possession"
   - "Second Amendment"
 pull_quote: "Pam Bondi built the most pro-Second Amendment DOJ in history — then let the Solicitor General's office pick the worst possible case to bring to the Supreme Court. The next AG needs to keep Bondi's fire but actually control the strategic chessboard."
+image_prompt: "An empty mahogany executive desk in a stately government office, an American flag standing in the corner, late afternoon light streaming through tall venetian blinds casting striped shadows across the desk surface. A leather chair pushed back as if someone just left. Moody atmospheric photography, warm amber and cool shadow tones, shallow depth of field on the chair."
 ---
 
 ## Summary
