@@ -62,12 +62,12 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
     <svg class="w-4 h-4 text-white/30 group-hover:text-gold group-hover:translate-x-0.5 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
   </a>
 
-  <div class="p-5 space-y-6 bg-cream/50">
+  <div class="p-5 bg-cream/50">
     <!-- Cases -->
     {cases_discussed.length > 0 && (
-      <div>
+      <div class="pb-5 mb-5 border-b border-gold/10">
         <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+          <svg class="w-3.5 h-3.5 text-gold/40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
           Cases Discussed
         </h3>
         <ul class="space-y-2.5">
@@ -86,9 +86,9 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
 
     <!-- Court Level -->
     {court_level.length > 0 && (
-      <div>
+      <div class="pb-5 mb-5 border-b border-gold/10">
         <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+          <svg class="w-3.5 h-3.5 text-gold/40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
           Court Level
         </h3>
         <div class="flex flex-wrap gap-1.5">
@@ -101,7 +101,7 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
 
     <!-- Circuits -->
     {circuits.length > 0 && (
-      <div>
+      <div class="pb-5 mb-5 border-b border-gold/10">
         <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3">Circuits</h3>
         <div class="flex flex-wrap gap-1.5">
           {circuits.map(circuit => (
@@ -115,9 +115,9 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
 
     <!-- Topics -->
     {legal_topics.length > 0 && (
-      <div>
+      <div class="pb-5 mb-5 border-b border-gold/10">
         <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3 flex items-center gap-2">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path d="M6 6h.008v.008H6V6Z"/></svg>
+          <svg class="w-3.5 h-3.5 text-gold/40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path d="M6 6h.008v.008H6V6Z"/></svg>
           Legal Topics
         </h3>
         <div class="flex flex-wrap gap-1.5">
@@ -132,7 +132,7 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
 
     <!-- Status -->
     {case_status.length > 0 && (
-      <div>
+      <div class="pb-5 mb-5 border-b border-gold/10">
         <h3 class="text-[11px] font-bold text-navy/50 uppercase tracking-[0.15em] mb-3">Case Status</h3>
         <div class="flex flex-wrap gap-1.5">
           {case_status.map(status => (
