@@ -22,11 +22,11 @@ function formatTopic(t: string) {
 
 <BaseLayout title="Search" description="Search Second Amendment legal analysis articles">
   <!-- Hero with integrated search -->
-  <div class="bg-navy">
+  <div class="bg-obsidian">
     <div class="max-w-4xl mx-auto px-5 lg:px-8 pt-12 pb-16">
-      <div class="text-xs text-gold font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Find</div>
-      <h1 class="font-[Playfair_Display] text-3xl font-bold text-white tracking-tight mb-3 animate-fade-up stagger-1">Search Articles</h1>
-      <p class="text-white/50 text-sm font-[Newsreader] mb-8 animate-fade-up stagger-2">Search across {articles.length} articles, cases, and legal topics.</p>
+      <div class="text-xs text-brass font-[Figtree] font-semibold tracking-[0.2em] uppercase mb-2 animate-fade-up">Find</div>
+      <h1 class="font-[Fraunces] text-3xl font-bold text-white tracking-tight mb-3 animate-fade-up stagger-1">Search Articles</h1>
+      <p class="text-white/50 text-sm font-[Lora] mb-8 animate-fade-up stagger-2">Search across {articles.length} articles, cases, and legal topics.</p>
 
       <!-- Search box in the hero -->
       <div class="animate-fade-up stagger-3">
@@ -43,7 +43,7 @@ function formatTopic(t: string) {
     <div id="browse-section">
       <!-- Popular topics -->
       <div class="mb-10">
-        <h2 class="text-xs font-bold text-navy/50 uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
+        <h2 class="text-xs font-[Figtree] font-bold text-obsidian/50 uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path d="M6 6h.008v.008H6V6Z"/></svg>
           Popular Topics
         </h2>
@@ -51,12 +51,12 @@ function formatTopic(t: string) {
           {popularTopics.map(([topic, count]) => (
             <a
               href={`/topics/${topic}`}
-              class="group flex items-center gap-2 bg-white border border-gray-100 rounded-lg px-4 py-2.5 hover:border-gold/30 hover:bg-gold/5 transition-all"
+              class="group flex items-center gap-2 bg-white border border-gray-100 rounded-md px-4 py-2.5 hover:border-brass/30 hover:bg-brass/5 transition-all"
             >
-              <span class="text-sm font-medium text-navy group-hover:text-gold-dark transition-colors capitalize">
+              <span class="text-sm font-medium text-obsidian group-hover:text-brass-dark transition-colors capitalize">
                 {formatTopic(topic)}
               </span>
-              <span class="text-[10px] text-gray-warm bg-cream px-1.5 py-0.5 rounded-full">{count}</span>
+              <span class="text-[10px] font-[Figtree] text-warm-gray bg-parchment px-1.5 py-0.5 rounded-full">{count}</span>
             </a>
           ))}
         </div>
@@ -64,24 +64,24 @@ function formatTopic(t: string) {
 
       <!-- Recent articles -->
       <div>
-        <h2 class="text-xs font-bold text-navy/50 uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
+        <h2 class="text-xs font-[Figtree] font-bold text-obsidian/50 uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
           Recent Articles
         </h2>
         <div class="space-y-3">
           {recentArticles.map(article => (
-            <a href={`/articles/${article.id}`} class="group flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-3 hover:border-gold/25 hover:shadow-sm transition-all">
+            <a href={`/articles/${article.id}`} class="group flex items-center gap-4 bg-white border border-gray-100 rounded-md p-3 hover:border-brass/25 hover:shadow-sm transition-all">
               <img
                 src={article.data.thumbnail}
                 alt=""
-                class="w-20 h-14 object-cover rounded-lg shrink-0"
+                class="w-20 h-14 object-cover rounded-md shrink-0"
                 loading="lazy"
               />
               <div class="min-w-0 flex-1">
-                <h3 class="text-sm font-semibold text-navy group-hover:text-gold-dark transition-colors leading-snug line-clamp-2">
+                <h3 class="text-sm font-semibold text-obsidian group-hover:text-brass-dark transition-colors leading-snug line-clamp-2">
                   {article.data.title}
                 </h3>
-                <time class="text-[11px] text-gray-warm mt-0.5 block">
+                <time class="text-[11px] text-warm-gray mt-0.5 block">
                   {new Date(article.data.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                 </time>
               </div>
@@ -106,13 +106,13 @@ function formatTopic(t: string) {
   /* Pagefind in hero - dark background variant */
   .search-in-hero .pagefind-ui {
     --pagefind-ui-scale: 1;
-    --pagefind-ui-primary: #c8a55a;
+    --pagefind-ui-primary: #b5942d;
     --pagefind-ui-text: #ffffff;
     --pagefind-ui-background: transparent;
     --pagefind-ui-border: rgba(255,255,255,0.2);
     --pagefind-ui-border-width: 1.5px;
-    --pagefind-ui-border-radius: 12px;
-    --pagefind-ui-font: 'DM Sans', system-ui, sans-serif;
+    --pagefind-ui-border-radius: 6px;
+    --pagefind-ui-font: 'Figtree', system-ui, sans-serif;
   }
   .search-in-hero .pagefind-ui__search-input {
     background: rgba(255,255,255,0.08) !important;
@@ -121,7 +121,7 @@ function formatTopic(t: string) {
     padding: 1rem 1.25rem 1rem 3rem !important;
     font-size: 1rem !important;
     border: 1.5px solid rgba(255,255,255,0.15) !important;
-    border-radius: 12px !important;
+    border-radius: 6px !important;
   }
   .search-in-hero .pagefind-ui__search-input::placeholder {
     color: rgba(255,255,255,0.55) !important;
@@ -132,9 +132,9 @@ function formatTopic(t: string) {
     opacity: 0.6 !important;
   }
   .search-in-hero .pagefind-ui__search-input:focus {
-    border-color: #c8a55a !important;
+    border-color: #b5942d !important;
     outline: none !important;
-    box-shadow: 0 0 0 3px rgba(200, 165, 90, 0.2) !important;
+    box-shadow: 0 0 0 3px rgba(181, 148, 45, 0.2) !important;
     background: rgba(255,255,255,0.12) !important;
   }
   .search-in-hero .pagefind-ui__search-clear {
@@ -148,46 +148,46 @@ function formatTopic(t: string) {
   /* Results area below hero */
   #search-results .pagefind-ui {
     --pagefind-ui-scale: 1;
-    --pagefind-ui-primary: #c8a55a;
-    --pagefind-ui-text: #0f1a2e;
-    --pagefind-ui-background: #fdfcfa;
-    --pagefind-ui-border: #e5e7eb;
-    --pagefind-ui-tag: #faf8f3;
+    --pagefind-ui-primary: #b5942d;
+    --pagefind-ui-text: #161821;
+    --pagefind-ui-background: #faf7f0;
+    --pagefind-ui-border: #e8e0d0;
+    --pagefind-ui-tag: #f5f0e6;
     --pagefind-ui-border-width: 1.5px;
-    --pagefind-ui-border-radius: 10px;
-    --pagefind-ui-image-border-radius: 10px;
+    --pagefind-ui-border-radius: 6px;
+    --pagefind-ui-image-border-radius: 6px;
     --pagefind-ui-image-box-ratio: 16 / 9;
-    --pagefind-ui-font: 'DM Sans', system-ui, sans-serif;
+    --pagefind-ui-font: 'Figtree', system-ui, sans-serif;
   }
   #search-results .pagefind-ui__search-input {
     display: none !important;
   }
   #search-results .pagefind-ui__result {
     padding: 1rem 0 !important;
-    border-bottom: 1px solid #f3f4f6 !important;
+    border-bottom: 1px solid #e8e0d0 !important;
   }
   #search-results .pagefind-ui__result-link {
-    color: #0f1a2e !important;
+    color: #161821 !important;
     font-weight: 600 !important;
-    font-family: 'Playfair Display', Georgia, serif !important;
+    font-family: 'Fraunces', Georgia, serif !important;
     font-size: 1.05rem !important;
   }
   #search-results .pagefind-ui__result-link:hover {
-    color: #c8a55a !important;
+    color: #b5942d !important;
   }
   #search-results .pagefind-ui__result-excerpt {
-    font-family: 'Newsreader', Georgia, serif !important;
+    font-family: 'Lora', Georgia, serif !important;
     line-height: 1.7 !important;
     color: #4b5060 !important;
     font-size: 0.9rem !important;
   }
   #search-results .pagefind-ui__button {
-    background: #0f1a2e !important;
-    border-radius: 8px !important;
+    background: #161821 !important;
+    border-radius: 6px !important;
     font-weight: 600 !important;
   }
   #search-results .pagefind-ui__button:hover {
-    background: #1a2744 !important;
+    background: #2a2d3a !important;
   }
   #search-results .pagefind-ui__message {
     font-weight: 500 !important;
