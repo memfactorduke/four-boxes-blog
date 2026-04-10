@@ -22,7 +22,7 @@ const variantClasses = {
   {items.map(item => (
     <a
       href={`${basePath}/${item.toLowerCase().replace(/\s+/g, '-')}`}
-      class={`px-3 py-1 rounded text-sm transition-colors ${variantClasses[variant]}`}
+      class={`px-3 py-1 rounded text-sm transition-colors duration-200 ${variantClasses[variant]}`}
     >
       {formatLabel(item)}
     </a>
