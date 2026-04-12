@@ -1,5 +1,5 @@
 ---
-title: "The Trump DOJ's Baffling Legal Error in the DC Magazine Ban Case"
+title: "The Trump DOJ's Baffling Error in the Benson Magazine Ban Case"
 date: "2026-04-06"
 youtube_url: "https://www.youtube.com/watch?v=XT8aYQ7ZzQw"
 youtube_id: "XT8aYQ7ZzQw"
@@ -7,127 +7,75 @@ thumbnail: "/images/articles/2026-04-06-trump-doj-baffling-error-second-amendmen
 duration: "19:02"
 author: "Mark W. Smith"
 cases_discussed:
-  - name: "United States v. Benson"
-    citation: ""
-    court: "U.S. Court of Appeals for the DC Circuit (en banc)"
-  - name: "New York State Rifle & Pistol Association v. Bruen"
-    citation: "597 U.S. 1 (2022)"
-    court: "Supreme Court of the United States"
-  - name: "United States v. Rahimi"
-    citation: "602 U.S. 680 (2024)"
-    court: "Supreme Court of the United States"
+  - name: "Benson v. United States"
+    court: "D.C. Court of Appeals"
   - name: "District of Columbia v. Heller"
     citation: "554 U.S. 570 (2008)"
     court: "Supreme Court of the United States"
+  - name: "Heller v. District of Columbia (Heller II)"
+    citation: "670 F.3d 1244 (D.C. Cir. 2011)"
+    court: "U.S. Court of Appeals for the D.C. Circuit"
+  - name: "United States v. Rahimi"
+    citation: "602 U.S. 680 (2024)"
+    court: "Supreme Court of the United States"
   - name: "Cheeseman v. Platkin"
-    citation: ""
     court: "U.S. Court of Appeals for the Third Circuit"
-  - name: "Association of New Jersey Rifle & Pistol Clubs v. Platkin"
-    citation: ""
-    court: "U.S. Court of Appeals for the Third Circuit"
-court_level:
-  - "federal-circuit"
-circuits:
-  - "dc"
-  - "3rd"
-states:
-  - "DC"
-  - "NJ"
-federal: true
 legal_topics:
   - "second-amendment"
-  - "magazine-bans"
-  - "facial-challenge"
-  - "bruen-methodology"
-  - "en-banc-review"
-  - "injunctive-relief"
-case_status:
-  - "en-banc-pending"
-content_type:
-  - "case-analysis"
+  - "facial-vs-as-applied-challenges"
+  - "large-capacity-magazines"
 tags:
-  - "Second Amendment"
   - "Magazine Ban"
-  - "D.C. Circuit"
-  - "Third Circuit"
-  - "DOJ"
-  - "Bruen"
-  - "En Banc"
-pull_quote: "The Trump DOJ had a chance to drive a stake through magazine bans nationwide — and instead they filed a brief that could hand gun control advocates exactly the framework they've been looking for."
+  - "Benson v. United States"
+  - "Jeanine Pirro"
+  - "Trump DOJ"
+  - "Facial Challenge"
+  - "Remedies"
+  - "D.C. Court of Appeals"
+court_level:
+  - "state-supreme"
+circuits: []
+states:
+  - "DC"
+federal: true
+case_status:
+  - "pending-rehearing"
+content_type:
+  - "legal-analysis"
+pull_quote: "The Pirro office wants the court to reimagine a statute that doesn't exist — and that gets the facial challenge inquiry exactly backwards."
+image_prompt: "A dimly lit government prosecutor's office with stacked case files on a heavy oak desk, a brass desk lamp casting warm directional light, an open legal brief with a red pen lying across it. Shot from a low angle looking across the desk surface, shallow depth of field blurring the background bookshelves. Moody, contemplative atmosphere, warm amber highlights against cool blue-gray shadow tones, editorial still life photography."
 ---
 
-## Summary
+The U.S. Attorney's Office for the District of Columbia, led by Jeanine Pirro, has filed a brief agreeing that the D.C. Court of Appeals should rehear *Benson v. United States* en banc — the landmark decision striking down D.C.'s ban on magazines holding more than ten rounds. At first glance, this looks like a betrayal. It is not, exactly. But the legal analysis the Pirro office deployed to get there is flatly wrong on a critical point of Second Amendment law, and that error deserves careful examination.
 
-The Trump Department of Justice has filed a brief in the en banc DC Court of Appeals in **United States v. Benson** that takes what appears, at first glance, to be a fully pro-Second Amendment position — conceding that DC's large capacity magazine ban violates the Second Amendment and agreeing with the three-judge panel that struck it down. That concession represents a significant and genuinely encouraging development. I submit, however, that the brief also contains a consequential legal error that, if accepted by the court, would effectively rescue the DC magazine ban from meaningful invalidation. By misapplying the facial versus as-applied challenge framework derived from **United States v. Rahimi**, 602 U.S. 680 (2024), the US Attorney's Office under Janine Pirro has handed the en banc court a roadmap to narrow the remedy in a manner inconsistent with controlling Second Amendment doctrine — and the downstream consequences for parallel litigation in the Third Circuit could be severe.
+## The Good News First
+
+Credit where it is due: the Pirro office has stated unequivocally that D.C.'s large-capacity magazine ban is unconstitutional under the Second Amendment. The office has not been enforcing the ban for months and has no intention of doing so going forward. On the merits — the question of whether the government can criminalize possession of magazines holding more than ten rounds — the Trump DOJ is on the right side. That is a significant and welcome position from a sitting U.S. Attorney.
+
+## Where Pirro Goes Off the Rails
+
+The problem is the remedy. When the D.C. Court of Appeals' three-judge panel struck down the magazine ban in its 2-1 ruling, it did not stop there. The court reasoned that because the magazine ban was unconstitutional, Tyree Benson could not have lawfully registered his firearm — registration in D.C. would have required compliance with an unconstitutional condition. The panel therefore vacated not only Benson's magazine conviction but also his convictions for possessing an unregistered firearm and carrying without a license.
+
+The Pirro office contends this remedy was too broad. Their argument: the magazine ban's unconstitutionality should not excuse Benson from the separate obligations to register his firearm and obtain a license. They want to continue prosecuting those offenses and are concerned about the practical consequences — reportedly over 300 pending cases involve similar charges, and unwinding them could release individuals convicted under plea agreements.
+
+The policy concern is understandable. But the answer is not to distort Second Amendment doctrine. If someone is a dangerous criminal, prove it at trial rather than leaning on constitutionally suspect shortcut charges.
+
+## The Facial Challenge Error
+
+The most troubling portion of the brief concerns facial versus as-applied challenges. The Pirro office argues that the panel improperly conducted a facial challenge, citing *United States v. Rahimi* for the proposition that a facial challenge requires showing "no set of circumstances exists under which the act would be valid." Under this logic, if the D.C. Council could hypothetically have passed a narrower statute — say, banning only magazines over fifty rounds — then the existing statute survives because it has some constitutional applications.
+
+This gets the analysis exactly backwards.
+
+The correct approach starts with the essential elements of the crime as written. D.C.'s law criminalizes possession of any magazine holding more than ten rounds. That is the only element the prosecution must prove beyond a reasonable doubt. The statute does not require proof that the defendant possessed a fifty-round drum rather than an eleven-round magazine. Because the statute as written sweeps in plainly protected conduct — possessing standard-capacity magazines in common use for lawful purposes — it fails on its face.
+
+*District of Columbia v. Heller* itself demonstrates the point. The Court struck down D.C.'s handgun ban facially, even while acknowledging that bans on machine guns and felon-possession prohibitions remained valid. Hypothetical constitutional applications did not save the statute. The Pirro office's brief asks the court to imagine a statute the D.C. Council never passed and use that hypothetical to rescue the one it did. That is not how facial challenges work.
+
+## The Bigger Picture
+
+The silver lining is strategic context. Even if the en banc D.C. Court of Appeals were to narrow or reverse the panel's ruling, the Third Circuit's pending en banc decision in *Cheeseman v. Platkin* — challenging New Jersey's assault weapons and magazine bans — may render the question academic. That case, recently argued before a full bench that includes newly confirmed Judge Jennifer Mascott, could produce the definitive circuit split needed to bring magazine and rifle ban cases before the Supreme Court this term. A Third Circuit ruling striking down New Jersey's bans would create a conflict that the Court could not easily decline to resolve.
+
+Still, the Pirro office's brief is a missed opportunity. The Trump DOJ had a chance to let a clean Second Amendment victory stand and instead chose to re-litigate the remedy using a facial-challenge analysis that contradicts settled law. The correct position was straightforward: decline to seek en banc rehearing and prosecute violent offenders through substantive criminal charges rather than registration technicalities. The Second Amendment community should take the win on the merits — but keep a watchful eye on the DOJ's remedial instincts.
 
 ---
 
 *This article is based on analysis by [Mark W. Smith](https://www.youtube.com/@TheFourBoxesDiner) on The Four Boxes Diner. [Watch the original video](https://www.youtube.com/watch?v=XT8aYQ7ZzQw). This does not constitute legal advice.*
-
----
-
-## Background: The Benson Case and DC's Structural Registration Trap
-
-**United States v. Benson** arises from DC's comprehensive firearms regulatory scheme, which imposes two distinct obligations on gun owners: a registration requirement mandating that every firearm possessed in the District be registered with local authorities, and a large capacity magazine ban prohibiting possession of any magazine capable of holding more than ten rounds. Mr. Benson was charged under both provisions after he was found in possession of an unregistered firearm equipped with a magazine exceeding DC's capacity limit.
-
-The interaction between these two provisions created a structural legal trap that lies at the heart of the constitutional analysis. Under DC law, a firearm cannot be registered if it is equipped with a magazine that the law independently prohibits. Because Mr. Benson's firearm contained a large-capacity magazine, DC law rendered it ineligible for registration regardless of his willingness to comply. He was thus exposed to criminal liability for failing to register a firearm that DC's own rules prevented him from registering. The magazine prohibition created the registration violation.
-
-The DC Court of Appeals' three-judge panel found that the large capacity magazine ban violated the Second Amendment under **New York State Rifle & Pistol Association v. Bruen**, 597 U.S. 1 (2022), ruling two to one. The full DC Court of Appeals — the highest court of the District of Columbia, not to be confused with the United States Court of Appeals for the DC Circuit — granted en banc rehearing at the District's request. The Trump administration's Department of Justice, through the US Attorney's Office for DC, filed a brief on behalf of the United States that diverges dramatically from the positions of prior administrations.
-
-## The Genuine Win: DOJ Concedes the Magazine Ban Is Unconstitutional
-
-I wish to be clear about what the Trump DOJ has done correctly before identifying the error in its brief, because the threshold concession is genuinely significant and should not be minimized.
-
-The DOJ brief agrees with the three-judge panel that DC's ban on magazines capable of holding more than ten rounds violates the Second Amendment. This represents a clean break from years of federal enforcement posture under prior administrations, which consistently defended magazine restrictions against constitutional challenge. The DOJ's alignment with the Second Amendment position on the merits is exactly what advocates for constitutional rights have sought from the executive branch, and it is a meaningful institutional signal.
-
-The analytical basis for this concession is, I submit, unimpeachable under *Bruen*. The government bears the burden of identifying a historical tradition of analogous firearm regulation rooted in the founding era. There is no founding-era tradition of prohibiting citizens from possessing standard-capacity ammunition feeding devices. Magazines that hold more than ten rounds are, as the DC Court of Appeals majority recognized, "commonly owned" — a central consideration under *District of Columbia v. Heller*, 554 U.S. 570 (2008). The DOJ correctly acknowledges this failure of historical justification.
-
-The DOJ also agrees, as it must, that the magazine ban was unconstitutional as applied to Mr. Benson, given the registration trap: because the magazine made his firearm ineligible for registration under DC's own rules, he could not have come into legal compliance even if he had chosen to do so. The DOJ's agreement on this subsidiary point is also correct.
-
-## The Consequential Error: Misapplication of Rahimi's Facial Challenge Framework
-
-Having conceded that the magazine ban is unconstitutional, the DOJ's brief proceeds to argue that the proper remedy is not facial invalidation but only as-applied relief — limited, in the DOJ's formulation, to the facts of Mr. Benson's specific case. This is where, in my assessment, the brief commits a serious and consequential doctrinal error.
-
-To understand the error, it is necessary to examine precisely what **United States v. Rahimi**, 602 U.S. 680 (2024), holds about the facial versus as-applied challenge framework. In *Rahimi*, the Supreme Court addressed a Second Amendment challenge to the federal statute prohibiting firearm possession by persons subject to domestic violence restraining orders. The Court's majority opinion articulated the standard for facial invalidation: a facial challenge succeeds when "no set of circumstances exists under which the Act would be valid." Correspondingly, a statute survives a facial challenge if it is constitutional in the "vast majority" of its practical applications.
-
-The critical analytical move in *Rahimi* — and the move the DOJ's brief inverts — is the sequence in which this inquiry proceeds. Under *Rahimi* properly applied, the court first identifies the conduct the statute regulates and evaluates whether that conduct, across the full range of circumstances in which the statute operates, is constitutionally protected activity. If the statute sweeps primarily across constitutionally protected conduct — that is, if the typical, ordinary application of the law burdens the Second Amendment right — then the statute cannot survive a facial challenge regardless of whether one can conjure a hypothetical extreme application that might be constitutional.
-
-The DC Court of Appeals majority appears, according to the substance of the DOJ's own brief, to have conducted this inquiry backwards. Rather than starting with the conduct regulated and asking whether the statute's ordinary applications are constitutional, the majority identified some potentially valid edge application — perhaps a prohibition on magazines capable of holding fifty or more rounds — and concluded that because this extreme application might survive *Bruen*, the statute could not be struck down facially. This reasoning is, I submit, entirely inconsistent with *Rahimi*'s framework. A statute is not immunized from facial invalidation by the theoretical availability of some constitutional edge case. The question is whether the law criminalizes constitutionally protected conduct across the preponderance of its real-world applications.
-
-DC's ten-round magazine limit does exactly that. Standard-capacity magazines for common defensive handguns and rifles frequently hold more than ten rounds. The overwhelming majority of individuals prosecuted under this ban will be prosecuted for conduct — possessing standard-capacity magazines for common firearms in common defensive use — that lies squarely within the Second Amendment's plain text protection. A statute that operates primarily as a prohibition on constitutionally protected conduct cannot escape facial invalidation by invoking *Rahimi*.
-
-The DOJ's brief accepts, at least implicitly, the DC majority's inverted framing by urging that the proper remedy is as-applied relief limited to defendants in Mr. Benson's factual posture. In doing so, the brief effectively suggests that the large capacity magazine ban could survive as applied to the many DC residents who possess such magazines without the complicating factor of the registration trap. That is not a position consistent with the full scope of *Bruen* or with a genuine commitment to facial invalidation of an admittedly unconstitutional law.
-
-## The Registration Trap's Independent Constitutional Significance
-
-The structural registration trap deserves attention in its own right, distinct from the facial challenge question, because it illuminates the breadth of the constitutional defect in DC's firearms regulatory scheme.
-
-DC's law operates as follows: a resident who obtains a firearm equipped with a magazine holding more than ten rounds cannot register that firearm because the magazine makes it ineligible. The resident simultaneously violates the law by possessing an unregistered firearm and the law by possessing a prohibited magazine. He is exposed to criminal liability on two fronts simultaneously as a direct consequence of one act of possession — and he is foreclosed from curing either violation without curing the other. The registration violation is a structural artifact of the magazine violation.
-
-The DOJ acknowledges that Mr. Benson "had not been able to register" his firearm "because it could not be registered" under DC's own rules. This acknowledgment carries implications that extend beyond as-applied relief. If DC's magazine ban renders a substantial category of otherwise lawful firearms ineligible for registration, the constitutional defect in the magazine ban propagates forward into the registration prosecution: the government cannot criminally charge a defendant for failing to register a firearm that the government's own regulations made impossible to register. The remedy for unconstitutional government obstruction of a constitutional right is not as-applied limitation; it is invalidation of the obstruction.
-
-The broader question of whether DC's registration and licensing regime is independently constitutional — separate from the magazine issue — is one that implicates *Heller* directly. *Heller* recognized the right to possess firearms in the home for self-defense purposes. A registration and licensing scheme that functions as a de facto permission system, requiring citizens to obtain government approval before exercising a constitutional right, raises serious constitutional questions that will require full judicial attention as DC's regulatory framework continues to be litigated.
-
-## The Strategic Context: Why the DOJ's Limiting Argument May Have Been Made
-
-I submit that it is worth considering, charitably, why the DOJ might have advanced this seemingly self-defeating remedy argument rather than pressing for full facial invalidation.
-
-One plausible explanation is that the US Attorney's Office — operating in a jurisdiction where over three hundred Second Amendment-related cases are currently pending — may have been attempting to manage the downstream consequences of a broad ruling across those pending prosecutions. A facial invalidation of the DC magazine ban would immediately implicate the viability of pending charges in which the magazine violation underlies or enables other prosecution theories, including registration violations structured in the same way as *Benson*. The DOJ may have been attempting to limit the ruling to avoid what it perceives as a destabilizing wave of case dismissals.
-
-That strategic calculation may be understandable from a prosecutorial management perspective. It is not, however, legally sound as a matter of Second Amendment doctrine, and it is not a position consistent with the Trump administration's stated commitment to the Second Amendment. The proper response to discovering that over three hundred pending prosecutions may rest in whole or in part on a constitutionally infirm statute is not to argue for a narrow remedy that preserves the unconstitutional statute. It is to acknowledge the constitutional defect and ensure that prosecutions premised on that defect are resolved accordingly.
-
-## Implications for the Third Circuit
-
-The *Benson* en banc proceedings carry significant consequences not only for DC residents but for the parallel Second Amendment litigation currently pending before the United States Court of Appeals for the Third Circuit. **Cheeseman v. Platkin** and **Association of New Jersey Rifle & Pistol Clubs v. Platkin** — consolidated cases challenging New Jersey's large capacity magazine ban and assault weapons restrictions — are before the Third Circuit, which has been among the most hostile federal circuits to Second Amendment claims in the post-*Bruen* environment.
-
-If the en banc DC Court of Appeals adopts the DOJ's proposed limiting approach and issues a ruling that avoids full facial invalidation of the DC magazine ban, that ruling may provide the Third Circuit with doctrinal cover to sustain New Jersey's analogous prohibitions. Conversely, a robust ruling by the DC Court of Appeals that facially invalidates DC's magazine ban and applies *Bruen*'s framework with fidelity would create pressure on the Third Circuit to reach the same conclusion in *Cheeseman* and *ANJRPC* — or face a circuit split requiring Supreme Court resolution.
-
-The resolution of the DC and Third Circuit cases is, in my assessment, likely to be the vehicle through which magazine ban litigation ultimately reaches the Supreme Court. A cramped ruling in *Benson* delays and complicates that path without improving the underlying constitutional outcome.
-
-## Implications
-
-**United States v. Benson* is currently one of the most consequential Second Amendment cases in active litigation outside the Supreme Court. The Trump DOJ's concession that DC's large capacity magazine ban violates the Second Amendment is a genuine and significant advance that should be recognized as such. I do not diminish that achievement.
-
-The error in the brief — the argument for as-applied rather than facial relief, premised on an inversion of *Rahimi*'s proper analytical sequence — is nonetheless a real error with real consequences. If the en banc DC Court of Appeals accepts the DOJ's limiting framework, DC's magazine ban will remain on the books and enforceable against the overwhelming majority of individuals who possess standard-capacity magazines in the District. The more than three hundred pending prosecutions will proceed, with defendants relegated to mounting individual as-applied challenges on a case-by-case basis at significant personal expense.
-
-The correct ruling, fully consistent with *Bruen*, *Heller*, and *Rahimi* properly applied, is that DC's ten-round magazine limit is facially unconstitutional because it criminalizes the possession of commonly owned magazines across the vast majority of its applications — none of which can be supported by the historical tradition of firearms regulation that *Bruen* demands. The remedy for a facially unconstitutional statute is facial invalidation. Anything less leaves an admittedly unconstitutional law operational as an instrument of prosecution against the District's law-abiding residents.
