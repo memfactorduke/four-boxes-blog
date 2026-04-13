@@ -100,8 +100,19 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
           </div>
         )}
 
-        <div class="prose max-w-none">
+        <div id="article-body" class="prose max-w-none">
           <Content />
+        </div>
+
+        <!-- Copy Article button -->
+        <div class="mt-6 flex justify-end">
+          <button
+            id="copy-article-btn"
+            class="inline-flex items-center gap-2 text-sm text-obsidian/50 hover:text-obsidian/80 transition-colors bg-obsidian/5 hover:bg-obsidian/10 px-4 py-2 rounded-md font-[Figtree]"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy Article</span>
+          </button>
         </div>
 
         <!-- Article footer: email capture -->
@@ -157,6 +168,42 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
   </div>
 
   <script is:inline>
+    document.getElementById('copy-article-btn')?.addEventListener('click', async function() {
+      const title = document.querySelector('h1')?.textContent?.trim() || '';
+      const body = document.getElementById('article-body');
+      if (!body) return;
+      // Get clean text: title + two newlines + body text with paragraph breaks
+      const paragraphs = body.querySelectorAll('p, h2, h3, li, blockquote');
+      let text = title + '\n\n';
+      paragraphs.forEach(el => {
+        const tag = el.tagName.toLowerCase();
+        const content = el.textContent.trim();
+        if (!content) return;
+        if (tag === 'h2' || tag === 'h3') {
+          text += content + '\n\n';
+        } else {
+          text += content + '\n\n';
+        }
+      });
+      try {
+        await navigator.clipboard.writeText(text.trim());
+        const span = this.querySelector('span');
+        span.textContent = 'Copied!';
+        setTimeout(() => { span.textContent = 'Copy Article'; }, 2000);
+      } catch {
+        // Fallback for older browsers
+        const ta = document.createElement('textarea');
+        ta.value = text.trim();
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        const span = this.querySelector('span');
+        span.textContent = 'Copied!';
+        setTimeout(() => { span.textContent = 'Copy Article'; }, 2000);
+      }
+    });
+
     document.getElementById('article-email-form')?.addEventListener('submit', async function(e) {
       e.preventDefault();
       const success = document.getElementById('article-email-success');
