@@ -1,0 +1,256 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const articles = (await getCollection('articles')).sort((a, b) =>
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+// Pre-render all articles
+const rendered = await Promise.all(
+  articles.map(async (article) => {
+    const { Content } = await render(article);
+    return { article, Content };
+  })
+);
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Article Review</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background: #f8f7f4; color: #1a1a1a; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    header { background: #1a1a1a; color: #fff; padding: 20px 0; margin-bottom: 30px; }
+    header .container { display: flex; align-items: center; justify-content: space-between; }
+    header h1 { font-size: 18px; font-weight: 600; letter-spacing: 1px; }
+    header .count { font-size: 13px; color: #999; }
+
+    .article-card { background: #fff; border: 1px solid #e0ddd8; border-radius: 6px; margin-bottom: 24px; overflow: hidden; }
+    .article-header { padding: 20px 24px; cursor: pointer; display: flex; align-items: flex-start; gap: 16px; }
+    .article-header:hover { background: #faf9f6; }
+    .article-date { font-size: 12px; color: #888; font-family: -apple-system, sans-serif; white-space: nowrap; padding-top: 3px; min-width: 80px; }
+    .article-title { font-size: 17px; font-weight: 600; flex: 1; }
+    .toggle-arrow { font-size: 18px; color: #aaa; transition: transform 0.2s; padding-top: 2px; }
+    .article-card.open .toggle-arrow { transform: rotate(90deg); }
+
+    .article-body { display: none; border-top: 1px solid #e0ddd8; }
+    .article-card.open .article-body { display: block; }
+
+    .section { padding: 20px 24px; border-bottom: 1px solid #f0ede8; }
+    .section:last-child { border-bottom: none; }
+    .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #999; font-family: -apple-system, sans-serif; margin-bottom: 10px; }
+
+    .image-section { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+    .image-section img { max-width: 300px; border-radius: 4px; border: 1px solid #e0ddd8; }
+    .image-actions { display: flex; flex-direction: column; gap: 8px; }
+
+    .quote-text { font-style: italic; font-size: 16px; color: #444; border-left: 3px solid #c9a54e; padding-left: 16px; margin: 8px 0; }
+
+    .prose-content { font-size: 15px; line-height: 1.75; }
+    .prose-content h2 { font-size: 18px; font-weight: 700; margin: 20px 0 8px; }
+    .prose-content h3 { font-size: 16px; font-weight: 700; margin: 16px 0 6px; }
+    .prose-content p { margin-bottom: 12px; }
+    .prose-content em { font-style: italic; }
+    .prose-content strong { font-weight: 700; }
+    .prose-content a { color: #6b2029; }
+    .prose-content hr { margin: 16px 0; border: none; border-top: 1px solid #e0ddd8; }
+
+    .controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding: 16px 24px; background: #faf9f6; border-top: 1px solid #e0ddd8; }
+
+    .checkbox-row { display: flex; gap: 16px; align-items: center; font-size: 13px; font-family: -apple-system, sans-serif; color: #666; }
+    .checkbox-row label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+    .checkbox-row input { cursor: pointer; }
+
+    .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 13px; font-weight: 600; font-family: -apple-system, sans-serif; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; background: #fff; color: #333; transition: all 0.15s; }
+    .btn:hover { background: #f0f0f0; border-color: #999; }
+    .btn-primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .btn-primary:hover { background: #333; }
+    .btn-download { background: #f0ede8; }
+
+    .meta-row { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; font-family: -apple-system, sans-serif; color: #888; }
+    .meta-row span { display: flex; align-items: center; gap: 4px; }
+
+    .video-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #6b2029; text-decoration: none; font-family: -apple-system, sans-serif; }
+    .video-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ARTICLE REVIEW</h1>
+      <span class="count">{articles.length} articles</span>
+    </div>
+  </header>
+
+  <div class="container">
+    {rendered.map(({ article, Content }, idx) => (
+      <div class="article-card" data-index={idx}>
+        <div class="article-header" onclick={`this.parentElement.classList.toggle('open')`}>
+          <span class="article-date">{article.data.date}</span>
+          <span class="article-title">{article.data.title}</span>
+          <span class="toggle-arrow">›</span>
+        </div>
+
+        <div class="article-body">
+          <!-- Meta -->
+          <div class="section">
+            <div class="meta-row">
+              <span>Duration: {article.data.duration}</span>
+              <span>ID: {article.data.youtube_id}</span>
+              <a href={article.data.youtube_url} target="_blank" rel="noopener" class="video-link">
+                Watch on YouTube ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="section">
+            <div class="section-label">Image</div>
+            <div class="image-section">
+              <img src={article.data.thumbnail} alt={article.data.title} loading="lazy" />
+              <div class="image-actions">
+                <a href={article.data.thumbnail} download class="btn btn-download">
+                  ↓ Download Image
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pull Quote -->
+          {article.data.pull_quote && (
+            <div class="section">
+              <div class="section-label">Pull Quote</div>
+              <div class="quote-text">{article.data.pull_quote}</div>
+            </div>
+          )}
+
+          <!-- Article Text -->
+          <div class="section">
+            <div class="section-label">Article</div>
+            <div class={`prose-content article-prose-${idx}`}>
+              <Content />
+            </div>
+          </div>
+
+          <!-- Copy Controls -->
+          <div class="controls">
+            <div class="checkbox-row">
+              <label>
+                <input type="checkbox" class="chk-quote" data-idx={idx} checked />
+                Include quote
+              </label>
+            </div>
+            <button class="btn btn-primary copy-x-btn" data-idx={idx}>
+              Copy for X
+            </button>
+            <button class="btn copy-plain-btn" data-idx={idx}>
+              Copy Plain Text
+            </button>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <script is:inline>
+    // Copy for X — rich text with formatting
+    document.querySelectorAll('.copy-x-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const idx = this.dataset.idx;
+        const card = this.closest('.article-card');
+        const title = card.querySelector('.article-title').textContent.trim();
+        const includeQuote = card.querySelector('.chk-quote')?.checked;
+        const quote = card.querySelector('.quote-text')?.textContent?.trim();
+        const prose = card.querySelector('.prose-content');
+
+        let html = '<h1>' + title + '</h1>';
+        let plain = title + '\n\n';
+
+        // Add quote if checked
+        if (includeQuote && quote) {
+          html += '<blockquote><em>"' + quote + '"</em></blockquote>';
+          plain += '"' + quote + '"\n\n';
+        }
+
+        // Walk prose content, stop at footer hr
+        const elements = prose.querySelectorAll('h2, h3, p, li, blockquote, hr');
+        let hitHr = false;
+        for (const el of elements) {
+          if (el.tagName === 'HR') { hitHr = true; continue; }
+          if (hitHr) continue;
+
+          const tag = el.tagName.toLowerCase();
+          const text = el.textContent.trim();
+          if (!text) continue;
+
+          if (tag === 'h2') {
+            html += '<h2>' + el.innerHTML + '</h2>';
+            plain += text.toUpperCase() + '\n\n';
+          } else if (tag === 'h3') {
+            html += '<h3>' + el.innerHTML + '</h3>';
+            plain += text + '\n\n';
+          } else {
+            html += '<p>' + el.innerHTML + '</p>';
+            plain += text + '\n\n';
+          }
+        }
+
+        copyRich(html, plain.trim(), this);
+      });
+    });
+
+    // Copy plain text only
+    document.querySelectorAll('.copy-plain-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const card = this.closest('.article-card');
+        const title = card.querySelector('.article-title').textContent.trim();
+        const includeQuote = card.querySelector('.chk-quote')?.checked;
+        const quote = card.querySelector('.quote-text')?.textContent?.trim();
+        const prose = card.querySelector('.prose-content');
+
+        let plain = title + '\n\n';
+        if (includeQuote && quote) {
+          plain += '"' + quote + '"\n\n---\n\n';
+        }
+
+        const elements = prose.querySelectorAll('h2, h3, p, li, blockquote, hr');
+        let hitHr = false;
+        for (const el of elements) {
+          if (el.tagName === 'HR') { hitHr = true; continue; }
+          if (hitHr) continue;
+          const text = el.textContent.trim();
+          if (!text) continue;
+          const tag = el.tagName.toLowerCase();
+          if (tag === 'h2') plain += text.toUpperCase() + '\n\n';
+          else plain += text + '\n\n';
+        }
+
+        navigator.clipboard.writeText(plain.trim()).then(() => {
+          this.textContent = 'Copied!';
+          setTimeout(() => { this.textContent = 'Copy Plain Text'; }, 2000);
+        });
+      });
+    });
+
+    async function copyRich(html, plain, btn) {
+      try {
+        const htmlBlob = new Blob([html], { type: 'text/html' });
+        const textBlob = new Blob([plain], { type: 'text/plain' });
+        await navigator.clipboard.write([
+          new ClipboardItem({ 'text/html': htmlBlob, 'text/plain': textBlob })
+        ]);
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy for X'; }, 2000);
+      } catch {
+        await navigator.clipboard.writeText(plain);
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy for X'; }, 2000);
+      }
+    }
+  </script>
+</body>
+</html>
