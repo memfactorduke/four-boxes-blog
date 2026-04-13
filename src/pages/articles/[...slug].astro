@@ -172,33 +172,48 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
       const title = document.querySelector('h1')?.textContent?.trim() || '';
       const body = document.getElementById('article-body');
       if (!body) return;
-      // Get clean text: title + two newlines + body text with paragraph breaks
-      const paragraphs = body.querySelectorAll('p, h2, h3, li, blockquote');
-      let text = title + '\n\n';
-      paragraphs.forEach(el => {
+
+      // Build both HTML (for rich paste into X Articles) and plain text (fallback)
+      let html = '<h1>' + title + '</h1>';
+      let plain = title + '\n\n';
+
+      // Walk through article content, skip the attribution footer
+      const elements = body.querySelectorAll('h2, h3, p, li, blockquote, hr');
+      let hitFooterHr = false;
+      for (const el of elements) {
+        if (el.tagName === 'HR') { hitFooterHr = true; continue; }
+        if (hitFooterHr) continue; // skip attribution after the ---
+
         const tag = el.tagName.toLowerCase();
-        const content = el.textContent.trim();
-        if (!content) return;
-        if (tag === 'h2' || tag === 'h3') {
-          text += content + '\n\n';
+        const text = el.textContent.trim();
+        if (!text) continue;
+
+        if (tag === 'h2') {
+          html += '<h2>' + el.innerHTML + '</h2>';
+          plain += text.toUpperCase() + '\n\n';
+        } else if (tag === 'h3') {
+          html += '<h3>' + el.innerHTML + '</h3>';
+          plain += text + '\n\n';
         } else {
-          text += content + '\n\n';
+          // Preserve inner HTML (bold, italic, links)
+          html += '<p>' + el.innerHTML + '</p>';
+          plain += text + '\n\n';
         }
-      });
+      }
+
+      const span = this.querySelector('span');
       try {
-        await navigator.clipboard.writeText(text.trim());
-        const span = this.querySelector('span');
+        // Copy both rich text and plain text — X Articles will use the HTML version
+        const blob = new Blob([html], { type: 'text/html' });
+        const textBlob = new Blob([plain.trim()], { type: 'text/plain' });
+        await navigator.clipboard.write([
+          new ClipboardItem({ 'text/html': blob, 'text/plain': textBlob })
+        ]);
         span.textContent = 'Copied!';
         setTimeout(() => { span.textContent = 'Copy Article'; }, 2000);
       } catch {
-        // Fallback for older browsers
-        const ta = document.createElement('textarea');
-        ta.value = text.trim();
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        const span = this.querySelector('span');
+        // Fallback: plain text only
+        await navigator.clipboard.writeText(plain.trim());
         span.textContent = 'Copied!';
         setTimeout(() => { span.textContent = 'Copy Article'; }, 2000);
       }
