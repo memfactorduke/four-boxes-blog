@@ -33,10 +33,10 @@ tags:
   - "Remedies"
   - "D.C. Court of Appeals"
 court_level:
-  - "state-supreme"
+  - "state-appellate"
 circuits: []
 states:
-  - "DC"
+  - "District of Columbia"
 federal: true
 case_status:
   - "pending-rehearing"

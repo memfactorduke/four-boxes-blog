@@ -39,9 +39,9 @@ court_level:
   - "federal-appellate"
   - "federal-district"
 circuits:
-  - "1st"
+  - "first-circuit"
 states:
-  - "maine"
+  - "Maine"
 federal: true
 case_status:
   - "appellate-ruling"

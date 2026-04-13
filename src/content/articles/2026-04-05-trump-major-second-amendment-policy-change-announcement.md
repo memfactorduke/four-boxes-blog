@@ -26,8 +26,7 @@ tags:
   - "Executive Power"
   - "Pam Bondi"
   - "Right to Acquire"
-court_level:
-  - "executive-branch"
+court_level: []
 circuits: []
 states: []
 federal: true

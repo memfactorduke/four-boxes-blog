@@ -34,7 +34,9 @@ circuits: []
 states: ["Virginia"]
 federal: false
 case_status: []
-content_type: ["Legal Analysis", "Policy Analysis"]
+content_type:
+  - "legal-analysis"
+  - "policy-analysis"
 pull_quote: "The founding fathers actively encouraged Americans to become their own gunsmiths — the very opposite of a historical tradition that would justify Virginia's serialization and registration mandate."
 image_prompt: "A dimly lit colonial-era workshop bench with hand tools — files, a small vise, brass fittings — arranged next to a partially assembled flintlock mechanism. Warm candlelight from a single taper casting long shadows across worn wood grain. Extreme close-up, shallow depth of field, rich amber and deep brown tones. Intimate artisan still life with historical gravitas, editorial photography."
 ---

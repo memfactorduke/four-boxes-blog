@@ -31,18 +31,18 @@ tags:
   - "Lee Zeldin"
   - "Second Amendment"
 court_level:
-  - "SCOTUS"
-  - "appellate"
+  - "supreme-court"
+  - "federal-appellate"
 circuits:
-  - "3rd"
-  - "5th"
-  - "7th"
+  - "third-circuit"
+  - "fifth-circuit"
+  - "seventh-circuit"
 states: []
 federal: true
 case_status:
   - "pending"
 content_type:
-  - "opinion"
+  - "legal-analysis"
   - "news-reaction"
 pull_quote: "The next attorney general must have the fortitude to stop career DOJ attorneys and the Solicitor General's office from pushing bad fact patterns to the Supreme Court — because bad facts make bad law, and bad Second Amendment precedent lasts for generations."
 image_prompt: "A long, dimly lit corridor inside a federal government building, polished marble floor reflecting overhead fluorescent lights, closed wooden office doors receding into the distance. A single door at the far end stands ajar with warm golden light spilling out. Low-angle perspective, deep vanishing point, moody blue-gray tones with one warm accent. Institutional photography with cinematic atmosphere, shallow depth of field on the distant open door."

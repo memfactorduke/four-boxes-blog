@@ -49,9 +49,9 @@ tags:
 court_level:
   - "federal-district"
 circuits:
-  - "8th"
+  - "eighth-circuit"
 states:
-  - "MO"
+  - "Missouri"
 federal: true
 case_status:
   - "briefing"
@@ -61,11 +61,11 @@ pull_quote: "If you support the Second Amendment and you find yourself relying u
 image_prompt: "A stark federal courtroom interior with heavy oak counsel tables and empty leather chairs, a single thick legal brief lying open under harsh fluorescent overhead lighting. Close-up on the brief's pages with shallow depth of field, the courtroom receding into cool blue shadow behind. Clinical and institutional atmosphere, desaturated tones with warm amber accent on the polished wood grain, documentary photography feel."
 ---
 
-The Trump administration deserves credit for its pro-Second Amendment posture — from its amicus brief in **Barnett v. Raoul** to Harmeet Dhillon's personal appearance before the Seventh Circuit. But unforced errors by DOJ line attorneys continue to undermine that agenda. The latest example is a brief filed in the Eastern District of Missouri in **Brown v. ATF**, the major challenge to the National Firearms Act's regulation of suppressors and short-barreled rifles. The brief misapplies Supreme Court precedent in ways difficult to reconcile with either *Heller* or *Bruen* — and somebody at the Department of Justice needs to get control of these filings.
+The Trump administration deserves credit for its pro-Second Amendment posture — from its amicus brief in *Barnett v. Raoul* to Harmeet Dhillon's personal appearance before the Seventh Circuit. But unforced errors by DOJ line attorneys continue to undermine that agenda. The latest example is a brief filed in the Eastern District of Missouri in *Brown v. ATF*, the major challenge to the National Firearms Act's regulation of suppressors and short-barreled rifles. The brief misapplies Supreme Court precedent in ways difficult to reconcile with either *Heller* or *Bruen* — and somebody at the Department of Justice needs to get control of these filings.
 
 ## The Case: Brown v. ATF
 
-**Brown v. ATF** was filed in August 2025 by the Second Amendment Foundation, Firearms Policy Coalition, NRA, and American Suppressor Association, along with individual plaintiffs including Chris Brown. The lawsuit argues that suppressors and short-barreled rifles should be removed entirely from the NFA's regulatory framework, particularly after the One Big Beautiful Bill Act zeroed out the $200 NFA excise tax on these items effective January 1, 2026. With the taxing power hook eliminated, plaintiffs contend that the remaining NFA registration regime lacks constitutional authorization and that these items are constitutionally protected arms under the Second Amendment.
+*Brown v. ATF* was filed in August 2025 by the Second Amendment Foundation, Firearms Policy Coalition, NRA, and American Suppressor Association, along with individual plaintiffs including Chris Brown. The lawsuit argues that suppressors and short-barreled rifles should be removed entirely from the NFA's regulatory framework, particularly after the One Big Beautiful Bill Act zeroed out the $200 NFA excise tax on these items effective January 1, 2026. With the taxing power hook eliminated, plaintiffs contend that the remaining NFA registration regime lacks constitutional authorization and that these items are constitutionally protected arms under the Second Amendment.
 
 The argument is straightforward: treat suppressors and short-barreled rifles the same as any ordinary handgun or semiautomatic rifle — no NFA registration, no special regulatory burden.
 
@@ -85,11 +85,11 @@ The brief argues that because the NFA's provisions could theoretically be applie
 
 ## The Registration Problem
 
-The DOJ continues to defend the NFA's registration regime by analogizing it to a shall-issue licensing system. But registration and licensing are constitutionally distinct categories. As then-Judge Brett Kavanaugh explained at length in his dissent in **Heller II** at the DC Court of Appeals in 2011, a registration requirement is a precursor to confiscation — a government-maintained record of who owns what — while a licensing regime merely verifies that an individual is not a prohibited person. The two serve fundamentally different governmental purposes and carry fundamentally different constitutional implications.
+The DOJ continues to defend the NFA's registration regime by analogizing it to a shall-issue licensing system. But registration and licensing are constitutionally distinct categories. As then-Judge Brett Kavanaugh explained at length in his dissent in *Heller II* at the DC Court of Appeals in 2011, a registration requirement is a precursor to confiscation — a government-maintained record of who owns what — while a licensing regime merely verifies that an individual is not a prohibited person. The two serve fundamentally different governmental purposes and carry fundamentally different constitutional implications.
 
 ## The Bigger Picture
 
-The Trump administration, through Dhillon and the Civil Rights Division, has taken strong positions in cases like **Barnett v. Raoul** and **Cheeseman v. Platkin**. But the left hand does not know what the right hand is doing. While DOJ argues against arms bans in the Seventh Circuit, DOJ attorneys in Missouri file briefs contradicting the administration's own doctrinal positions.
+The Trump administration, through Dhillon and the Civil Rights Division, has taken strong positions in cases like *Barnett v. Raoul* and *Cheeseman v. Platkin*. But the left hand does not know what the right hand is doing. While DOJ argues against arms bans in the Seventh Circuit, DOJ attorneys in Missouri file briefs contradicting the administration's own doctrinal positions.
 
 Someone at the Department of Justice needs to make clear that briefs inconsistent with Supreme Court precedent will not be tolerated. This is not rocket science. It is paint by numbers — and these lawyers keep coloring outside the lines.
 

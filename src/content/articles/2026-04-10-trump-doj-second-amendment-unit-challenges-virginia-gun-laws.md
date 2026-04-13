@@ -47,7 +47,9 @@ circuits: []
 states: ["Virginia"]
 federal: true
 case_status: []
-content_type: ["Legal Analysis", "Policy Analysis"]
+content_type:
+  - "legal-analysis"
+  - "policy-analysis"
 pull_quote: "This Civil Rights Division will seek to enjoin any attempt to infringe the right of law-abiding Virginians to acquire constitutionally protected arms that are possessed by literally tens of millions of Americans."
 image_prompt: "The exterior of the Virginia State Capitol building in Richmond, shot from a low angle at dusk with deep blue twilight sky, warm amber light glowing from the neoclassical columned portico. A single spotlight rakes across the white limestone facade, casting long dramatic shadows from the columns. Wide-angle documentary photography, desaturated cool tones with warm accent from interior light, shallow atmospheric haze. Moody and institutional, editorial architecture photography."
 ---

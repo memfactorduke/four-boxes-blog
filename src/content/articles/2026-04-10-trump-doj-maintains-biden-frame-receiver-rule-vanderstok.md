@@ -31,11 +31,11 @@ tags:
   - "Second Amendment Foundation"
 court_level:
   - "federal-district"
-  - "scotus"
+  - "supreme-court"
 circuits:
-  - "5th"
+  - "fifth-circuit"
 states:
-  - "TX"
+  - "Texas"
 federal: true
 case_status:
   - "pending"
