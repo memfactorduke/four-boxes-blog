@@ -11,11 +11,6 @@ isbn: "9798888455364"
 summary: "The October 7, 2023 Hamas massacre exposed a devastating truth: Israel's restrictive gun laws left most citizens defenseless when terrorists struck. I examine how Israel's experience powerfully reinforces the American Second Amendment's wisdom — that the right of individuals to arm themselves is the last line of defense when government protection fails."
 amazon_rating: 4.9
 amazon_ratings_count: 94
-endorsements:
-  - quote: "Smith demonstrates conclusively that disarming citizens costs lives. October 7 proved it beyond any doubt."
-    source: "John Lott, President of the Crime Prevention Research Center"
-  - quote: "A must-read for anyone who cares about self-defense as a human right."
-    source: "Tom Fitton, President of Judicial Watch"
 legal_topics:
   - "second-amendment"
   - "right-to-bear-arms"

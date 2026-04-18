@@ -58,11 +58,6 @@ const books = (await getCollection('books'))
                 <span class="text-[10px] text-warm-gray">{book.data.publisher} &middot; {new Date(book.data.publish_date + 'T00:00:00').getFullYear()}</span>
               </div>
               <p class="text-sm text-ink/70 mt-2.5 leading-relaxed line-clamp-3 font-[Lora]">{book.data.summary}</p>
-              {book.data.endorsements.length > 0 && (
-                <p class="text-[11px] text-warm-gray mt-2 italic line-clamp-2 font-[Lora]">
-                  &ldquo;{book.data.endorsements[0].quote}&rdquo; — {book.data.endorsements[0].source}
-                </p>
-              )}
               <div class="flex flex-wrap gap-1.5 mt-2.5">
                 {book.data.legal_topics.slice(0, 4).map(topic => (
                   <span class="font-[Figtree] text-[10px] bg-brass/15 text-brass-dark px-2 py-0.5 rounded-sm font-medium uppercase tracking-wide capitalize">

@@ -11,11 +11,6 @@ isbn: "9781637589236"
 summary: "Drawing on the harrowing lessons of Russia's invasion of Ukraine, I make the case that the right to bear arms is not an abstract legal principle — it is a matter of national survival. When Ukrainian civilians found themselves defenseless against an invading army, the world saw in real time what happens when a population is disarmed. This book connects those lessons directly to the American Second Amendment debate."
 amazon_rating: 4.8
 amazon_ratings_count: 187
-endorsements:
-  - quote: "A powerful and timely reminder of why the Second Amendment exists."
-    source: "Dana Loesch, nationally syndicated radio host"
-  - quote: "Mark Smith makes the irrefutable case that an armed citizenry is the foundation of a free society."
-    source: "David Harsanyi, author of First Freedom"
 legal_topics:
   - "second-amendment"
   - "right-to-bear-arms"

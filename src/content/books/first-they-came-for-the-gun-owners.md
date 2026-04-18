@@ -11,11 +11,6 @@ isbn: "9781642932010"
 summary: "I expose the all-encompassing nature of the anti-gun lobby's attack on the right to keep and bear arms. This isn't just about guns — it's about a systematic campaign to strip Americans of their fundamental freedoms. I lay out the playbook the anti-gun movement uses and show gun owners exactly how to fight back."
 amazon_rating: 4.7
 amazon_ratings_count: 152
-endorsements:
-  - quote: "A brilliant, comprehensive takedown of the gun control movement's strategy."
-    source: "Sean Hannity, Fox News"
-  - quote: "Mark Smith is one of the most important voices defending the Second Amendment today."
-    source: "Larry Elder, bestselling author and radio host"
 legal_topics:
   - "second-amendment"
   - "right-to-bear-arms"

@@ -10,11 +10,6 @@ isbn: "9780895260857"
 summary: "My New York Times bestseller that deconstructs the biggest liberal myths with facts, data, and sharp analysis. From taxes and welfare to gun control and foreign policy, I provide the arguments every conservative needs to win debates and expose the Left's hypocrisy."
 amazon_rating: 4.5
 amazon_ratings_count: 68
-endorsements:
-  - quote: "Mark Smith is one of the fastest rising legal stars in the country."
-    source: "Ann Coulter, bestselling author"
-  - quote: "The perfect ammunition for anyone facing down liberal arguments."
-    source: "Publishers Weekly"
 legal_topics:
   - "constitutional-rights"
   - "gun-control"

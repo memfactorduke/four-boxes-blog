@@ -52,6 +52,41 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <script is:inline src="/pagefind/pagefind-ui.js"></script>
   </head>
   <body class="min-h-screen flex flex-col">
+    <!-- Draft site disclaimer (dismissible) -->
+    <div id="draft-banner" class="hidden bg-oxblood text-white font-[Figtree] text-[11px] sm:text-xs leading-snug">
+      <div class="max-w-7xl mx-auto px-4 py-1.5 flex items-center gap-3">
+        <span class="flex-1 text-center">
+          <strong class="font-semibold uppercase tracking-wider text-brass mr-1">Draft</strong>
+          <span class="text-white/90">Site is a work in progress. Spot an issue? Let me know. Not legal advice.</span>
+        </span>
+        <button
+          id="draft-banner-close"
+          type="button"
+          aria-label="Dismiss draft notice"
+          class="shrink-0 text-white/60 hover:text-white transition-colors p-0.5 -my-0.5 rounded"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <script is:inline>
+      (function () {
+        var banner = document.getElementById('draft-banner');
+        if (!banner) return;
+        try {
+          if (localStorage.getItem('draft-banner-dismissed') !== '1') {
+            banner.classList.remove('hidden');
+          }
+        } catch (e) {
+          banner.classList.remove('hidden');
+        }
+        var btn = document.getElementById('draft-banner-close');
+        btn && btn.addEventListener('click', function () {
+          banner.remove();
+          try { localStorage.setItem('draft-banner-dismissed', '1'); } catch (e) {}
+        });
+      })();
+    </script>
     <!-- Top accent bar -->
     <div class="h-0.5 bg-gradient-to-r from-brass-dark via-oxblood to-brass-dark"></div>
 

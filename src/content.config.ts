@@ -48,14 +48,6 @@ const books = defineCollection({
     summary: z.string(),
     amazon_rating: z.number().optional(),
     amazon_ratings_count: z.number().optional(),
-    endorsements: z
-      .array(
-        z.object({
-          quote: z.string(),
-          source: z.string(),
-        }),
-      )
-      .default([]),
     legal_topics: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
   }),

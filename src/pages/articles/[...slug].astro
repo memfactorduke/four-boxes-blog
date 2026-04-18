@@ -54,9 +54,14 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
 
         <div class="flex items-center gap-3 text-sm text-white/50 font-[Figtree]">
           <div class="flex items-center gap-2">
-            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-brass/40 to-brass/20 flex items-center justify-center">
-              <span class="text-[10px] text-brass font-bold font-[Fraunces]">MWS</span>
-            </div>
+            <img
+              src="/images/mark-smith-avatar.jpg"
+              alt="Mark W. Smith"
+              width="28"
+              height="28"
+              loading="lazy"
+              class="w-7 h-7 rounded-full object-cover ring-1 ring-brass/30"
+            />
             <span class="text-white/70 font-medium">{data.author}</span>
           </div>
           <span class="w-1 h-1 rounded-full bg-white/20"></span>
@@ -87,7 +92,7 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
               <div class="mt-3 flex items-center justify-between">
                 <span class="text-sm text-obsidian/50 font-medium font-[Figtree]">— Mark W. Smith</span>
                 <a
-                  href={`https://x.com/intent/tweet?text=${encodeURIComponent(`"${data.pull_quote}"\n\n— @markwsmithlaw\n\n`)}&url=${encodeURIComponent(`https://2ablog.com/articles/${Astro.params.slug}`)}`}
+                  href={`https://x.com/intent/tweet?text=${encodeURIComponent(`"${data.pull_quote}"\n\n— @fourboxesdiner\n\n`)}&url=${encodeURIComponent(`https://2ablog.com/articles/${Astro.params.slug}`)}`}
                   target="_blank"
                   rel="noopener"
                   class="inline-flex items-center gap-1.5 text-xs text-obsidian/40 hover:text-obsidian/70 transition-colors group bg-obsidian/5 hover:bg-obsidian/10 px-3 py-1.5 rounded-full"

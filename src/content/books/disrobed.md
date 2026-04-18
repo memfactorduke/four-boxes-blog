@@ -10,11 +10,6 @@ isbn: "9780307339256"
 summary: "I lay out a comprehensive battle plan for conservatives to reclaim the federal judiciary from activist judges who legislate from the bench. This book examines how the Left captured the courts and provides a strategic roadmap for restoring originalist and textualist principles to American jurisprudence."
 amazon_rating: 4.3
 amazon_ratings_count: 45
-endorsements:
-  - quote: "Author Mark W. Smith has come out with all guns blazing."
-    source: "New York Post"
-  - quote: "This tome really should be the official handbook of the conservative movement."
-    source: "Townhall.com"
 legal_topics:
   - "constitutional-rights"
   - "judicial-appointments"

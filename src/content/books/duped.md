@@ -10,11 +10,6 @@ isbn: "9781642930115"
 summary: "In the wake of the Parkland school shooting, the anti-gun lobby launched its most aggressive campaign yet. I break down exactly how they exploit tragedy to advance a pre-existing political agenda, expose the flawed arguments behind their proposals, and arm gun owners with the facts they need to fight back effectively."
 amazon_rating: 4.6
 amazon_ratings_count: 89
-endorsements:
-  - quote: "Fact-based, hard-hitting, and impossible to refute. This is the book gun owners have been waiting for."
-    source: "Andrew Pollack, father of Parkland victim Meadow Pollack"
-  - quote: "Mark Smith cuts through the emotional manipulation with facts and legal precision."
-    source: "Katie Pavlich, Fox News contributor and author"
 legal_topics:
   - "second-amendment"
   - "firearms-regulation"
