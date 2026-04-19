@@ -2,6 +2,66 @@ import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { getStore } from '@netlify/blobs';
 
+// --- Abuse Controls ---
+
+const ALLOWED_ORIGINS = new Set([
+  'https://2ablog.com',
+  'https://www.2ablog.com',
+  'http://localhost:4321',
+  'http://localhost:8888',
+]);
+
+const RATE_LIMIT_PER_DAY = 50;
+const DAILY_SPEND_CAP_CENTS = 1000; // $10/day hard cap
+
+function buildCorsHeaders(origin) {
+  const h = {
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Vary': 'Origin',
+  };
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    h['Access-Control-Allow-Origin'] = origin;
+  }
+  return h;
+}
+
+function getClientIp(req) {
+  return req.headers.get('x-nf-client-connection-ip')
+    || (req.headers.get('x-forwarded-for') || '').split(',')[0].trim()
+    || 'unknown';
+}
+
+async function checkAndIncrementRateLimit(ip) {
+  try {
+    const store = getStore('rate-limit');
+    const today = new Date().toISOString().slice(0, 10);
+    const key = `${today}:${ip}`;
+    const current = (await store.get(key, { type: 'json' })) || { count: 0 };
+    if (current.count >= RATE_LIMIT_PER_DAY) {
+      return { allowed: false, count: current.count };
+    }
+    current.count += 1;
+    await store.set(key, JSON.stringify(current));
+    return { allowed: true, count: current.count };
+  } catch (err) {
+    console.warn('Rate limit check failed, failing open:', err.message);
+    return { allowed: true, count: 0 };
+  }
+}
+
+async function isUnderDailySpendCap() {
+  try {
+    const store = getStore('api-usage');
+    const today = new Date().toISOString().slice(0, 10);
+    const data = await store.get(today, { type: 'json' });
+    const cents = data?.est_cost_cents || 0;
+    return cents < DAILY_SPEND_CAP_CENTS;
+  } catch {
+    return true;
+  }
+}
+
 // --- Usage Tracking ---
 async function trackUsage({ grokTokens, perplexityUsed, voyageUsed, duration }) {
   try {
@@ -247,11 +307,8 @@ async function vectorSearch(query, data, limit = 5) {
 // --- API Handler ---
 
 export default async function handler(req) {
-  const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-  };
+  const origin = req.headers.get('origin') || '';
+  const headers = buildCorsHeaders(origin);
 
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204, headers });
@@ -260,6 +317,21 @@ export default async function handler(req) {
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405, headers: { ...headers, 'Content-Type': 'application/json' },
+    });
+  }
+
+  if (!(await isUnderDailySpendCap())) {
+    return new Response(JSON.stringify({ error: 'Daily usage cap reached. Try again tomorrow.' }), {
+      status: 503, headers: { ...headers, 'Content-Type': 'application/json' },
+    });
+  }
+
+  const ip = getClientIp(req);
+  const rate = await checkAndIncrementRateLimit(ip);
+  if (!rate.allowed) {
+    return new Response(JSON.stringify({ error: 'Rate limit exceeded. Try again tomorrow.' }), {
+      status: 429,
+      headers: { ...headers, 'Content-Type': 'application/json', 'Retry-After': '3600' },
     });
   }
 
@@ -275,6 +347,14 @@ export default async function handler(req) {
 
     if (!message || typeof message !== 'string' || message.length > 2000) {
       return new Response(JSON.stringify({ error: 'Invalid message' }), {
+        status: 400, headers: { ...headers, 'Content-Type': 'application/json' },
+      });
+    }
+
+    if (!Array.isArray(history) || history.length > 20 ||
+        history.some(m => !m || typeof m.content !== 'string' || m.content.length > 4000 ||
+                          (m.role !== 'user' && m.role !== 'assistant'))) {
+      return new Response(JSON.stringify({ error: 'Invalid history' }), {
         status: 400, headers: { ...headers, 'Content-Type': 'application/json' },
       });
     }

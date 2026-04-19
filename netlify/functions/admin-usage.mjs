@@ -1,10 +1,38 @@
 import { getStore } from '@netlify/blobs';
+import { timingSafeEqual } from 'node:crypto';
+
+function safeEqual(a, b) {
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return timingSafeEqual(bufA, bufB);
+}
 
 export default async function handler(req) {
   const headers = {
     'Content-Type': 'text/html; charset=utf-8',
-    'Cache-Control': 'no-cache',
+    'Cache-Control': 'no-store',
   };
+
+  const adminToken = process.env.ADMIN_TOKEN;
+  if (!adminToken) {
+    return new Response('Admin dashboard not configured. Set ADMIN_TOKEN env var in Netlify.', {
+      status: 503,
+      headers: { 'Content-Type': 'text/plain' },
+    });
+  }
+
+  const authHeader = req.headers.get('authorization') || '';
+  const expected = 'Basic ' + Buffer.from(`admin:${adminToken}`).toString('base64');
+  if (!authHeader.startsWith('Basic ') || !safeEqual(authHeader, expected)) {
+    return new Response('Unauthorized', {
+      status: 401,
+      headers: {
+        'WWW-Authenticate': 'Basic realm="Four Boxes Admin", charset="UTF-8"',
+        'Content-Type': 'text/plain',
+      },
+    });
+  }
 
   try {
     // Fetch GoatCounter analytics

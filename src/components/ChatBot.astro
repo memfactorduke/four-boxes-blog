@@ -403,21 +403,44 @@
   }
 
   function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function safeUrl(url) {
+    if (typeof url !== 'string') return null;
+    const trimmed = url.trim();
+    if (!trimmed) return null;
+    if (/[\s<>"'`]/.test(trimmed)) return null;
+    if (trimmed.startsWith('/') || trimmed.startsWith('#')) return trimmed;
+    try {
+      const u = new URL(trimmed);
+      if (u.protocol !== 'http:' && u.protocol !== 'https:') return null;
+      return u.href;
+    } catch {
+      return null;
+    }
   }
 
   function renderMarkdown(text) {
-    // Inline formatting
+    // LLM output is untrusted — escape HTML before applying markdown rules.
+    text = escapeHtml(text);
+
     function inlineFmt(s) {
       return s
-        // Links: [text](url) — internal links stay in same tab
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_, text, url) {
-          if (url.startsWith('/') || url.startsWith('#')) {
-            return `<a href="${url}">${text}</a>`;
+        // Links: [text](url) — validate scheme, escape href. linkText is already HTML-escaped.
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_, linkText, rawUrl) {
+          const safe = safeUrl(rawUrl);
+          if (!safe) return linkText;
+          const href = escapeHtml(safe);
+          if (safe.startsWith('/') || safe.startsWith('#')) {
+            return `<a href="${href}">${linkText}</a>`;
           }
-          return `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+          return `<a href="${href}" target="_blank" rel="noopener">${linkText}</a>`;
         })
         // Bold
         .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
