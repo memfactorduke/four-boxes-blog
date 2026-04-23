@@ -1,5 +1,5 @@
 ---
-title: "PLACEHOLDER TITLE — REPLACE ME"
+title: "Where the Trump DOJ Is Headed on the Second Amendment: A Post-NRA Convention Read"
 date: "2026-04-23"
 youtube_url: "https://www.youtube.com/watch?v=kS0kPScwsqc"
 youtube_id: "kS0kPScwsqc"
