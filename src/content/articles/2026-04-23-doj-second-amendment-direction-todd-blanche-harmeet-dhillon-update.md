@@ -4,7 +4,7 @@ date: "2026-04-23"
 youtube_url: "https://www.youtube.com/watch?v=kS0kPScwsqc"
 youtube_id: "kS0kPScwsqc"
 thumbnail: "/images/articles/2026-04-23-doj-second-amendment-direction-todd-blanche-harmeet-dhillon-update.jpg"
-duration: "00:00"
+duration: "19:24"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "District of Columbia v. Heller"
@@ -72,7 +72,7 @@ content_type:
   - "legal-analysis"
   - "news-reaction"
 pull_quote: "The DOJ is a defense law firm with one client — the federal government — and that single fact explains almost everything about which Second Amendment cases it will fight and which it will not."
-image_prompt: "An empty Solicitor General's lectern at the U.S. Supreme Court bar, mahogany and brass, photographed from the perspective of an empty advocate's chair just behind it. Polished marble floor reflecting overhead chandelier light, deep shadow falling across the bench beyond. Single warm directional light source from the left, the rest of the chamber dissolving into cool blue shadow. Cinematic editorial photography, shallow depth of field on the lectern's worn brass edge, deeply contemplative mood, rich warm amber against cold institutional blue palette."
+image_prompt: "A polished oak law library at deep blue hour, illuminated only by a single warm green-shaded brass banker's lamp pooling golden light across an open reading table cluttered with half-stacked leather-bound volumes and a worn leather portfolio. Tall floor-to-ceiling bookshelves of antique case reporters dissolve into deep blue shadow at the edges of the frame, their gilt spines catching only the faintest cool highlights. Wide establishing shot from across the table at sitting eye level, deeply moody dramatic single-source lighting, single warm amber pool against cold deep navy ambient shadow, oxblood leather and antique gilt brass against the cold blue darkness beyond, intimate scholarly atmosphere of late-night deliberation, shallow depth of field falling off into mystery beyond the lamplight, cinematic editorial still life photography."
 ---
 
 I came back from the 2026 NRA convention with a clearer read on where the Trump DOJ is headed on the Second Amendment, and on balance the news is good. Acting Attorney General Todd Blanche, ATF Chief Counsel Robert Leider, and Assistant Attorney General Harmeet Dhillon, who runs the Civil Rights Division, all spoke, and what they said — combined with conversations with people who know the building — confirms most of what I have been arguing here.
