@@ -2,19 +2,43 @@
 interface Props {
   youtube_id: string;
   title: string;
+  thumbnail?: string;
 }
 
-const { youtube_id, title } = Astro.props;
+const { youtube_id, title, thumbnail } = Astro.props;
+const hasVideo = youtube_id.length > 0;
 ---
 
-<div class="relative w-full aspect-video rounded-md overflow-hidden mb-10 border border-parchment-dark">
-  <iframe
-    src={`https://www.youtube-nocookie.com/embed/${youtube_id}`}
-    title={title}
-    class="absolute inset-0 w-full h-full"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    loading="lazy"
-  ></iframe>
-</div>
+{hasVideo ? (
+  <div class="relative w-full aspect-video rounded-md overflow-hidden mb-10 border border-parchment-dark">
+    <iframe
+      src={`https://www.youtube-nocookie.com/embed/${youtube_id}`}
+      title={title}
+      class="absolute inset-0 w-full h-full"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+) : (
+  <div class="relative w-full aspect-video rounded-md overflow-hidden mb-10 border border-parchment-dark bg-obsidian">
+    {thumbnail && (
+      <img
+        src={thumbnail}
+        alt={title}
+        class="absolute inset-0 w-full h-full object-cover opacity-50"
+        loading="lazy"
+      />
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/40 to-transparent"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <span class="bg-brass/20 text-brass text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-[0.2em] font-[Figtree] mb-4 backdrop-blur-sm">
+        Video Coming Soon
+      </span>
+      <p class="font-[Lora] text-white/80 text-sm md:text-base max-w-md leading-relaxed">
+        The video for this analysis hasn&rsquo;t been published yet. Check back shortly &mdash; the embed will appear here as soon as it goes live.
+      </p>
+    </div>
+  </div>
+)}

@@ -6,10 +6,14 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.string(),
-    youtube_url: z.string().url(),
-    youtube_id: z.string(),
+    // youtube_url, youtube_id, and duration may be empty strings when the
+    // article is published before the underlying video goes live. The UI
+    // renders a "Video Coming Soon" placeholder when these are empty, and
+    // scripts/link-video.mjs backfills them once the video drops.
+    youtube_url: z.union([z.string().url(), z.literal("")]).default(""),
+    youtube_id: z.string().default(""),
     thumbnail: z.string(),
-    duration: z.string(),
+    duration: z.string().default(""),
     author: z.string().default("Mark W. Smith"),
     cases_discussed: z
       .array(

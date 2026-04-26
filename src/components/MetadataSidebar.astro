@@ -19,6 +19,8 @@ interface Props {
   duration: string;
 }
 
+
+
 const {
   cases_discussed,
   court_level,
@@ -42,25 +44,39 @@ const formattedDate = new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+const hasVideo = youtube_url.length > 0;
+const subline = duration ? `${duration} · ${formattedDate}` : formattedDate;
 ---
 
 <aside class="rounded-md border border-parchment-dark overflow-hidden">
-  <!-- Watch on YouTube CTA -->
-  <a
-    href={youtube_url}
-    target="_blank"
-    rel="noopener"
-    class="group flex items-center gap-3 bg-obsidian p-4 text-white hover:bg-obsidian-light transition-colors"
-  >
-    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-brass/20 transition-colors">
-      <svg class="w-4 h-4 text-brass" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+  {hasVideo ? (
+    <a
+      href={youtube_url}
+      target="_blank"
+      rel="noopener"
+      class="group flex items-center gap-3 bg-obsidian p-4 text-white hover:bg-obsidian-light transition-colors"
+    >
+      <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-brass/20 transition-colors">
+        <svg class="w-4 h-4 text-brass" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 00-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 00.5 6.19 31.97 31.97 0 000 12a31.97 31.97 0 00.5 5.81 3.02 3.02 0 002.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 002.12-2.14A31.97 31.97 0 0024 12a31.97 31.97 0 00-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="text-sm font-semibold font-[Figtree]">Watch on YouTube</div>
+        <div class="text-[11px] text-white/40 font-[Figtree]">{subline}</div>
+      </div>
+      <svg class="w-4 h-4 text-white/30 group-hover:text-brass group-hover:translate-x-0.5 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+    </a>
+  ) : (
+    <div class="flex items-center gap-3 bg-obsidian p-4 text-white">
+      <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+        <svg class="w-4 h-4 text-brass/60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="text-sm font-semibold font-[Figtree]">Video Coming Soon</div>
+        <div class="text-[11px] text-white/40 font-[Figtree]">Posted {formattedDate}</div>
+      </div>
     </div>
-    <div class="flex-1 min-w-0">
-      <div class="text-sm font-semibold font-[Figtree]">Watch on YouTube</div>
-      <div class="text-[11px] text-white/40 font-[Figtree]">{duration} &middot; {formattedDate}</div>
-    </div>
-    <svg class="w-4 h-4 text-white/30 group-hover:text-brass group-hover:translate-x-0.5 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
-  </a>
+  )}
 
   <div class="p-5 space-y-6 bg-parchment/50">
     <!-- Cases -->

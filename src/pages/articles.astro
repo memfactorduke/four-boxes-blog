@@ -41,7 +41,7 @@ const allTopics = [...new Set(articles.flatMap(a => a.data.legal_topics))];
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
             <span class="absolute bottom-2.5 right-2.5 bg-black/60 text-white/90 text-[11px] px-2 py-0.5 rounded backdrop-blur-sm font-medium">
-              {article.data.duration}
+              {article.data.duration || 'Coming Soon'}
             </span>
             <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
               <div class="w-14 h-14 rounded-full bg-brass/90 flex items-center justify-center shadow-xl shadow-brass/30 scale-90 group-hover:scale-100 transition-transform">

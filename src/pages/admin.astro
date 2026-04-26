@@ -99,11 +99,15 @@ const rendered = await Promise.all(
           <!-- Meta -->
           <div class="section">
             <div class="meta-row">
-              <span>Duration: {article.data.duration}</span>
-              <span>ID: {article.data.youtube_id}</span>
-              <a href={article.data.youtube_url} target="_blank" rel="noopener" class="video-link">
-                Watch on YouTube ↗
-              </a>
+              <span>Duration: {article.data.duration || '(pending)'}</span>
+              <span>ID: {article.data.youtube_id || '(pending)'}</span>
+              {article.data.youtube_url ? (
+                <a href={article.data.youtube_url} target="_blank" rel="noopener" class="video-link">
+                  Watch on YouTube ↗
+                </a>
+              ) : (
+                <span class="video-link" style="opacity: 0.5;">Video Coming Soon</span>
+              )}
             </div>
           </div>
 

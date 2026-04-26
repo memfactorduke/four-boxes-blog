@@ -92,7 +92,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
                     </span>
                   </div>
                   <span class="absolute bottom-3 right-3 bg-obsidian/80 text-white/90 text-xs font-[Figtree] px-2 py-0.5 rounded-sm backdrop-blur-sm">
-                    {featuredArticle.data.duration}
+                    {featuredArticle.data.duration || 'Video Coming Soon'}
                   </span>
                 </div>
                 <div class="p-5">
