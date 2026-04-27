@@ -1,10 +1,10 @@
 ---
 title: "Tennessee's Deadly-Force Debate and the Missing Half of the Second Amendment"
 date: "2026-04-26"
-youtube_url: ""
-youtube_id: ""
+youtube_url: "https://www.youtube.com/watch?v=eR9It0HTO1g"
+youtube_id: "eR9It0HTO1g"
 thumbnail: "/images/articles/2026-04-26-tennessee-deadly-force-defense-of-property-second-amendment-right-to-use.jpg"
-duration: ""
+duration: "19:57"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "R v. Martin (Anthony)"
