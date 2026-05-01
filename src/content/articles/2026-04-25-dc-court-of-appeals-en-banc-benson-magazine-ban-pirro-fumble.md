@@ -1,5 +1,5 @@
 ---
-title: "Benson v. United States: How an En Banc Grant Erased a Magazine-Ban Win, and Why DOJ Needs a Second Amendment Czar"
+title: "DOJ 2A Error Demonstrates Why Team Trump Needs a 2nd Amendment Czar Now to Thwart the Deep State"
 date: "2026-04-25"
 youtube_url: "https://www.youtube.com/watch?v=rMxtgjgMlJc"
 youtube_id: "rMxtgjgMlJc"
@@ -13,22 +13,16 @@ cases_discussed:
   - name: "District of Columbia v. Heller"
     citation: "554 U.S. 570 (2008)"
     court: "Supreme Court of the United States"
-  - name: "Heller v. District of Columbia (Heller II)"
-    citation: "670 F.3d 1244 (D.C. Cir. 2011)"
-    court: "U.S. Court of Appeals for the D.C. Circuit"
   - name: "New York State Rifle & Pistol Association v. Bruen"
     citation: "597 U.S. 1 (2022)"
     court: "Supreme Court of the United States"
-  - name: "McDonald v. City of Chicago"
-    citation: "561 U.S. 742 (2010)"
-    court: "Supreme Court of the United States"
-  - name: "Duncan v. Bonta"
-    citation: "No. 25-198 (cert. pending)"
-    court: "Supreme Court of the United States"
-  - name: "Gator's Custom Guns, Inc. v. Washington"
-    citation: "No. 25-153 (cert. pending)"
-    court: "Supreme Court of the United States"
-  - name: "Cheeseman v. Platkin (consolidated with ANJRPC v. Platkin)"
+  - name: "Heller v. District of Columbia (Heller II)"
+    citation: "670 F.3d 1244 (D.C. Cir. 2011)"
+    court: "U.S. Court of Appeals for the D.C. Circuit"
+  - name: "Cheeseman v. Platkin"
+    citation: "Pending en banc"
+    court: "U.S. Court of Appeals for the Third Circuit"
+  - name: "ANJRPC v. Platkin"
     citation: "Pending en banc"
     court: "U.S. Court of Appeals for the Third Circuit"
 legal_topics:
@@ -37,6 +31,7 @@ legal_topics:
   - "common-use"
   - "bruen-framework"
   - "doj-enforcement"
+  - "second-amendment-czar"
 tags:
   - "Second Amendment"
   - "Magazine Ban"
@@ -46,6 +41,9 @@ tags:
   - "DOJ"
   - "En Banc"
   - "Common Use"
+  - "Second Amendment Czar"
+  - "John Sauer"
+  - "Justice Kavanaugh"
 court_level:
   - "Supreme Court"
   - "Federal Circuit"
@@ -55,8 +53,6 @@ circuits:
   - "D.C. Circuit"
 states:
   - "District of Columbia"
-  - "California"
-  - "Washington"
   - "New Jersey"
 federal: true
 case_status:
@@ -65,42 +61,46 @@ case_status:
 content_type:
   - "legal-analysis"
   - "news-reaction"
-pull_quote: "Trading a national magazine-ban precedent for a couple hundred local registration prosecutions is not a close call. It is malpractice on a strategic scale."
+pull_quote: "It was clear error by the Justice Department to jeopardize a pro-Second Amendment ruling for the sake of a few hundred prosecutions for failing to register a firearm in Benson v. US."
 image_prompt: "The limestone facade of the District of Columbia Court of Appeals at the Historic Courthouse on Indiana Avenue, shot from a low angle at dawn. Blue-hour light fading into first warm sun raking across the carved stone columns and pediment, long shadows pooling on the empty marble steps. Documentary architectural photography, cool slate and warm amber palette, shallow depth of field on a single weathered cornerstone, faint mist hanging at the base of the columns, hushed early-morning atmosphere."
 ---
 
-The District of Columbia Court of Appeals has granted en banc rehearing in *Benson v. United States*, and with one procedural stroke the most important magazine-ban victory of the past year has been wiped off the books. That is bad news on its own terms. What makes it worse is that it almost certainly did not have to happen.
+> "It was clear error by the Justice Department to jeopardize a pro-Second Amendment ruling for the sake of a few hundred prosecutions for failing to register a firearm in *Benson v. US*. The need for a true Second Amendment czar has never been greater to stop such mistakes from occurring in the future. The leadership of DOJ has been great on the Second Amendment — but they need to do a better job of controlling the deep state toiling away in the bowels of DOJ."
+>
+> — Professor Mark W. Smith, Four Boxes Diner Host
 
-## An En Banc Grant That Erased the Win
+The District of Columbia Court of Appeals just granted DC's petition for rehearing en banc in the *Benson v. United States* case, which now vacates the most important Second Amendment victory over a "large capacity magazine" ban in modern history. That alone is bad news. What makes it worse is that the Trump Administration's U.S. Attorney's Office for DC under Jeanine Pirro actually supported DC's request for en banc review.
 
-A few months ago, a three-judge panel of the District of Columbia Court of Appeals held, 2-1, that the District's prohibition on magazines holding more than ten rounds violates the Second Amendment. To be clear about which court we are talking about: the District of Columbia Court of Appeals is the *local* high court for the District, the functional equivalent of a state supreme court. It is not the federal U.S. Court of Appeals for the D.C. Circuit. That distinction matters because a ruling from a state-style high court still creates a meaningful split of authority for cert purposes.
+## An En Banc Grant That Erased a Huge 2A Victory
 
-The panel got the analysis right. Magazines are arms in common use by tens of millions of law-abiding Americans for lawful purposes. They cannot, therefore, be "dangerous and unusual," and the government cannot meet its historical burden to ban them. That holding gave the Second Amendment community a high-court ruling on the books striking down a magazine cap, with real weight at the Supreme Court.
+Last month, a three-judge panel of the District of Columbia Court of Appeals held 2-1 that the District's prohibition on magazines holding more than ten rounds violates the Second Amendment. The District of Columbia Court of Appeals is the local high court for the District, the functional equivalent of a state supreme court. It is not to be confused with the federal U.S. Court of Appeals for the D.C. Circuit. This distinction is worth noting because the DC Court of Appeals' decision triggered a "split of authority" though not technically a federal "circuit split."
 
-Then the District petitioned for rehearing en banc. The court granted it. And the moment the grant issued, the panel opinion was automatically vacated.
+The three-judge panel reached the correct conclusion that DC's magazine ban was unconstitutional. Firearm magazines are definitionally "arms" falling within the plain text of the Second Amendment because, as the Supreme Court said in *Bruen*, any "instrument that facilitates armed self defense" is an arm. By banning magazines holding over 10 rounds, DC's gun control law implicates the plain text of the Constitution, which shifts the burden to the government to justify its law. To meet its burden here, DC had to demonstrate that magazines holding over 10 rounds are "dangerous and unusual", which is the only historical tradition of firearms regulation identified by the Supreme Court in *Heller* that would allow government to ban a category of arms consistent with the Second Amendment. Because magazines holding over 10 rounds are undeniably used by tens of millions of law-abiding Americans, DC could not meet its burden, and its law was found to be unconstitutional.
 
-## The Pirro Fumble and the Case for a Second Amendment Czar
+The panel went on to state that because Mr. Benson was unable to register his firearm (that was capable of accepting magazines holding over 10 rounds) with DC's local government, his other convictions for possession of unregistered firearms and possessing firearms without a license also had to be tossed.
 
-Here is where my frustration boils over. When the D.C. Court of Appeals asked the parties for their positions on rehearing, the U.S. Attorney's Office for the District of Columbia, now run by Jeanine Pirro, told the court that yes, the panel was right that the magazine ban is unconstitutional, but the court should nevertheless rehear the case to clean up the registration and licensing issues, because the office wants to preserve Mr. Tyree Benson's other convictions for possessing an unregistered firearm and carrying a pistol without a license.
+DC then petitioned for rehearing en banc asking the entire DC Court of Appeals to reconsider the panel opinion. The US Attorney's Office agreed that en banc review on certain aspects of the case made sense. Thus, with the support of the Trump Administration, the DC Court of Appeals granted rehearing en banc. Once granted, the entire panel decision, including the favorable Second Amendment ruling, was automatically vacated thus eliminating the split of constitutional authority over the magazine ban law.
 
-That is an unforced error of the first order. By blessing rehearing, the office handed the District exactly the procedural lever it needed to vacate a Second Amendment victory that benefits roughly one hundred million American gun owners. Trading a national magazine-ban precedent for a couple hundred local registration prosecutions is not a close call. It is malpractice on a strategic scale.
+## Jeanine Pirro's Office Fumble Demonstrates the Need for a 2A Czar
 
-This is exactly why I have been arguing for a Second Amendment czar inside DOJ: a senior official with explicit authority to vet every Second Amendment-adjacent filing before it leaves a U.S. Attorney's office. Career prosecutors are paid to win convictions, and that is a fine instinct in its lane. It is not the right instinct when the filing in question can erase Heller-Bruen progress. Someone needed to pick up the phone and tell the U.S. Attorney's Office for D.C. not to file that letter. No one did, or no one with the authority to be heard did.
+Here is where my frustration boils over. When the D.C. Court of Appeals asked the parties for their positions on rehearing, the U.S. Attorney's Office for the District of Columbia, now run by Jeanine Pirro, told the court yes, rehearing en banc should occur. Pirro's office argued that although the panel was correct that the magazine ban is unconstitutional, the full court should nevertheless rehear the case to clean up the registration and licensing issues. Pirro's office wanted to preserve Mr. Benson's other convictions for possessing an unregistered firearm and carrying a pistol without a license.
 
-## Why the Panel Was Right, and Why the Damage Is Manageable
+This was an unforced error of the first order. By blessing rehearing, Pirro's office offered the District support to vacate a Second Amendment victory that benefits roughly one hundred million American gun owners. While most American gun owners don't live in DC and are not subject to its ban, by becoming the first final-except-for-SCOTUS court to strike down a magazine ban, the DC Court of Appeals' decision was a critical step forward in getting the Supreme Court to take one of the "mag ban" cases and settle the constitutionality of magazine bans once and for all. Trading a national magazine-ban precedent for a couple hundred local registration prosecutions is not a close call. It's a terrible mistake not only from the perspective of establishing and protecting favorable Second Amendment rulings but also politically where the Trump Administration's support for rehearing creates the public impression that the Administration is not solidly pro-2A.
 
-On the merits, the en banc court should reach the same answer the panel did. Under the Heller-Bruen methodology, step one asks whether the plain text of the Second Amendment covers the conduct. *Bruen* expressly defined "arms" to include any instrument that facilitates armed self-defense. A magazine plainly qualifies. Banning magazines over ten rounds is, functionally, a ban on every modern firearm that fires more than ten rounds without a manual reload, which is a category-wide arms ban.
+This is precisely why I have been arguing for a functional Second Amendment czar inside DOJ: a senior official with explicit presidential authority to vet every Second Amendment-adjacent filing before it is filed in court. (Note: this authority should also cover decisions by John Sauer's Solicitor General's office, but that's a story for another day). Career prosecutors are paid to win convictions. But the pursuit of another courtroom "W" has to be balanced against other priorities like strengthening the Second Amendment rights for over 100 million American gun owners.
 
-That shifts the burden to the government, and the burden is the government's, not the citizen's. *Heller* set the only available historical exception: arms that are "dangerous and unusual." Magazines holding more than ten rounds are owned in the hundreds of millions. By definition they are not unusual, which means they cannot be dangerous and unusual. End of analysis.
+## Why the Original Panel Was Right
 
-The registration argument the U.S. Attorney's Office is trying to preserve is, if anything, weaker. As then-Judge Brett Kavanaugh wrote in his *Heller II* dissent, there is no founding-era historical tradition supporting comprehensive gun-owner registration, and registration is a meaningful step toward confiscation, which the founders feared above almost every other governmental abuse. Justice Joseph Story called the armed citizenry the palladium of the liberties of the republic for a reason.
+On the merits, the en banc DC court should reach the same answer the panel did at least when it comes to the question of whether magazines holding over 10 rounds can be banned. Under the *Heller-Bruen* methodology, step one asks whether the plain text of the Second Amendment covers the conduct being regulated. *Bruen* expressly defined "arms" to include any instrument that facilitates armed self-defense. A magazine plainly qualifies since it helps facilitate armed self defense. No one in a gun fight ever said "I wish I had fewer rounds," and magazines holding over 10 rounds provide more life-defending firepower. Moreover, banning magazines over ten rounds is, functionally, a ban on an entire category of firearms, i.e., firearms capable of firing over ten rounds without a manual reload.
 
-And as Justice Samuel Alito explained in *McDonald v. City of Chicago*, every guarantee in the Bill of Rights imposes public-policy costs. The Fourth and Fifth Amendments make convictions harder every day. That is a feature, not a bug.
+That shifts the burden to the government to justify the modern gun law using historical gun laws. *Heller* set forth the only available longstanding history-based exception for any ban on bearable arms: arms that are "dangerous and unusual." Magazines holding more than ten rounds are owned in the hundreds of millions. By definition they are not unusual, which means they cannot be "dangerous and unusual." End of analysis. DC loses.
 
-## Closing
+The DC gun registration ban that DC and Jeanine Pirro is trying to preserve is just as weak. As then-Judge Brett Kavanaugh explained in 2011 while on the DC Circuit, there is no founding-era historical tradition supporting gun or gun-owner registration laws. See *Heller v. DC*, 670 F.3d 1244 (D.C. Cir. 2011). Historically, it was understood by all, especially our Founders, that registering firearms constituted a meaningful step toward gun confiscation, which the Founders greatly feared. Even today, gun registration remains an extreme outlier legal scheme that is limited to only a few insanely anti-gun jurisdictions.
 
-The damage here is real but probably not catastrophic. The pending cert petitions in *Duncan v. Bonta* out of California and *Gator's Custom Guns, Inc. v. Washington* out of the Washington Supreme Court are still alive. And I remain confident the *Cheeseman* and *ANJRPC v. Platkin* cases pending en banc in the U.S. Court of Appeals for the Third Circuit will produce a genuine federal circuit split soon enough, with thanks to the newly confirmed Judges Jennifer Mascott and Emil Bove. But this episode should be the last time a U.S. Attorney's office is allowed to fumble away a Second Amendment win because nobody upstairs was paying attention.
+## Team Trump Needs a 2A Czar Now
+
+The damage from the decision to rehear en banc the *Benson* case is real, but hopefully not catastrophic. I remain confident that the US Court of Appeals for the Third Circuit will rule favorably on the Second Amendment questions in the *Cheeseman* and *ANJRPC v. Platkin* cases, which will produce a genuine federal circuit split. But this error by the U.S. Attorney's Office for DC must be the last time a U.S. Attorney's office fumbles away an easy touchdown. A Second Amendment Czar would protect a fundamental constitutional right.
 
 ---
 
-*Mark W. Smith is a constitutional attorney, member of the Bar of the Supreme Court of the United States, and host of [The Four Boxes Diner](https://www.youtube.com/@TheFourBoxesDiner). He is the author of [First They Came for the Gun Owners](https://www.amazon.com/dp/B07XLG5KDX) and [Disarmed](https://www.amazon.com/dp/B0DLZ54BNT).*
+*This article is based on analysis by Professor Mark W. Smith, constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. Watch the original video [here](https://www.youtube.com/watch?v=rMxtgjgMlJc). This does not constitute legal advice.*
