@@ -1,8 +1,8 @@
 ---
 title: "Fifth Circuit Denies En Banc in Wilson — and Why That Is the Right Outcome for the Second Amendment Right Now"
 date: "2026-05-01"
-youtube_url: "https://www.youtube.com/watch?v=fAKkHtmah4k"
-youtube_id: "fAKkHtmah4k"
+youtube_url: "https://www.youtube.com/watch?v=l_z9DXsv2rI"
+youtube_id: "l_z9DXsv2rI"
 thumbnail: "/images/articles/2026-05-01-fifth-circuit-wilson-machine-gun-ban-en-banc-denial-second-amendment.jpg"
 duration: "18:57"
 author: "Mark W. Smith"
@@ -131,4 +131,4 @@ The 10-7 denial in Wilson is a tactical win disguised as a defeat. *Hollis* surv
 
 ---
 
-*This article is based on analysis by Professor Mark W. Smith, constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. Watch the original video [here](https://www.youtube.com/watch?v=fAKkHtmah4k). This does not constitute legal advice.*
+*This article is based on analysis by Professor Mark W. Smith, constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. Watch the original video [here](https://www.youtube.com/watch?v=l_z9DXsv2rI). This does not constitute legal advice.*
