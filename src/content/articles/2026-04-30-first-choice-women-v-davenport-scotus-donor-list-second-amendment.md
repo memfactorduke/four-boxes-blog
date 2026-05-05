@@ -51,10 +51,6 @@ pull_quote: "Without the soap box, the cartridge box does not survive. Yesterday
 image_prompt: "A vintage steel donor-card cabinet with rows of small drawers and brass label plates in a dim records archive, a single brass-fitted desk lamp casting a tight amber pool of light on a polished mahogany table next to one open drawer. Atmospheric editorial photography, warm tungsten light against cool shadow, shallow depth of field, quiet and contemplative mood."
 ---
 
-> "A blue-state attorney general can no longer fish through a Second Amendment organization's donor list and pretend the chilling effect is somebody else's problem. The Supreme Court just made that play a lot harder — by a 9-0 unanimous vote."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The Supreme Court just handed the anti-gun crowd a 9-0 loss that has nothing to do with the Second Amendment on its face — and everything to do with the Second Amendment in practice. The case is *First Choice Women's Resource Centers, Inc. v. Davenport*, No. 24-781 (Apr. 29, 2026), and it is going on the shelf in every Second Amendment lawyer's office in the country.
 
 ## A Subpoena That Started in New Jersey

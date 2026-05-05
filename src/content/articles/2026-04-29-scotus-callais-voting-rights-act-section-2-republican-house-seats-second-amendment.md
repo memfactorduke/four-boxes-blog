@@ -47,10 +47,6 @@ pull_quote: "A Democratic House means more gun control — and the Supreme Court
 image_prompt: "A brass surveyor's transit mounted on a wooden tripod, positioned on a worn mahogany conference table covered with large county maps of the Deep South, rulers and red drafting pencils scattered alongside. Raking late-afternoon light through venetian blinds casting striped shadows across the paper maps. Moody documentary still life, warm amber and deep shadow tones, shallow depth of field."
 ---
 
-> "A Democratic House means more gun control — and the Supreme Court just knocked out the scheme that was handing Democrats a dozen or more House seats they did not earn."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The Supreme Court just handed down a 6-3 decision in *Louisiana v. Callais* that could reshape the November 2026 midterms — and with them, the future of the Second Amendment. If you care about gun rights, free speech, or any other constitutional liberty, you need to understand what happened here and why it matters so much.
 
 ## A One-Way Ratchet Against Red States

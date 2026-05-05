@@ -61,10 +61,6 @@ pull_quote: "An 8-1 mandate order in Callais just cleared the runway for Louisia
 image_prompt: "An aerial topographic view of the lower Mississippi River delta at golden hour, sinuous river bends and bayous threading through patchwork farmland, raking sunlight casting long shadows from levee berms and tree lines that hint at hidden boundary lines. Cool teal water, warm ochre fields, deep umber shadows in the cypress stands. Editorial cartographic photography, high altitude, shallow atmospheric haze, painterly light."
 ---
 
-> "An 8-1 mandate order in Callais just cleared the runway for Louisiana to redraw its map before November — and that math runs straight through the Second Amendment."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Major breaking news from the United States Supreme Court late last night. By 8-1, the Court granted the application to issue judgment forthwith in *Callais v. Louisiana*, No. 25A1197 (U.S. May 4, 2026), clearing the way for Louisiana to redraw its congressional map immediately rather than waiting the standard 32-day period under Sup. Ct. R. 45.3. The merits decision — *Louisiana v. Callais*, Nos. 24-109 & 24-110 — came down 6-3 on April 29, 2026, holding Louisiana's two-majority-Black-district map (SB 8) an unconstitutional racial gerrymander. Last night's order is the procedural finisher. In my read, it is one of the most consequential Second Amendment wins of the cycle — even though the Second Amendment is nowhere in the opinion.
 
 ## Why a Voting Rights Case Is a Second Amendment Case

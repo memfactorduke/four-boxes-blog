@@ -38,10 +38,6 @@ pull_quote: "Amtrak's lockbox proposal is not a perfect solution, but it is anot
 image_prompt: "Empty Amtrak passenger coach interior at dawn, two rows of vinyl-and-fabric seats receding down a center aisle, golden light streaming through large rectangular windows and casting striped shadows on the carpet, brushed-aluminum overhead luggage racks catching warm highlights. Worn fabric textures, faint dust motes in the light, deep depth of field, photojournalistic editorial photography. Warm amber tones against cool steel-blue shadow, single directional sunrise light, no people, no signage, no lettering."
 ---
 
-> "Amtrak's lockbox proposal is not the right answer on the merits — the right answer is on-person carry — but it is another Overton-window shift in favor of the Second Amendment, and we win this war one battle at a time."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Major Second Amendment news from an unexpected place: Amtrak. According to CBS News, citing two sources who spoke to the Associated Press on condition of anonymity, the National Railroad Passenger Corporation is considering a policy change that would allow passengers to bring firearms onto roughly 1,500 trains a day — including the Northeast Corridor — by installing onboard lockboxes where the conductor holds the only key. CBS reported on May 1, 2026 that the proposal has been under consideration since early this year, after Trump administration officials pressured Amtrak to ease its firearm-transport restrictions. This is a meaningful expansion of the Overton window in favor of the right to keep and bear arms.
 
 ## What Amtrak Is Actually Proposing

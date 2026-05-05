@@ -54,10 +54,6 @@ pull_quote: "A man builds a suppressor in his bedroom in Louisiana. Two years la
 image_prompt: "Precision-machined aluminum tube with circular cross-section cuts resting on a dark steel workbench, side-raking industrial light, cool silver and steel-blue palette, shallow depth of field, no people, no text, no flags, editorial macro photography."
 ---
 
-> "A man builds a suppressor in his bedroom in Louisiana. Two years later that suppressor is at the doorstep of the Supreme Court. That is how constitutional law gets made — one flawed lower-court decision at a time."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On March 9, 2026, a cert petition was filed at the United States Supreme Court in *Peterson v. United States*, No. 25-1076, and it is asking the justices to do something the Court has never done: directly confront the constitutionality of the National Firearms Act's registration-and-tax regime for suppressors. I have been following this case from the beginning, and I want to walk you through exactly what happened in the Fifth Circuit, why that court got the law wrong twice, and why this petition deserves serious consideration at One First Street.
 
 ## From a Louisiana Bedroom Safe to the Steps of the Supreme Court

@@ -64,10 +64,6 @@ pull_quote: "This is the first time the Supreme Court has ever agreed to hear tw
 image_prompt: "Sweeping wide-angle low-angle view of white limestone columns at the base of a classical courthouse portico, late afternoon golden light raking horizontally across fluted column shafts, deep elongated shadows stretching across polished stone steps, no human figures. Two principal columns framing a dark recessed entrance beyond. Editorial architectural photography, cool shadow in foreground transitioning to warm amber stone facade. Austere and monumental, moody contrast, high detail."
 ---
 
-> "This is the first time the Supreme Court has ever agreed to hear two Second Amendment merits cases in a single Term — and based on how both oral arguments went, I think we are about to have a very good year."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Two Second Amendment cases are headed for decision at the United States Supreme Court before this Term ends in late June, and the implications for millions of gun owners nationwide could not be more significant. *United States v. Hemani*, No. 24-1234, and *Wolford v. Lopez*, No. 24-1046, represent the first time the Court has ever agreed to hear more than one 2A merits case in a single Term. Oral arguments in *Wolford* were held January 20, 2026; *Hemani* was argued March 2, 2026. Both decisions are pending. Here is where each case stands — and why I am cautiously optimistic about both.
 
 ## Wolford — Hawaii's Default No-Carry Rule and the Vampire Analogy

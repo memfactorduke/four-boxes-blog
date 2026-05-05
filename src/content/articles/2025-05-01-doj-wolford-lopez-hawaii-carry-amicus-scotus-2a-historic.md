@@ -71,10 +71,6 @@ pull_quote: "This is the first time in American history that the Department of J
 image_prompt: "Mahogany judicial bench in an empty appellate courtroom viewed from the attorney's podium, slightly low angle showing the raised platform and a row of high-backed leather chairs behind it. Brass nameplates catch raking late afternoon light from tall unseen windows. Dark paneled walls, deep burgundy upholstery, polished chestnut woodwork. No people, editorial architectural interior photography, warm amber on wood grain against deep shadow, wide-angle shallow focus."
 ---
 
-> "This is the first time in American history that the Department of Justice has filed an amicus brief at the certiorari stage in support of gun-rights plaintiffs before the United States Supreme Court. Read that again."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On May 1, 2025, the Bondi Department of Justice filed a 29-page amicus curiae brief urging the Supreme Court to grant certiorari in *Wolford v. Lopez*, No. 24-1046 — a Second Amendment challenge to Hawaii's law making it a crime for a licensed concealed-carry holder to bring a firearm onto private property open to the public without the owner's express permission. This brief is historic. I do not use that word lightly. In the entire post-*Heller* era — stretching back to 2008 — no administration's Justice Department had ever filed an amicus brief in support of gun-rights *plaintiffs* at the certiorari stage in a Second Amendment case before the Supreme Court. Not once.
 
 ## The Case That Put Five States' Laws in Play

@@ -62,10 +62,6 @@ pull_quote: "Denver has run an unconstitutional AR-15 ban for 37 years by hiding
 image_prompt: "The Denver City and County Building's Beaux-Arts limestone facade and central dome at golden hour, shot from low-angle street level, the Greek Revival columns and carved cornices catching warm raking light, the dome silhouetted against a deep cobalt Colorado sky. Long architectural shadows pooling on the granite plaza, distant blurred pedestrians as anonymous silhouettes. Editorial civic architecture photography, Fuji Velvia saturation, warm amber stone against cool blue sky, shallow depth of field on the foreground stonework."
 ---
 
-> "Denver has run an unconstitutional AR-15 ban for 37 years by hiding behind blue-state circuit courts. The DOJ just stripped that cover away — and Denver knows it."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Major news out of Washington and Denver. On April 28, 2026, Assistant Attorney General Harmeet K. Dhillon, head of the DOJ Civil Rights Division, sent a letter to Denver Mayor Mike Johnston and City Attorney Miko Brown threatening a federal Second Amendment lawsuit unless Denver agrees by 5 p.m. on May 5, 2026, to stop enforcing its so-called assault weapon ban — Denver Revised Municipal Code Section 38-130, on the books since 1989 under then-Mayor Federico Peña. This is the Trump DOJ's new Second Amendment Section doing exactly what I have argued for years it should do: dropping binding Supreme Court precedent on an anti-gun jurisdiction that has been hiding behind sympathetic lower courts. The game is over.
 
 ## What the Letter Actually Says

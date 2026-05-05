@@ -46,10 +46,6 @@ pull_quote: "The Second Amendment was written for the people outside the marbled
 image_prompt: "The cavernous interior of an empty hotel grand ballroom the morning after a black-tie event, photographed from a low angle near the floor. Round banquet tables stand half-cleared with overturned chairs, abandoned linen napkins, and a single toppled water goblet catching cold light. Dim emergency lighting glows from the ceiling coves while pale gray dawn filters through tall draped windows along one wall. Polished parquet floor reflects the muted scene. Wide-angle lens with deep depth of field, desaturated palette of slate blue, charcoal, and faded gold, somber documentary photojournalism mood reminiscent of a quiet crime-scene aftermath."
 ---
 
-> "The Second Amendment was written for the people outside the marbled halls, not the political elite inside them. Justice Clarence Thomas previously made this point and its truth now should resonate with all."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The assassination attempt at the White House Correspondents' Dinner on Saturday night at the Washington Hilton is not just a security story. It is a Second Amendment story, and it provides a compelling case study for my point that unless government locks down a location with comprehensive security of the type we saw at the Hilton on Saturday night, then Americans may not be denied the right and ability to carry firearms into any location in the country. Indeed, by labeling an area a "gun-free zone" without comprehensively securing it, politicians have converted the location into a magnet for want-to-be mass murderers.
 
 ## When is a Gun-Free Zone Constitutional under 2A?

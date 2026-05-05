@@ -36,10 +36,6 @@ pull_quote: "By letting Second Amendment Rights Section attorneys work from thei
 image_prompt: "A vintage U.S. Attorney's office interior in a small Western city, oak desks and a tall leaded-glass window overlooking a Main Street below, marble wainscoting, brass banker's lamp casting a pool of warm light on a closed leather briefcase and a yellow legal pad. Late golden hour light raking through venetian blinds, dust motes suspended in the beams, a heavy panel door slightly ajar to a terrazzo hallway beyond. Wide interior establishing shot at eye level, shallow depth of field on the desk, warm amber highlights against deep mahogany shadow tones, quiet contemplative mood, editorial documentary photography, Fuji Velvia saturation."
 ---
 
-> "By letting Second Amendment Rights Section attorneys work from their local U.S. Attorney's offices, DOJ has quietly removed the single largest structural filter keeping red-state talent out of federal civil rights work."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 At the 2026 NRA Annual Meetings in Houston, the Department of Justice confirmed a personnel reform that sounds administrative, but is actually structural: attorneys hired into the new Second Amendment Rights Unit will be permitted to work out of their local U.S. Attorney's offices rather than relocate to Washington, D.C. The change eliminates a major hurdle that has made it harder to hire attorneys sympathetic to President Trump's agenda, including pro-Second Amendment lawyers.
 
 ## The Announcement

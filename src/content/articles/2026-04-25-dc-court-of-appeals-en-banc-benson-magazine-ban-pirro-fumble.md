@@ -65,10 +65,6 @@ pull_quote: "It was clear error by the Justice Department to jeopardize a pro-Se
 image_prompt: "The limestone facade of the District of Columbia Court of Appeals at the Historic Courthouse on Indiana Avenue, shot from a low angle at dawn. Blue-hour light fading into first warm sun raking across the carved stone columns and pediment, long shadows pooling on the empty marble steps. Documentary architectural photography, cool slate and warm amber palette, shallow depth of field on a single weathered cornerstone, faint mist hanging at the base of the columns, hushed early-morning atmosphere."
 ---
 
-> "It was clear error by the Justice Department to jeopardize a pro-Second Amendment ruling for the sake of a few hundred prosecutions for failing to register a firearm in *Benson v. US*. The need for a true Second Amendment czar has never been greater to stop such mistakes from occurring in the future. The leadership of DOJ has been great on the Second Amendment — but they need to do a better job of controlling the deep state toiling away in the bowels of DOJ."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The District of Columbia Court of Appeals just granted DC's petition for rehearing en banc in the *Benson v. United States* case, which now vacates the most important Second Amendment victory over a "large capacity magazine" ban in modern history. That alone is bad news. What makes it worse is that the Trump Administration's U.S. Attorney's Office for DC under Jeanine Pirro actually supported DC's request for en banc review.
 
 ## An En Banc Grant That Erased a Huge 2A Victory

@@ -43,10 +43,6 @@ pull_quote: "The press conference itself was the story — three officials, on t
 image_prompt: "An eye-level view of an empty federal press-conference podium with a dense cluster of black foam-covered network microphones angled toward the lectern, mic flags slightly out of focus, soft daylight from off-camera left raking across the polished wood. Cool institutional palette with one warm pool of light on the lectern surface, shallow depth of field, documentary press-photo aesthetic, moody and quiet just before the room fills."
 ---
 
-> "The press conference itself was the story — three officials, on the record, framing the Second Amendment as a non-negotiable constitutional right and backing it up with the largest regulatory rewrite in ATF history."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On April 29, DOJ held a press conference at headquarters that was a watershed moment for ATF policy. Acting Attorney General Todd Blanche, newly confirmed ATF Director Robert Cekada, and ATF Chief Counsel Robert Leider announced 34 regulatory actions — seven final rules and twenty-seven proposed rules — aimed at unwinding more than a decade of regulatory drift. I covered the political timing in my last piece. Today I want to walk through what was said at the podium.
 
 ## Blanche's Opening: The Second Amendment Is "Not Negotiable"

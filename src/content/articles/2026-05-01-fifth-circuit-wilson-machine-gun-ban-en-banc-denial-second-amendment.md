@@ -79,10 +79,6 @@ pull_quote: "A 10-7 en banc denial in Wilson looks like a loss, but for the Seco
 image_prompt: "An empty mahogany en-banc bench inside a stately federal courthouse, raised judicial seats curving in a shallow arc, low warm raking light from tall arched windows cutting across the wood grain, deep shadow falloff into the back of the chamber. Worn leather chairs, polished brass fittings, faint dust in the light beam. Editorial architectural photography, shallow depth of field, warm amber tones against cool blue shadow."
 ---
 
-> "A 10-7 en banc denial in Wilson looks like a loss, but for the Second Amendment movement right now, it is exactly the outcome we needed — because losing this case at the Supreme Court would set us back decades."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Major news out of the Fifth Circuit. By a 10-7 vote, the en banc court declined to rehear *United States v. Wilson*, No. 24-10633, leaving in place the panel decision upholding the federal machine gun ban under 18 U.S.C. § 922(o). Wilson used a Glock switch to convert a handgun into a machine gun and killed someone. The panel, bound by *Hollis v. Lynch*, 827 F.3d 436 (5th Cir. 2016), affirmed his conviction. Seven judges wanted the case reheard en banc — likely to overturn *Hollis*. Ten said no. Here is the part that will surprise some viewers: I think the ten got it right — not because § 922(o) is constitutional in every application, but because the Second Amendment movement cannot afford to win this case at the wrong time.
 
 ## The Vote, the Concurrence, and the Dissent

@@ -46,10 +46,6 @@ pull_quote: "The panic over Roberts and Barrett is wrong. SCOTUS denied an emerg
 image_prompt: "Interior of an empty federal courthouse rotunda viewed from below, upward perspective through a coffered stone dome toward a central oculus, pale gray light filtering down through the opening, concentric carved rings receding into shadow above. Massive marble columns flank the frame below. No people, hushed monumental space, cool blue-gray stone palette with faint ivory highlights on carved edges. Wide-angle architectural documentary photography, sharp center-to-top plane with vignetting shadows."
 ---
 
-> "The panic over Roberts and Barrett is wrong. SCOTUS denied an emergency stay application on a moot TRO enforcement order. That is not a ruling on presidential spending power — it is not even a ruling on the merits."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The Supreme Court denied the Trump administration's emergency application in *Department of State v. AIDS Vaccine Advocacy Coalition*, No. 24A831, by a 5-4 vote on March 5, 2025, and the conservative commentariat immediately imploded. Roberts and Barrett joined Sotomayor, Kagan, and Jackson. Justice Alito's dissent opened: "I am stunned." Mike Davis called Roberts and Barrett "cowardly." Multiple outlets ran "Do we have an Amy Coney Barrett problem?" My answer is no — and the reaction reflects a fundamental misreading of what SCOTUS actually did.
 
 ## What the Court Actually Did — and Didn't Do
