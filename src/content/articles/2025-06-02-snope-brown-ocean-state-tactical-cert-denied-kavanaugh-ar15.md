@@ -69,10 +69,6 @@ pull_quote: "Three Justices dissented. Kavanaugh all but promised the Court will
 image_prompt: "Extreme close-up of a modern semi-automatic rifle's receiver and ejection port, cold machined aluminum and steel, no magazine inserted, resting on a neutral dark workbench surface. Single hard light from upper left creates crisp metallic highlights and deep geometric shadows along the milled edges. Cool graphite and gunmetal palette, ultra-sharp mechanical detail, documentary industrial photography aesthetic, shallow depth of field isolating the receiver face."
 ---
 
-> "Three Justices dissented. Kavanaugh all but promised the Court will take the AR-15 question in the next Term or two. This is not the end — it is the Court clearing the runway for a landing it has promised to make."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On June 2, 2025, the Supreme Court denied certiorari in *Snope v. Brown*, No. 24-203, leaving in place the Fourth Circuit's en banc ruling in *Bianchi v. Brown*, 111 F.4th 438 (4th Cir. 2024), which upheld Maryland's ban on AR-15 semi-automatic rifles. On the same orders list, the Court also denied certiorari in *Ocean State Tactical, LLC v. Rhode Island*, No. 24-131, leaving intact the First Circuit's decision in *Ocean State Tactical, LLC v. Rhode Island*, 95 F.4th 38 (1st Cir. 2024), which upheld Rhode Island's large-capacity magazine ban. Both denials arrived after fifteen re-listings — fifteen consecutive conferences at which the Court declined to act. Three Justices would have granted cert in each case. But three votes is one short of the four required, and the Court declined.
 
 The frustration here is real and I will not pretend otherwise. Maryland's AR-15 ban and Rhode Island's magazine ban are unconstitutional restrictions that law-abiding gun owners are living under today. Residents of those states cannot exercise their Second Amendment rights while the Court decides when it is ready to act. Every re-listing, every conference at which cert was denied, was another months-long delay for people who have a constitutional right to keep common arms.

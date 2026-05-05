@@ -45,10 +45,6 @@ pull_quote: "The New York Times spent considerable resources proving that tens o
 image_prompt: "Low-angle nighttime view looking up at a residential street intersection, wet pavement reflecting amber and blue streetlight hues, blurred background buildings with lit windows, shallow depth of field on the intersection, moody urban documentary aesthetic. Cool blue shadows, warm sodium-vapor highlights on the asphalt, slight lens flare from a street lamp at upper left."
 ---
 
-> "The New York Times spent considerable resources proving that tens of millions of Americans live near gun crime — and then apparently forgot that this is exactly the argument the Supreme Court made in *Heller* for why people have a constitutional right to defend themselves."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The New York Times recently published an interactive map titled "This Is How Close We Live to Gun Violence" — tracking every gun homicide in the United States since 2020, then drawing a quarter-mile radius around each crime scene to determine how many Americans live within range. The tool was designed, presumably, to make the case for more gun control. What it actually produced is one of the most compelling empirical arguments for the Second Amendment's core right that has ever appeared in a major American newspaper.
 
 The Times calculated that 47 million Americans live within a quarter mile of a gun homicide site — 8.7 million more than before the pandemic. I am going to make the case that the editors who approved this piece did not think through its constitutional implications.

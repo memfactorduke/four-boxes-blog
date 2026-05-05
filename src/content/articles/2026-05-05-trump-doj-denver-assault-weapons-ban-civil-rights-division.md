@@ -52,10 +52,6 @@ pull_quote: "When the Civil Rights Division of the Department of Justice treats 
 image_prompt: "A macro close-up of a matte-black AR-15 lower receiver resting on a clean polished grey-slate surface, single directional soft-box light from upper left creating crisp shadows in the machined lettering, cool grey-charcoal palette with subtle blue undertones, shallow depth of field with the grip grip area falling soft, product-photography aesthetic, minimalist and precise."
 ---
 
-> "When the Civil Rights Division of the Department of Justice treats the Second Amendment as a civil right — and backs that up with a hard deadline and a lawsuit threat against a major American city — every gun owner needs to pay very close attention to what comes next."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On April 28, 2026, Assistant Attorney General Harmeet Dhillon sent a letter to Denver Mayor Mike Johnston and City Attorney Miko Brown that deserves to be framed on the wall of every Second Amendment organization in America. The message was unambiguous: Denver's 37-year-old assault-weapon ordinance — which bans all semi-automatic pistols and centerfire rifles with detachable magazines holding more than fifteen rounds, including AR-15-style rifles — violates the Second Amendment. Stop enforcing it, acknowledge it is unconstitutional, and enter a consent decree before 5 p.m. today, or the Department of Justice will sue. Denver said no. Now there will be a federal lawsuit.
 
 ## The Civil Rights Division Finally Treats the Second Amendment as a Civil Right

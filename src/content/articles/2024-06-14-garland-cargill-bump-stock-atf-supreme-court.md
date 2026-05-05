@@ -52,10 +52,6 @@ pull_quote: "When Congress wrote 'single function of the trigger,' it meant thos
 image_prompt: "Macro close-up of a semiautomatic rifle trigger group in partial disassembly, showing the sear and disconnector in precise mechanical detail against an unfocused gunmetal workshop surface. Single directional hard light from upper-left creating strong metallic highlights and deep angular shadows. Cool steel and silver palette with faint oxidation marks on the machined surfaces. Documentary industrial photography aesthetic, shallow depth of field."
 ---
 
-> "When Congress wrote 'single function of the trigger,' it meant those words — not 'anything that accelerates fire.' The ATF had no authority to rewrite that definition, and the Supreme Court just said so, 6–3."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On June 14, 2024, the Supreme Court handed down *Garland v. Cargill*, 602 U.S. 406 (2024), striking down the ATF's 2018 bump stock ban in a 6–3 decision. The Court held that bump stocks do not transform semi-automatic rifles into "machineguns" under the National Firearms Act. Attorney General Merrick Garland had defended a rule that required roughly 500,000 Americans to destroy or surrender legally purchased accessories on 90 days' notice with no compensation. The rule was unlawful from the beginning. The Supreme Court finally confirmed it.
 
 ## What the NFA's Text Actually Says

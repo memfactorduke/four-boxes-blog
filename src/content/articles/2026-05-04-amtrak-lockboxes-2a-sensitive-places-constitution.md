@@ -34,10 +34,6 @@ pull_quote: "We don't shrink constitutional rights because some wackadoodle nut 
 image_prompt: "Close-up of heavy silver corrugated aluminum passenger train-car siding and door frame, shallow depth of field, cool diffuse overcast light raking across the textured metal surface, no text, no people, no signage, muted steel-gray and blue palette, photorealistic documentary style, slight upward camera angle emphasizing the mass and scale of the vehicle."
 ---
 
-> "We don't shrink constitutional rights because some wackadoodle nut job psychopath can misuse the right. You can misuse anything, but that doesn't make it a basis for shrinking rights."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Amtrak, the federally funded national railroad that carries roughly 750,000 passengers a day on its Northeast Corridor alone, is quietly considering a major policy change: adding lockboxes to more than 1,500 trains per day so that American gun owners can bring their firearms aboard, regardless of whether a locked baggage car is available. The story broke through CBS News, citing anonymous sources familiar with the proposed plan. The Trump administration has been pressuring Amtrak to loosen restrictions for months. This is a real win, and I want to explain exactly why — and why it does not go far enough.
 
 ## Amtrak Is a State Actor — The Constitution Already Applies

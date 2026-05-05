@@ -53,10 +53,6 @@ pull_quote: "Minnesota asked the Supreme Court to revive a carry prohibition the
 image_prompt: "Close-up of a polished wooden judge's bench surface at an angle, empty, no objects on it, warm amber overhead light creating a narrow band of illumination along the edge, deep shadow behind, smooth oak grain visible in sharp focus. Moody interior architectural photography, warm amber and deep brown palette, quiet and solemn, no text, no people, no room context visible."
 ---
 
-> "Minnesota asked the Supreme Court to revive a carry prohibition the Eighth Circuit unanimously struck down. The Court declined. For seven states, the right of eighteen-to-twenty-year-olds to carry for self-defense is now settled circuit law."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On April 21, 2025, the Supreme Court denied certiorari in *Jacobson v. Worth*, leaving intact a unanimous Eighth Circuit ruling that Minnesota's carry prohibition for adults aged 18 to 20 violates the Second Amendment. Minnesota Attorney General Keith Ellison had petitioned the Court on January 17, 2025, asking the Justices to reverse the panel decision and save the state's age restriction. The Court declined — ending the litigation with a clean win for the Second Amendment Foundation, the Firearms Policy Coalition, the Minnesota Gun Owners Caucus, and the four individual plaintiffs who brought the original challenge: Kristin Worth, Austin Dye, Alex Anderson, and Joe Knudsen.
 
 ## The Eighth Circuit's Unanimous Decision

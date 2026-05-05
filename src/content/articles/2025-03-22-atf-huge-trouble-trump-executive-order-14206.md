@@ -45,10 +45,6 @@ pull_quote: "The ATF has spent years treating the Second Amendment as a problem 
 image_prompt: "A row of identical metal government filing cabinets along a beige institutional corridor, cabinet drawers slightly open with hanging file folders visible inside, overhead fluorescent tube lighting casting a cool institutional glow with faint amber warm tones from a distant window at the end of the hall. Wide-angle perspective shot from ground level, moody and sparse. Cool blue-gray palette, minimalist federal-building aesthetic."
 ---
 
-> "The ATF has spent years treating the Second Amendment as a problem to be managed through regulatory creativity. Executive Order 14206 just directed the Justice Department to treat it as a right to be protected. That is a fundamental reversal — and the agency knows it."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 The ATF is in serious trouble, and I mean that in the best possible sense for the Second Amendment. President Trump signed Executive Order 14206 on February 6, 2025, directing the Attorney General to conduct a comprehensive review of all ATF regulations, guidance documents, and enforcement policies that may infringe on the Second Amendment right. The 30-day review window closed on March 7. Combine that deadline with budget pressure from the continuing resolution, a DOGE team scrutinizing every federal agency, and a new Justice Department leadership that has publicly committed to treating the Second Amendment as a first-class right — and the ATF faces an accountability moment unlike anything in its modern history.
 
 ## What Executive Order 14206 Actually Directs

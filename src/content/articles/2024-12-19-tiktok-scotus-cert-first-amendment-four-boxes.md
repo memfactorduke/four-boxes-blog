@@ -50,10 +50,6 @@ pull_quote: "The same government that wants to suppress speech it dislikes in th
 image_prompt: "An old wooden soap box crate on a bare concrete floor, seen from a low side angle, single hard light from camera-right casting a long dramatic shadow across the floor behind it. Weathered wood grain with faded stenciled lettering partially visible. Deep shadows, high contrast, monochrome palette with slight warm sepia tones on the wood. Minimalist documentary still-life photography."
 ---
 
-> "The same government that wants to suppress speech it dislikes in the name of national security is the same government that has been trying to restrict arms it dislikes in the name of public safety. How courts reason about one box affects how they will reason about the others."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 On December 18, 2024, the Supreme Court granted certiorari in *TikTok Inc. v. Garland*, No. 24-656, taking up the First Amendment challenge to the Protecting Americans from Foreign Adversary Controlled Applications Act — the federal law requiring ByteDance to divest TikTok or face a ban affecting 170 million American users. The Court set an expedited schedule, with oral argument on January 10, 2025, just nine days before the law's divestment deadline. This is a major constitutional case, and while the Four Boxes Diner is primarily a Second Amendment channel, this case belongs in our conversation because the soapbox is one of the four boxes — and what happens to one of them has implications for all of them.
 
 ## The Four Boxes Framework and Why It Matters Here
