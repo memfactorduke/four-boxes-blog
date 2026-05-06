@@ -54,10 +54,6 @@ pull_quote: "Kavanaugh said there's no broad historical tradition. Gorsuch said 
 image_prompt: "A polished brass deadbolt lock mechanism set into a dark-stained oak door, tight macro shot with extreme shallow depth of field, warm amber light from above illuminating the brass hardware against the deep wood grain, dramatic chiaroscuro, fine-art still life aesthetic, no signage or text visible."
 ---
 
-> "Kavanaugh said there's no broad historical tradition. Gorsuch said Hawaii's own analogy reads like garlic in front of a vampire. Alito said the law was designed to disarm the formerly enslaved. Those are not questions — they are a roadmap."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Yesterday's oral argument in *Wolford v. Lopez*, No. 24-1046, gave Second Amendment supporters a great deal to think about. The case tests Hawaii's "vampire rule" — the requirement that gun owners obtain express authorization from a property owner before carrying on private property open to the public. I spent the argument taking notes on the specific quotes from the bench, and today I want to walk through the ones that matter most and explain what they signal about where this decision is headed.
 
 ## Kavanaugh: "No Broad Tradition" — and What That Means Legally

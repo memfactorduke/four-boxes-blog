@@ -53,10 +53,6 @@ pull_quote: "The Supreme Court heard argument today in Wolford v. Lopez, and if 
 image_prompt: "A pair of worn leather holsters resting on a weathered wooden fence post in an outdoor setting, golden late-afternoon sidelight casting long shadows across the grain, muted earth tones of tan, brown, and deep shadow, close-up lens with smooth background blur, rustic Western atmosphere, natural-material texture study."
 ---
 
-> "The Supreme Court heard argument today in *Wolford v. Lopez*, and if the questions from the bench tell us anything, Hawaii's so-called 'vampire rule' is about to get a stake through its constitutional heart."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Today, January 20, 2026, the Supreme Court of the United States heard oral argument in *Wolford v. Lopez*, No. 24-1046 — the most important Second Amendment carry case the Court has taken since *Bruen*. At issue: Hawaii's statute requiring that anyone who wishes to carry a firearm on private property open to the public first obtain "express authorization" from the property owner. Walk into a restaurant armed without a posted sign or verbal permission, and you are violating Hawaii law. Gun-rights observers have taken to calling it the "vampire rule" — you need an explicit invitation before your right to carry crosses the threshold. After watching the argument today, my read is that Hawaii came with very little to show for its position, and the conservative justices were not shy about saying so.
 
 ## What the Vampire Rule Actually Does

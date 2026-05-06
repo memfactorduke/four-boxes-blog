@@ -51,10 +51,6 @@ pull_quote: "When a federal court declares that a 10-round magazine is not an 'a
 image_prompt: "A close-up of a matte-black double-stack pistol magazine standing upright on a clean polished concrete surface, single overhead studio softbox light casting a crisp circular shadow, cool grey industrial palette with fine surface texture detail, product-photography precision, no text or branding visible, shallow depth of field blurring the background to neutral grey."
 ---
 
-> "When a federal court declares that a 10-round magazine is not an 'arm' covered by the Second Amendment, it is not faithfully applying *Bruen* — it is manufacturing an escape hatch to avoid it entirely."
->
-> — Professor Mark W. Smith, Four Boxes Diner Host
-
 Yesterday, March 20, 2025, the en banc United States Court of Appeals for the Ninth Circuit issued its long-awaited decision in *Virginia Duncan v. Rob Bonta*, No. 23-55805, upholding California's ban on firearm magazines capable of holding more than ten rounds by a 7-4 vote. Governor Newsom celebrated. I understand why he did. But the majority opinion written by Judge Susan Graber rests on a theory that is constitutionally incoherent, and four of her colleagues on that same court explained exactly why.
 
 ## The Majority's "Not an Arm" Escape Hatch
