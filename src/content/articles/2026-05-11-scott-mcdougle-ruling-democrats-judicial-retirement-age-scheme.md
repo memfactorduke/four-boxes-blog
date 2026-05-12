@@ -1,10 +1,10 @@
 ---
 title: "Breaking: Virginia Supreme Court Kills the 10-1 Gerrymander — and Democrats Float Firing Every Justice"
 date: "2026-05-11"
-youtube_url: ""
-youtube_id: ""
+youtube_url: "https://www.youtube.com/watch?v=6womT7f6En8"
+youtube_id: "6womT7f6En8"
 thumbnail: "/images/articles/2026-05-11-scott-mcdougle-ruling-democrats-judicial-retirement-age-scheme.jpg"
-duration: ""
+duration: "19:42"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "Scott v. McDougle"
