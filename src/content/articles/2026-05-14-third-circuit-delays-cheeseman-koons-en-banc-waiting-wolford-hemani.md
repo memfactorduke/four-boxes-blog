@@ -1,10 +1,10 @@
 ---
 title: "Breaking: Why the Third Circuit Is Sitting on Cheeseman and Koons — They're Waiting on Wolford and Hemani"
 date: "2026-05-14"
-youtube_url: ""
-youtube_id: ""
+youtube_url: "https://www.youtube.com/watch?v=11RE5KOMF2o"
+youtube_id: "11RE5KOMF2o"
 thumbnail: "/images/articles/2026-05-14-third-circuit-delays-cheeseman-koons-en-banc-waiting-wolford-hemani.jpg"
-duration: ""
+duration: "12:51"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "Cheeseman v. Platkin"
