@@ -466,7 +466,8 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
   })();
   </script>
 
-  <!-- Email Capture -->
+  {/* Email capture — disabled for now. Flip false → true to re-enable. */}
+  {false && (
   <section class="relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20">
       <div class="relative bg-obsidian rounded-md overflow-hidden" data-animate>
@@ -524,6 +525,7 @@ const totalCases = [...new Set(articles.flatMap(a => a.data.cases_discussed.map(
       </div>
     </div>
   </section>
+  )}
 
   <!-- Browse by Topic (compact, links to topic pages) -->
   {allTopics.length > 0 && (

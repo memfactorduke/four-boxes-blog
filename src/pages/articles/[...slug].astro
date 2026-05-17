@@ -130,7 +130,8 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
           </button>
         </div>
 
-        <!-- Article footer: email capture -->
+        {/* Article footer email capture — disabled for now. Flip false → true to re-enable. */}
+        {false && (
         <div class="mt-14 pt-10 border-t border-gray-100">
           <div class="bg-obsidian rounded-md p-8 md:p-10">
             <div class="max-w-md">
@@ -161,6 +162,7 @@ const formattedDate = new Date(data.date + 'T00:00:00').toLocaleDateString('en-U
             </div>
           </div>
         </div>
+        )}
       </article>
 
       <!-- Sidebar -->
