@@ -67,7 +67,11 @@ The Trump Department of Justice just dropped a major amended complaint against t
 
 The amended complaint is the work of Acting Deputy Attorney General Todd Blanche, Assistant Attorney General for Civil Rights Harmeet Dhillon, and Barry Arrington — Acting Chief of DOJ's Second Amendment Section. Together they have built a complaint that attacks both DC gun restrictions on the same constitutional grounds: DC has categorically banned arms that are in common use by law-abiding Americans, and categorical bans of commonly owned arms cannot survive under *Heller* and *Bruen*.
 
-On AR-15s, the numbers are not close. The complaint cites estimates of 16 to 24.6 million Americans who own AR-style rifles, and quotes Justice Brett Kavanaugh directly: "given that millions of Americans own AR-15s and that a significant majority of the states allow possession of those rifles, petitioners have a strong argument that AR-15s are in common use by law-abiding citizens and therefore are protected by the Second Amendment under *Heller*." The complaint even notes that Justice Elena Kagan recently acknowledged the AR-15 is the most popular rifle in the country. When both the left and right wings of the Court agree on a factual predicate, the constitutional analysis is not a close call.
+On AR-15s, the numbers are not close. The complaint cites estimates of 16 to 24.6 million Americans who own AR-style rifles, and quotes Justice Brett Kavanaugh directly:
+
+> Given that millions of Americans own AR-15s and that a significant majority of the states allow possession of those rifles, petitioners have a strong argument that AR-15s are in common use by law-abiding citizens and therefore are protected by the Second Amendment under *Heller*.
+
+The complaint even notes that Justice Elena Kagan recently acknowledged the AR-15 is the most popular rifle in the country. When both the left and right wings of the Court agree on a factual predicate, the constitutional analysis is not a close call.
 
 ## The Suppressor Argument Is Equally Airtight
 
