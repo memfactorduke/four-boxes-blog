@@ -4,7 +4,7 @@ date: "2026-05-04"
 youtube_url: "https://www.youtube.com/watch?v=WNdCDlews5s"
 youtube_id: "WNdCDlews5s"
 thumbnail: "/images/articles/2026-05-04-trump-doj-denver-assault-weapons-ban-civil-rights-division.jpg"
-duration: ""
+duration: "17:18"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "District of Columbia v. Heller"

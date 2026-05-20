@@ -4,7 +4,7 @@ date: "2026-03-11"
 youtube_url: "https://www.youtube.com/watch?v=ByAAcYYHwak"
 youtube_id: "ByAAcYYHwak"
 thumbnail: "/images/articles/2026-03-11-peterson-v-united-states-nfa-suppressor-scotus-certiorari.jpg"
-duration: ""
+duration: "18:57"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "Peterson v. United States"
