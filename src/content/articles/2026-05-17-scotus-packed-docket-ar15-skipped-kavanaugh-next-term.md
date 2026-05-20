@@ -1,5 +1,5 @@
 ---
-title: "Why the Supreme Court Skipped AR-15 This Term — And Why It's Coming Next Year"
+title: "Why the US Supreme Court Skipped AR-15s This Term — And Why It's Coming"
 date: "2026-05-17"
 youtube_url: "https://www.youtube.com/watch?v=V5RQLOQKAXY"
 youtube_id: "V5RQLOQKAXY"
@@ -88,37 +88,39 @@ case_status:
 content_type:
   - "legal-analysis"
   - "supreme-court-watch"
-pull_quote: "The Supreme Court didn't skip the AR-15 case this term out of hostility or neglect — they ran out of bandwidth on a generational docket, and Justice Kavanaugh has already telegraphed that the AR-15 case is coming next term."
+pull_quote: "The Supreme Court didn't skip the AR-15 case this term out of hostility or neglect — they ran out of bandwidth on a generational docket, and Justice Brett Kavanaugh has already telegraphed that the AR-15 case is coming as soon as October 2026."
 image_prompt: "Towering stacks of bound legal briefs and manila case folders piled high on a polished mahogany desk inside a Supreme Court justice's chambers, a single tipped-back leather chair pushed away from the desk, a brass banker's lamp casting a warm pooled circle of light over the topmost stack, tall arched windows in the background dimming to deep blue dusk. Documentary still life, shallow depth of field on the topmost folder spine, warm amber lamp glow against cool window-light tones, hushed late-night atmosphere, editorial photojournalism feel."
 ---
 
-The first question I get is why the Supreme Court refused to take an AR-15 or large-capacity magazine case this term. The implication is usually that the Court is dodging the Second Amendment. I don't read it that way. My read is the simpler one: the Justices have one of the most packed dockets in living memory, Chief Justice John Roberts is rationing political capital, and Justice Brett Kavanaugh has already told us where the AR-15 case lands — the term after this one.
+I'm often asked why the Supreme Court didn't take an AR-15 or "large-capacity" magazine case this term. The implication is usually that the Court is dodging the Second Amendment. But there is another more basic explanation: the Justices have one of the most packed, precedent-setting dockets in living memory, and Chief Justice John Roberts decided to ration the Court's political capital for now.
 
-To be the smartest person in the room on this, you have to start with the institutional reality. The Supreme Court hears roughly 60 to 75 cases per term on the merits docket. That number isn't arbitrary — every granted case demands briefing, oral argument, conference deliberation, opinion drafting, concurrences, and dissents, and the Justices have only nine pairs of hands and a small army of clerks. Behind the merits docket sit thousands of cert petitions a year, each one screened and discussed. And on top of all that is the shadow docket — emergency applications like the one Virginia just filed and lost trying to halt its own redistricting order. Those applications get no oral argument but still consume enormous attention.
+To be the smartest person in the room on this, you have to start with the institutional reality. The Supreme Court hears roughly 60 to 70 cases per term on the merits docket. Every granted case demands briefing, oral argument, conference deliberation, opinion drafting, concurrences, and dissents, and the Justices have themselves and a small group of clerks. Behind the merits docket sit thousands of cert petitions a year, each one screened and assessed. And on top of all that is the emergency docket (sometimes called the "shadow docket"), which consists of urgent applications like the one Virginia just filed and lost trying to engage in mid-decade redistricting. Those applications get no oral argument but still consume enormous attention.
 
-## The Generational Docket That Crowded Out AR-15
+## The Generational Docket That Crowded Out The AR-15 Ban Cases
 
-Look at what is on the merits docket this term. The Court is deciding birthright citizenship — whether children of illegal aliens are automatically American citizens under the Fourteenth Amendment. It's deciding Mullin v. Al Otro Lado, the Remain in Mexico fight, and Mullin v. Doe, the case over President Trump's authority to revoke the Temporary Protected Status that Biden handed to Haitian nationals. It already decided Learning Resources v. Trump on tariff authority — a loss for the administration, but a generational separation-of-powers ruling people will be reading for decades.
+Let's look at what is on the merits docket this term. The Court is deciding birthright citizenship — whether children of illegal aliens and tourist visa holders are automatically American citizens under the Fourteenth Amendment. It's deciding *Mullin v. Al Otro Lado*, the Remain in Mexico fight, as well as *Mullin v. Doe*, the case over President Trump's authority to revoke the Temporary Protected Status that Biden handed to Haitian nationals. It already decided *Learning Resources v. Trump* addressing the President's authority concerning tariff policy — a loss for the administration, but a separation-of-powers ruling that will be read by scholars and students for decades to come.
 
-Then there is the executive-power blockbuster: Trump v. Slaughter, teed up to overturn Humphrey's Executor v. United States, 295 U.S. 602 (1935). For ninety years that New Deal-era precedent has forced Republican presidents to keep Democrat holdovers running their own executive agencies. If Humphrey's Executor goes into the trash bin of history this June, the deep state's statutory immunity goes with it.
+Then there is the executive-power blockbuster: *Trump v. Slaughter*, teed up to overturn *Humphrey's Executor v. United States*, 295 U.S. 602 (1935). For ninety years that New Deal-era precedent has forced Republican presidents to keep Democrat holdovers operating their executive agencies. If *Humphrey's Executor* goes into the trash bin of history, the deep state's statutory immunity largely goes with it.
 
-The Court has already handed down Louisiana v. Callais and Allen v. Caster, the two decisions that finally said federal judges cannot use the Voting Rights Act to force red states to draw majority-minority districts when the Fourteenth and Fifteenth Amendments prohibit using race in redistricting in the first place. Those rulings reshaped the 2026 midterm map. On the cultural front, Chiles v. Salazar already struck down Colorado's one-way talk-therapy regime as a First Amendment violation, and West Virginia v. B.P.J. is teed up to decide whether states can keep biological boys out of girls' high school sports under Title IX.
+The Court has already handed down *Louisiana v. Callais* and *Allen v. Caster* (Alabama) — two decisions that held federal judges cannot use the Voting Rights Act to force red states to draw racial majority-minority districts where the Fourteenth and Fifteenth Amendments prohibit using race in governmental decisions. Those rulings reshaped the 2026 midterm map and served up a terrible blow to the Democrats.
 
-That is what was sitting in front of the Justices when the AR-15 and magazine cert petitions came across their desks. That is the bandwidth question.
+On the cultural front, *Chiles v. Salazar* struck down Colorado's one-way talk-therapy regime as a First Amendment violation, i.e., Colorado law said talk therapists could help individuals transition to a new gender, but those same therapists could not discourage gender transitioning. And *West Virginia v. B.P.J.* is teed up to decide whether states can keep biological boys out of girls' high school sports consistent with federal Title IX.
 
-## The Second Amendment Did Make the Cut
+These groundbreaking, precedent-setting cases were sitting in front of the Justices when the AR-15 and magazine cert petitions were being considered.
 
-Here is the part the cynics leave out. The Court granted cert in two Second Amendment cases this term. United States v. Hemani asks whether the federal government can disarm habitual marijuana users under 18 U.S.C. § 922(g)(3). Wolford v. Lopez asks whether Hawaii can presume that every restaurant, gas station, laundromat, and rest stop is a "sensitive place" where lawful concealed carriers may not bring a firearm without the owner's express permission. Both decisions land by the end of June. Neither is the AR-15 case, but neither is nothing. They are precedential rulings that will shape Second Amendment doctrine for the next decade.
+## The AR-15 Fight Didn't Make the Cut — For Now
 
-Remember the distinction I always draw: every case is important to the parties in it, but not every case is precedential. Hemani and Wolford are precedential. The Court took the Second Amendment seriously this term. It just couldn't take everything.
+Here is the part the cynics leave out: The Court granted cert in two important Second Amendment cases this term. *United States v. Hemani* asks whether the federal government can disarm unlawful users of marijuana under 18 U.S.C. § 922(g)(3). *Wolford v. Lopez* asks whether Hawaii can set as a default law that every place generally open to the public (restaurants, gas stations, laundromats, etc.) is a government-mandated gun free zone unless a CCW holder can first procure express permission to carry from the owners. Both decisions will land by the end of June. Neither is an AR-15 case, but they are precedential rulings that will shape Second Amendment doctrine for years to come.
 
-## Next Term Is the AR-15 Term
+Remember the distinction I always draw: every case is important to the parties in it, but not every case is precedential. *Hemani* and *Wolford* are precedential. The Court took the Second Amendment seriously this term. It just couldn't take every 2A case.
 
-Here is where my read gets specific. Justice Kavanaugh signaled in spring 2025 that the Court needed to take an AR-15 case in the next term or two. That phrasing was not accidental. He was looking down the chessboard. With the executive-power, immigration, redistricting, and tariff cases eating this term, the AR-15 fight gets pushed to the October 2026 / June 2027 term — exactly the term Kavanaugh was telegraphing.
+## Next Term Is Likely the AR-15 Term
 
-I think the vehicle is already in the pipeline. The Seventh Circuit's Barnett case out of Chicago and the Third Circuit's Cheeseman case out of Philadelphia both involve state-level "assault weapons" bans, and Assistant Attorney General Harmeet Dhillon's DOJ has already weighed in on both. One of those is the cert vehicle.
+Justice Kavanaugh signaled in spring 2025 that the Court needed to take an AR-15 case in the next term or two. That phrasing was not accidental. He was looking down the chessboard. With the executive-power, immigration, redistricting, and tariff cases eating up this term, the AR-15 fight likely gets pushed into the October 2026 – June 2027 term — exactly the term Kavanaugh had telegraphed.
 
-So when someone asks whether the Supreme Court is afraid of the AR-15 question, my answer is no. The Justices ran out of room on a generational docket. The history of the future has yet to be written, but the chessboard tells me the AR-15 case is coming next fall — and when it does, we are going to win it.
+I think the vehicle is already in the pipeline. The Seventh Circuit's *Barnett* case out of Chicago and the Third Circuit's *Cheeseman*/ANJRPC case out of Philadelphia both involve state-level "assault weapons" bans, and the Trump DOJ has already weighed in on both. One of those will likely be the cert vehicle.
+
+So when someone asks whether the Supreme Court is afraid of the AR-15 question, my answer is no. The Justices ran out of room this term due to an insanely significant docket. The history of the future has yet to be written, but the chessboard tells me the AR-15 case is coming next term — and when it does, the Second Amendment is going to win hugely.
 
 ---
 
