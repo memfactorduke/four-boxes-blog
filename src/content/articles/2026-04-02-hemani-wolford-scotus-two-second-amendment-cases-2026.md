@@ -1,9 +1,9 @@
 ---
 title: "Two SCOTUS Cases, One Historic Term — What Hemani and Wolford Mean for Your Gun Rights"
-date: "2026-04-03"
+date: "2026-04-02"
 youtube_url: "https://www.youtube.com/watch?v=u7iKnpadJK0"
 youtube_id: "u7iKnpadJK0"
-thumbnail: "/images/articles/2026-04-03-hemani-wolford-scotus-two-second-amendment-cases-2026.jpg"
+thumbnail: "/images/articles/2026-04-02-hemani-wolford-scotus-two-second-amendment-cases-2026.jpg"
 duration: "21:47"
 author: "Mark W. Smith"
 cases_discussed:

@@ -1,9 +1,9 @@
 ---
 title: "Tennessee's Deadly-Force Debate and the Missing Half of the Second Amendment"
-date: "2026-04-26"
+date: "2026-04-27"
 youtube_url: "https://www.youtube.com/watch?v=eR9It0HTO1g"
 youtube_id: "eR9It0HTO1g"
-thumbnail: "/images/articles/2026-04-26-tennessee-deadly-force-defense-of-property-second-amendment-right-to-use.jpg"
+thumbnail: "/images/articles/2026-04-27-tennessee-deadly-force-defense-of-property-second-amendment-right-to-use.jpg"
 duration: "19:57"
 author: "Mark W. Smith"
 cases_discussed:

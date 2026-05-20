@@ -1,9 +1,9 @@
 ---
 title: "The Trump DOJ Just Told Denver: Repeal Your 37-Year AR-15 Ban — or We'll See You in Court"
-date: "2026-05-05"
+date: "2026-05-04"
 youtube_url: "https://www.youtube.com/watch?v=WNdCDlews5s"
 youtube_id: "WNdCDlews5s"
-thumbnail: "/images/articles/2026-05-05-trump-doj-denver-assault-weapons-ban-civil-rights-division.jpg"
+thumbnail: "/images/articles/2026-05-04-trump-doj-denver-assault-weapons-ban-civil-rights-division.jpg"
 duration: ""
 author: "Mark W. Smith"
 cases_discussed:
