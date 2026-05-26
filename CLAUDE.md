@@ -203,22 +203,33 @@ node scripts/link-video.mjs <slug-or-filename> <youtube-id>
 ## Coverage audit & back-generation ("generate another N")
 The site does NOT articleize every video — it tracks the recent stream plus selective back-fill. Greetings / promos / interviews (e.g. "Merry Christmas", "Gundies nomination", "Fox interviews Mark Smith") are intentionally skipped; only substantive 2A / legal / political-commentary videos get articles.
 
-**To audit (find videos with no article) — reusable, never goes stale:**
+**To audit (find videos with no PUBLISHED article) — reusable, never goes stale:**
 ```sh
 # fetch a window of recent uploads, newest first, and flag any whose ID
-# appears in no article file. Widen --playlist-items to look further back.
+# appears in no published article. Widen --playlist-items to look further back.
 yt-dlp --flat-playlist --playlist-items 1-400 --print "%(id)s|%(title)s" \
   "https://www.youtube.com/@TheFourBoxesDiner/videos" | \
 while IFS='|' read -r id title; do
-  grep -rql "$id" src/content/articles/ || echo "MISSING  $id  $title"
+  # -F = literal, -- = end options (CRITICAL: video IDs can start with "-",
+  # which grep otherwise reads as flags and silently mis-reports). Glob only the
+  # top-level *.md — archive/ (see below) is NOT published, so don't count it.
+  grep -qF -- "$id" src/content/articles/*.md 2>/dev/null || echo "MISSING  $id  $title"
 done
 ```
+**Two gotchas this command handles (both bit a prior run):**
+1. **Dash-leading IDs.** Many IDs start with `-` (e.g. `-FPIrQeWPp8`). Without `-F -- ` grep treats them as options and reports false "MISSING" — which caused a duplicate article to be generated for an already-published video. Always use `grep -qF -- "$id"`.
+2. **The `archive/` folder.** `src/content/articles/archive/` holds ~275 retired drafts and is EXCLUDED from the build (the collection glob is non-recursive `*.md`, not `**/*.md`). A video can have an archived (intentionally unpublished) draft yet no published article. To tell "never processed" from "archived," also check: `grep -qF -- "$id" src/content/articles/archive/*.md`. If only an archive copy exists, it may have been set aside on purpose — confirm before re-publishing.
+
 Then run the full Article Pipeline on the chosen IDs (`upload_date` AS-IS for the `date`/filename — these are OLD dates; see Dates rule).
 
 **Sorting is automatic:** every listing page sorts `b.data.date.localeCompare(a.data.date)` on the `YYYY-MM-DD` string (`articles.astro`, `index.astro`, `rss.xml.ts`, `search.astro`, `circuits/`, `topics/`, `cases/`). A back-generated article with an old date slots into its correct chronological position — it will NOT jump to the top. No manual ordering anywhere.
 
 ### Back-generation bookmark (where we stopped)
-*Last audited 2026-05-26.* Coverage is essentially complete for roughly the **most-recent ~330 uploads** (only a handful of intentionally-skipped non-article videos in that range). The **back-generation frontier is ~position 330** in the `/videos` list — older than that, most videos have no article (e.g. window 321–520 had 176/200 missing). Resume back-fill from the frontier: re-run the audit above and take the most-recent `MISSING` substantive videos. No new back-generated articles have been published yet as of this bookmark.
+*Last back-generated 2026-05-26.* The **back-generation frontier is ~position 330** in the `/videos` list (newest first): positions ~1–330 are essentially fully published (a few intentionally-skipped non-article videos); older than ~330, most videos have no published article (window 321–520 had ~176/200 missing).
+
+On 2026-05-26 we back-generated and published **9 articles** from the frontier (dates 2025-07-01 → 2025-08-21): Reese v. ATF (18–20 handgun), Silencer Shop v. ATF / NFA, Junior Sports Magazines v. Bonta, McAllen Border Patrol shooting, Trump v. AFGE, Novak v. Federspiel, Vera Institute v. DOJ, Mackey ("Ricky Vaughn"), and the Cheeseman v. Platkin Third Circuit en-banc grant. A 10th candidate (`-FPIrQeWPp8`, ICE) turned out to be **already published** (the dash-ID grep bug above) and was dropped. Note `-X45QzRNHYE` (Cheeseman) had an *archived* prior draft that we superseded with a fresh article.
+
+**Resume:** re-run the (fixed) audit above and take the next most-recent `MISSING` substantive videos older than the ones above.
 
 ---
 
