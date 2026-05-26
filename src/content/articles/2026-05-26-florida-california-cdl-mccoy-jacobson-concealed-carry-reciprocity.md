@@ -1,10 +1,10 @@
 ---
 title: "Breaking: The Supreme Court Just Built the Case for Nationwide Concealed Carry — in a Trucking Decision"
 date: "2026-05-26"
-youtube_url: ""
-youtube_id: ""
+youtube_url: "https://www.youtube.com/watch?v=HdQVQweSTvA"
+youtube_id: "HdQVQweSTvA"
 thumbnail: "/images/articles/2026-05-26-florida-california-cdl-mccoy-jacobson-concealed-carry-reciprocity.jpg"
-duration: ""
+duration: "17:39"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "Florida v. California"
@@ -63,4 +63,4 @@ Here is the principle that ties it together: *a fortiori* — what is true for t
 The way to harmonize them is for the Supreme Court to grant cert in one of these traveler cases and do for carry permits exactly what it just did for CDLs. *McCoy v. Jacobson* may be the vehicle. Whoever seeks cert next should lay all of this in front of the Court and say it plainly: you already decided this — in a trucking case.
 
 ---
-*This article is based on analysis by Professor Mark W. Smith, constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. Watch the original video [here](https://www.youtube.com/@TheFourBoxesDiner). This does not constitute legal advice.*
+*This article is based on analysis by Professor Mark W. Smith, constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. Watch the original video [here](https://www.youtube.com/watch?v=HdQVQweSTvA). This does not constitute legal advice.*
