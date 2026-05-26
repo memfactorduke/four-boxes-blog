@@ -196,6 +196,30 @@ All other fields stay required; the thumbnail still gets generated from `image_p
 node scripts/link-video.mjs <slug-or-filename> <youtube-id>
 ```
 
+**Footer-link gotcha:** `link-video.mjs` rewrites ONLY the frontmatter (`youtube_url`/`youtube_id`/`duration`) — it never touches the body. So the REQUIRED closing-footer link (`Watch the original video [here](URL)`) does NOT auto-update. For a placeholder, write that footer link to the channel `https://www.youtube.com/@TheFourBoxesDiner` (always valid), and when you backfill the video, ALSO manually edit the footer to the specific `https://www.youtube.com/watch?v=<id>` URL.
+
+---
+
+## Coverage audit & back-generation ("generate another N")
+The site does NOT articleize every video — it tracks the recent stream plus selective back-fill. Greetings / promos / interviews (e.g. "Merry Christmas", "Gundies nomination", "Fox interviews Mark Smith") are intentionally skipped; only substantive 2A / legal / political-commentary videos get articles.
+
+**To audit (find videos with no article) — reusable, never goes stale:**
+```sh
+# fetch a window of recent uploads, newest first, and flag any whose ID
+# appears in no article file. Widen --playlist-items to look further back.
+yt-dlp --flat-playlist --playlist-items 1-400 --print "%(id)s|%(title)s" \
+  "https://www.youtube.com/@TheFourBoxesDiner/videos" | \
+while IFS='|' read -r id title; do
+  grep -rql "$id" src/content/articles/ || echo "MISSING  $id  $title"
+done
+```
+Then run the full Article Pipeline on the chosen IDs (`upload_date` AS-IS for the `date`/filename — these are OLD dates; see Dates rule).
+
+**Sorting is automatic:** every listing page sorts `b.data.date.localeCompare(a.data.date)` on the `YYYY-MM-DD` string (`articles.astro`, `index.astro`, `rss.xml.ts`, `search.astro`, `circuits/`, `topics/`, `cases/`). A back-generated article with an old date slots into its correct chronological position — it will NOT jump to the top. No manual ordering anywhere.
+
+### Back-generation bookmark (where we stopped)
+*Last audited 2026-05-26.* Coverage is essentially complete for roughly the **most-recent ~330 uploads** (only a handful of intentionally-skipped non-article videos in that range). The **back-generation frontier is ~position 330** in the `/videos` list — older than that, most videos have no article (e.g. window 321–520 had 176/200 missing). Resume back-fill from the frontier: re-run the audit above and take the most-recent `MISSING` substantive videos. No new back-generated articles have been published yet as of this bookmark.
+
 ---
 
 ## Mistakes Log / gotchas
