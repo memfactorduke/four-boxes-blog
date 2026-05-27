@@ -227,9 +227,13 @@ Then run the full Article Pipeline on the chosen IDs (`upload_date` AS-IS for th
 ### Back-generation bookmark (where we stopped)
 *Last back-generated 2026-05-26.* The **back-generation frontier is ~position 330** in the `/videos` list (newest first): positions ~1–330 are essentially fully published (a few intentionally-skipped non-article videos); older than ~330, most videos have no published article (window 321–520 had ~176/200 missing).
 
-On 2026-05-26 we back-generated and published **9 articles** from the frontier (dates 2025-07-01 → 2025-08-21): Reese v. ATF (18–20 handgun), Silencer Shop v. ATF / NFA, Junior Sports Magazines v. Bonta, McAllen Border Patrol shooting, Trump v. AFGE, Novak v. Federspiel, Vera Institute v. DOJ, Mackey ("Ricky Vaughn"), and the Cheeseman v. Platkin Third Circuit en-banc grant. A 10th candidate (`-FPIrQeWPp8`, ICE) turned out to be **already published** (the dash-ID grep bug above) and was dropped. Note `-X45QzRNHYE` (Cheeseman) had an *archived* prior draft that we superseded with a fresh article.
+On 2026-05-26 we back-generated and published **19 articles** in two batches from the frontier:
+- **Batch 1** (dates 2025-07-01 → 2025-08-21): Reese v. ATF (18–20 handgun), Silencer Shop v. ATF / NFA, Junior Sports Magazines v. Bonta, McAllen Border Patrol shooting, Trump v. AFGE, Novak v. Federspiel, Vera Institute v. DOJ, Mackey ("Ricky Vaughn"), Cheeseman v. Platkin (3d Cir. en-banc grant). A 10th candidate (`-FPIrQeWPp8`, ICE) was dropped as **already published** (dash-ID grep bug above); `-X45QzRNHYE` (Cheeseman) had an *archived* prior draft we superseded.
+- **Batch 2** (dates 2025-06-17 → 2025-07-26): United States v. Peterson (5th Cir. suppressor-opinion withdrawal), NFA/OBBBA suppressor-SBR-SBS deep dive, Nguyen v. Bonta (one-gun-a-month), Commonwealth v. Sumpter (Philly open carry), Trump v. CASA (universal injunctions), Padua v. Platkin (NJ suppressor ban), Shreve v. USPS (handgun mail ban), Trump v. Boyle (removal power), Rhode v. Bonta (ammo background-check panel ruling), DOGE/ATF deregulation.
 
-**Resume:** re-run the (fixed) audit above and take the next most-recent `MISSING` substantive videos older than the ones above.
+So published back-fill now covers roughly **mid-June → late-August 2025** from the frontier. Note Rhode v. Bonta and Peterson also appear in *later* articles (different videos/procedural stages); the per-video model expects that, and these batch articles are the earliest events in those timelines.
+
+**Resume:** re-run the (fixed) audit above and take the next most-recent `MISSING` substantive videos OLDER than mid-June 2025 (positions deeper than ~360). Skip greetings/promos/interviews; verify caption-availability (some videos have no captions) and run the full pipeline.
 
 ---
 
