@@ -57,7 +57,7 @@ The Ninth Circuit just delivered a clean, unanimous takedown of California's one
 
 California's core argument was, frankly, embarrassing. The state contended that the Second Amendment only guarantees the right to possess a *single* firearm, and that because most plaintiffs already owned at least one gun, their rights hadn't been infringed at all. The panel made short work of that:
 
-> "The Second Amendment protects the right of the people to keep and bear *arms* — plural — signing to Heller. This guarantees the individual right to possess and carry weapons, plural. California's interpretation would mean the Second Amendment only protects possession of a single weapon of any kind. There is no basis for interpreting the constitutional text in that way."
+> "The Second Amendment protects the right of the people to keep and bear *arms* — plural. This guarantees the individual right to possess and carry weapons, plural. California's interpretation would mean the Second Amendment only protects possession of a single weapon of any kind. There is no basis for interpreting the constitutional text in that way."
 
 That's the opinion citing *District of Columbia v. Heller*, 554 U.S. 570 (2008). The text of the Second Amendment says "arms." Not "an arm." This should not require three judges and fifteen pages to explain, but here we are.
 
@@ -65,7 +65,7 @@ That's the opinion citing *District of Columbia v. Heller*, 554 U.S. 570 (2008).
 
 The panel then addressed whether the right to *acquire* a firearm is even protected by the Second Amendment, given that the word "acquire" doesn't appear in the text. My answer has always been yes — and the court agreed. The ability to acquire a firearm is a necessary precondition to the right to keep and bear one.
 
-The panel drew on *Ezell v. City of Chicago*, 651 F.3d 684 (7th Cir. 2011), where the Seventh Circuit recognized that the right to *train* with a firearm — also not expressly mentioned in the constitutional text — is nonetheless protected because training is so intertwined with keeping and bearing arms that it functions as a concominant right. By the same logic, the right to *purchase* a firearm is at minimum as fundamental as the right to train with one. You cannot keep and bear arms you cannot acquire.
+The panel drew on *Ezell v. City of Chicago*, 651 F.3d 684 (7th Cir. 2011), where the Seventh Circuit recognized that the right to *train* with a firearm — also not expressly mentioned in the constitutional text — is nonetheless protected because training is so intertwined with keeping and bearing arms that it functions as a concomitant right. By the same logic, the right to *purchase* a firearm is at minimum as fundamental as the right to train with one. You cannot keep and bear arms you cannot acquire.
 
 Once the panel established that California's restriction implicates the text of the Second Amendment, the burden shifted to the government under *New York State Rifle & Pistol Ass'n v. Bruen*, 597 U.S. 1 (2022). And California had nothing to offer.
 

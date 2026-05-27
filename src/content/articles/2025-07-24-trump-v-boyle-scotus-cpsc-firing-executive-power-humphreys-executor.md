@@ -11,7 +11,7 @@ cases_discussed:
     citation: "No. 25A11 (U.S. July 23, 2025)"
     court: "Supreme Court of the United States"
   - name: "Trump v. Wilcox"
-    citation: "604 U.S. ___ (2025)"
+    citation: "605 U.S. ___ (2025)"
     court: "Supreme Court of the United States"
   - name: "Humphrey's Executor v. United States"
     citation: "295 U.S. 602 (1935)"
