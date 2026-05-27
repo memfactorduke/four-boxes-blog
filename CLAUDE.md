@@ -127,6 +127,9 @@ image_prompt: "..."                # REQUIRED — see Image Prompt Guidelines
 10. **Generate images centrally** via `scripts/generate-article-images.mjs`.
 11. **Build, verify, commit, push** (from this repo).
 
+> **Subagent guardrail (NON-NEGOTIABLE — put this in EVERY writer/research/fact-check agent prompt):**
+> Subagents **MUST NOT run `git` (no `add`/`commit`/`push`), MUST NOT run `npm run build`/`astro build`, and MUST NOT generate images.** They only read transcripts, research, and write/edit the article markdown, then report back. **Only the main thread builds, generates images centrally, and commits/pushes** — and only after the check + fact-check passes. *(A writer agent once self-committed and pushed 3 articles with no images and a half-built search index, bypassing every safety pass. Always include the explicit "do NOT run git or build" line; never assume the agent will infer it.)*
+
 ---
 
 ## Published Article Format (mirror Mark's X-published style)
