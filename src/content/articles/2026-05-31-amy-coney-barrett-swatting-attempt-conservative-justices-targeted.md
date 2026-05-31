@@ -1,10 +1,10 @@
 ---
 title: "Breaking: A Swatting Hoax Targeted Justice Barrett's Home — and It Could Have Gotten Someone Killed"
-date: "2026-05-27"
-youtube_url: ""
-youtube_id: ""
-thumbnail: "/images/articles/2026-05-27-amy-coney-barrett-swatting-attempt-conservative-justices-targeted.jpg"
-duration: ""
+date: "2026-05-31"
+youtube_url: "https://www.youtube.com/watch?v=feAx_U3T9hY"
+youtube_id: "feAx_U3T9hY"
+thumbnail: "/images/articles/2026-05-31-amy-coney-barrett-swatting-attempt-conservative-justices-targeted.jpg"
+duration: "15:04"
 author: "Mark W. Smith"
 cases_discussed:
   - name: "Dobbs v. Jackson Women's Health Organization"
@@ -74,4 +74,4 @@ These are, by and large, careful and ordinary people who chose a life of public 
 
 ---
 
-*This article is based on analysis by [Professor Mark W. Smith](https://www.youtube.com/@TheFourBoxesDiner), constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. [Watch the original video here](https://www.youtube.com/@TheFourBoxesDiner). This does not constitute legal advice.*
+*This article is based on analysis by [Professor Mark W. Smith](https://www.youtube.com/@TheFourBoxesDiner), constitutional attorney and Host of the Four Boxes Diner 2nd Amendment channel. [Watch the original video here](https://www.youtube.com/watch?v=feAx_U3T9hY). This does not constitute legal advice.*
